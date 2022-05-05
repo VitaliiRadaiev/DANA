@@ -1,0 +1,46 @@
+.technology {
+
+    &__body {
+    }
+
+    &__list {
+        padding-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -1.6rem;
+        transition: all .5s ease;
+
+
+        @media (min-width: 768px) {
+            max-height: none !important;
+        }
+
+        @media (max-width: $md3+px) {
+            overflow: hidden;
+        }
+
+        & > li {
+            padding: 0 1.6rem;
+            margin-bottom: 3.2rem;
+            flex: 0 1 33.33333%;
+
+            @media (max-width: $md2+px) {
+                flex: 0 1 50%;
+            }
+            @media (max-width: $md3+px) {
+                flex: 0 1 100%;
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 200px;
+    min-height: 5.6rem;
+    min-width: 18.9rem;
+    padding: 1rem 2.2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.31em;
+    letter-spacing: -0.02em;
+    transition: all 0s ease 0s;
+    transition: all .3s ease;
+
+    @media (min-width: 992px) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    @media (max-width: $md2+px) {
+        min-height: 50px;
+    }
+
+    @media (max-width: $md3+px) {
+        width: 100%;
+    }
+
+    &--dark {
+        border: 2px solid $mainColor;
+        background: $mainColor;
+        color: #fff;
+
+        &.btn--transparent {
+            color: $mainColor;
+
+            &:hover {
+                color: $mainColor;
+            }
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+    &--light {
+        border: 2px solid #fff;
+        background: #fff;
+        color: $textColorSecondary;
+
+        &:hover {
+            color: $textColorSecondary;
+        }
+
+        &.btn--transparent {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &--gradient {
+        background: linear-gradient(278.48deg, #179b97 1.93%, #09cac3 95.01%);
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @media (max-width: $md2+px) {
+            min-height: 42px !important;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &--transparent {
+        background-color: transparent !important;
+    }
+}

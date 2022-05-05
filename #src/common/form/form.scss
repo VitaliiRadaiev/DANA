@@ -1,0 +1,165 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5.7rem 5rem 5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 58.6rem;
+    position: relative;
+
+    @media (max-width: $md3+px) {
+        padding: 50px 20px 34px;
+    }
+
+    & .close-btn {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+
+        @media (max-width: 399.98px) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2.5rem;
+        text-align: center;
+        &.text-content {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 31.3rem;
+
+        @media (max-width: $md4+px) {
+            max-width: 230px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.9rem;
+
+            @media (max-width: $md4+px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        &--has-link {
+            margin-top: -1rem;
+        }
+    }
+
+    &__link {
+        padding: 0 1.5rem;
+    }
+
+    &__submit {
+        margin-top: 2.7rem;
+        align-self: center;
+
+        @media (max-width: $md4+px) {
+            margin-top: 11px;
+        }
+    }
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 5.6rem;
+    padding: 0.8rem 1.6rem;
+    border: 2px solid $mainColor;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1em;
+
+    @media (max-width: $md3+px) {
+        height: 50px;
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+
+    &::placeholder {
+        color: #9d9d9d;
+    }
+}
+.textarea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(40, 83, 143, 0.05);
+    border-radius: 0.8rem;
+    height: 10rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 1.58em;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+
+    &:focus {
+        border-color: $secondColor;
+    }
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+    }
+}
+
+.checkbox-radio {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+    & input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+
+        &:checked ~ {
+            & .checkbox-radio__square {
+                background-color: $secondColor;
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjUgM0w1LjUgN0wxMC41IDEuNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+            }
+        }
+    }
+
+    &__square {
+        flex: 0 0 auto;
+        height: 1.6rem;
+        width: 1.6rem;
+        border: 1px solid $secondColor;
+        margin-right: 0.8rem;
+        border-radius: 0.4rem;
+        background-position: center;
+        background-size: 85%;
+        background-repeat: no-repeat;
+        transform: translateY(11%);
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.43em;
+        color: #555555;
+
+        & a {
+            color: $secondColor;
+            text-decoration: underline;
+        }
+    }
+}

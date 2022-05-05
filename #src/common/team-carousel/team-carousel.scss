@@ -1,0 +1,163 @@
+.team-carousel {
+    &__slider {
+        position: relative;
+
+        @media (max-width: $md2+px) {
+            margin: 0 -32px;
+        }
+        @media (max-width: $md3+px) {
+            margin: 0 -16px;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100%;
+            z-index: 1;
+            transform: translateX(-50%);
+            background-color: $mainColor;
+        }
+
+        & .swiper {
+            position: relative;
+            z-index: 2;
+        }
+
+        & .slider-buttons {
+            padding: 0;
+
+            @media (max-width: $md2+px) {
+                display: none;
+            }
+        }
+
+        & .swiper-slide {
+            @media (max-width: $md2+px) {
+                width: auto;
+
+                &.swiper-slide-active {
+                    & .team-carousel-card {
+                        background-color: $secondColor;
+
+                        & .team-carousel-card__calendar {
+                            opacity: 1;
+                        }
+
+                        & .team-carousel-card__name,
+                        & .team-carousel-card__position {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-carousel-card {
+    display: flex;
+    flex-direction: column;
+    height: 76.9rem;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 0.3s ease;
+
+    @media (max-width: $md2+px) {
+        width: 456px;
+    }
+
+    @media (max-width: $md3+px) {
+        width: 264px;
+        height: 417px;
+        padding-top: 24px;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: $secondColor;
+
+            & .team-carousel-card__calendar {
+                opacity: 1;
+            }
+
+            & .team-carousel-card__name,
+            & .team-carousel-card__position {
+                color: #fff;
+            }
+        }
+    }
+
+    &__calendar {
+        position: absolute;
+        z-index: 4;
+        top: 4rem;
+        right: 3.2rem;
+        width: 4rem;
+        transition: all 0.3s ease;
+        opacity: 0.8;
+
+        @media (max-width: $md3+px) {
+            top: 24px;
+            right: 8px;
+            width: 32px;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__name {
+        padding: 0 6rem 0 4rem;
+        margin-bottom: 1.4rem;
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 1.08em;
+        letter-spacing: -0.02em;
+        color: #0abeb9;
+        transition: all 0.3s ease;
+
+        @media (max-width: $md3+px) {
+            padding: 0 40px 0 16px;
+            margin-bottom: 4px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    &__position {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.2em;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.6rem;
+        transition: all 0.3s ease;
+        padding: 0 6rem 0 4rem;
+        color: #9d9d9d;
+
+        @media (max-width: $md3+px) {
+            padding: 0 40px 0 16px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 1rem;
+        flex: 1 1 auto;
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}

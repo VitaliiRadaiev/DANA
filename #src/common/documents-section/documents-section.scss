@@ -1,0 +1,57 @@
+.documents-section {
+
+    &__slider {
+        margin: 0 auto;
+        max-width: 120rem;
+        position: relative;
+
+        @media (min-width: 768px) {
+            padding: 0 5rem;
+        }
+
+        @media (max-width: $md3+px) {
+            margin-right: -16px;
+        }
+
+        & .swiper {
+            @media (max-width: $md3+px) {
+                overflow: visible;
+            }
+        }
+
+        & .swiper-slide {
+            @media (max-width: $md3+px) {
+                width: 175px;
+            }
+        }
+
+        & .slider-buttons {
+            padding: 0;
+
+            @media (max-width: $md3+px) {
+                display: none;
+            }
+        }
+
+        & .slider-button {
+            color: $textColor;
+        }
+    }
+
+    &__slider-item {
+        position: relative;
+        display: block;
+        padding-bottom: 141.17%;
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%,);
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+<head>
+	<meta charset="UTF-8">
+	<title>DANA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+
+	<header class="header " data-header data-popup="add-right-padding">
+    <div class="header__row-1">
+        <div class="header__row-1-body container">
+            <div class="header__address">
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <img src="img/icons/local.svg" alt="">
+                    </div>
+                    ул. Адмирала Коновалова, 2-4
+                </div>
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <img src="img/icons/local.svg" alt="">
+                    </div>
+                    Большая Пороховская, 47
+                </div>
+            </div>
+            <div class="header__social">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/telegram.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/whatsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/viber.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="header__mob-phone">+7 (812) 612-44-54</a>
+        </div>
+    </div>
+    <div class="header__row-2"></div>
+    <div class="header__row-2-body container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="header__menu menu" data-menu>
+                <div class="menu__top-line"></div>
+                <div class="menu__head">
+                    <div class="menu__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                    <div class="menu__close-btn" data-action="close-menu">
+                        <img src="img/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">О клинике</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Технологии</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Статьи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__bottom">
+                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                </div>
+            </nav>
+            <div class="header__phone">
+                <a href="#">+7 (812) 612-44-54</a>
+                <p>Ежедневно: 9:00 — 21:00</p>
+            </div>
+            <a href="#" class="header__btn btn btn--dark">
+                Записаться на консультацию
+            </a>
+            <div class="header__burger" data-action="open-menu">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+    </div>
+</header>
+
+	<!-- == // TOP LINE ================== -->
+
+	<main class="_page home-page" data-padding-top-header-size>
+
+		<section class="promo-header padding-wrap pt-0">
+    <div class="container">
+        <div class="promo-header__slider swiper" data-promo-header-slider>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="promo-header__body">
+                        <div class="promo-header__title">
+                            Клиника инновационной
+                            стоматологии «Дана»
+                        </div>
+                        <div class="promo-header__img ibg">
+                            <picture>
+                                <source srcset="img/photo/promo-header-bg-1.jpg" media="(min-width: 992px)" >
+                                <img  src="img/photo/promo-header-bg-1-mob.jpg" alt="img">
+                            </picture>
+                        </div>
+                        <div class="promo-header__text">
+                            Мы рады предложить вам передовые методики лечения, специалистов с многолетним опытом работы и современное импортное оборудование
+                        </div>
+                        <a href="#" class="promo-header__btn-1 btn btn--light">Подробнее</a>
+                        <a href="#" class="promo-header__btn-2 btn btn--dark btn-transparent">Записаться на консультацию</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="promo-header__body">
+                        <div class="promo-header__title">
+                            Клиника инновационной
+                            стоматологии «Дана» 2
+                        </div>
+                        <div class="promo-header__img ibg">
+                            <picture>
+                                <source srcset="img/photo/promo-header-bg-1.jpg" media="(min-width: 992px)" >
+                                <img  src="img/photo/promo-header-bg-1-mob.jpg" alt="img">
+                            </picture>
+                        </div>
+                        <div class="promo-header__text">
+                            Мы рады предложить вам передовые методики лечения, специалистов с многолетним опытом работы и современное импортное оборудование
+                            Мы рады предложить вам передовые методики лечения
+                        </div>
+                        <a href="#" class="promo-header__btn-1 btn btn--light">Подробнее</a>
+                        <a href="#" class="promo-header__btn-2 btn btn--dark btn-transparent">Записаться на консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+    <div class="slider-button slider-button--prev hover">
+        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+    </div>
+    <div class="slider-button slider-button--next hover">
+        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+		<section class="why-us padding-wrap">
+			<div class="container">
+				<div class="head">
+					<h2 class="head__title text-lg-center">Почему стоит выбрать нас?</h2>
+					<div class="head__subtitle text text-lg-center">
+						Преимущества,
+						которые гарантируют вам высокие стандарты оказываемых услуг
+					</div>
+				</div>
+				<div class="why-us__body">
+					<div class="why-us__col why-us__col-1 text-content">
+						<h3>Индивидуальный подход</h3>
+						<p>
+							«Дана» оказывает современные стоматологические услуги, но основная цель для нас – ваше
+							здоровье и здоровье ваших зубов. Мы рады предложить вам передовые методики лечения,
+							специалистов с многолетним опытом работы и современное импортное оборудование.
+						</p>
+					</div>
+					<div class="why-us__col why-us__col-2">
+						<div class="why-us__img why-us__img-1 ibg" data-da=".why-us__col-1,991.98,1">
+							<img src="img/photo/why-us-img-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="why-us__col why-us__col-3">
+						<div class="why-us__img why-us__img-2 ibg" data-da=".why-us__col-4,991.98,1">
+							<img src="img/photo/why-us-img-2.jpg" alt="">
+						</div>
+					</div>
+					<div class="why-us__col why-us__col-4 text-content">
+						<h3>Цифровая стоматология</h3>
+						<p>
+							«Дана» оказывает современные стоматологические услуги, но основная цель для нас – ваше
+							здоровье и здоровье ваших зубов. Мы рады предложить вам передовые методики лечения,
+							специалистов с многолетним опытом работы и современное импортное оборудование.
+						</p>
+					</div>
+				</div>
+				<div class="why-us__bottom text-center">
+					<a href="#" class="btn btn-dark">Записаться на консультацию</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="technology padding-wrap">
+    <div class="container-md">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Мы используем передовые технологии</h2>
+        </div>
+        <div class="technology__body" data-technology>
+            <ul class="technology__list">
+                <li>
+                    <a href="#" class="post-card not-hover">
+    <div class="post-card__img ibg">
+        <img src="img/photo/technology-img-1.jpg" alt="">
+    </div>
+    <div class="post-card__text-wrap">
+        <div class="post-card__title">Лечение под микроскопом</div>
+        <div class="post-card__text text-content text-content--sm">Лечение зубов под микроскопом – современная методика, которая получает все большее распространение благодаря возможности детального осмотра поверхности зуба</div>
+        <div class="post-card__more text-content--sm">Подробнее</div>
+    </div>
+</a>
+                </li>
+                <li>
+                    <a href="#" class="post-card not-hover">
+    <div class="post-card__img ibg">
+        <img src="img/photo/technology-img-2.jpg" alt="">
+    </div>
+    <div class="post-card__text-wrap">
+        <div class="post-card__title">Навигационная система для имплантации</div>
+        <div class="post-card__text text-content text-content--sm">Даже самые сложные клинические случаи можно решить с помощью такого планирования и навигации. Все протоколы лечения прорабатываются виртуально</div>
+        <div class="post-card__more text-content--sm">Подробнее</div>
+    </div>
+</a>
+                </li>
+                <li>
+                    <a href="#" class="post-card not-hover">
+    <div class="post-card__img ibg">
+        <img src="img/photo/technology-img-3.jpg" alt="">
+    </div>
+    <div class="post-card__text-wrap">
+        <div class="post-card__title">3D моделирование улыбки</div>
+        <div class="post-card__text text-content text-content--sm">Процедура моделирования улыбки предоставит пациенту возможность увидеть заранее результат реставрации зубного ряда в зоне улыбки еще до выполнения процесса.</div>
+        <div class="post-card__more text-content--sm">Подробнее</div>
+    </div>
+</a>
+                </li>
+                <li>
+                    <a href="#" class="post-card not-hover">
+    <div class="post-card__img ibg">
+        <img src="img/photo/technology-img-4.jpg" alt="">
+    </div>
+    <div class="post-card__text-wrap">
+        <div class="post-card__title">Аппарат Vector</div>
+        <div class="post-card__text text-content text-content--sm">«Vector-терапия» – одна из самых эффективных технологий лечения пародонтита и снятие поддесневых отложений и профилактики заболевания пародонта</div>
+        <div class="post-card__more text-content--sm">Подробнее</div>
+    </div>
+</a>
+                </li>
+                <li>
+                    <a href="#" class="post-card not-hover">
+    <div class="post-card__img ibg">
+        <img src="img/photo/technology-img-5.jpg" alt="">
+    </div>
+    <div class="post-card__text-wrap">
+        <div class="post-card__title">Комплексная гигиена для инструментов</div>
+        <div class="post-card__text text-content text-content--sm">Все задачи по очистке, стерилизации, смазке и сушке инструментов этот аппарат выполняет в полностью автоматическом режиме</div>
+        <div class="post-card__more text-content--sm">Подробнее</div>
+    </div>
+</a>
+                </li>
+            </ul>
+            <div class="technology__bottom">
+                <a href="#" class="btn btn--dark btn--transparent">Показать еще</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+		<section class="about-banner padding-wrap">
+			<div class="about-banner__inner">
+				<div class="about-banner__bg ibg">
+					<img src="img/photo/about-banner-bg.jpg" alt="">
+				</div>
+				<div class="about-banner__body container">
+					<div class="about-banner__text-wrap">
+						<h2 class="about-banner__title">
+							Современная стоматологическая клиника
+							в двух районах Санкт-Петербурга
+						</h2>
+						<div class="about-banner__text text-content">
+							DANA – стоматология, в которой предоставляют качественные услуги и заботятся о каждом
+							пациенте. В нашей зубной клинике работают квалифицированные специалисты различных
+							направлений – от терапевтов до хирургов. В частности, поэтому наш стоматологический центр
+							предлагает больше, чем просто лечение! Мы создаем здоровые и эстетичные улыбки даже в тех
+							случаях, что казались безнадежными.
+						</div>
+						<div class="about-banner__buttons">
+							<a href="#" class="btn btn--light">Подробнее о нас</a>
+							<a href="#" class="btn btn--light btn--transparent">Фотогалерея клиники</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-services our-services--lift padding-wrap">
+    <div class="container-md">
+        <div class="our-services__head head">
+            <h2 class="head__title">Наши услуги</h2>
+            <div class="head__subtitle text">
+                Мы дарим улыбки, которые меняют жизнь
+            </div>
+        </div>
+        <ul class="our-services__list">
+            <li>
+                <a href="#" class="services-card not-hover">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-1.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Лечение зубов и десен </h3>
+        <div class="services-card__text">В стоматологии, как и других разделах медицины, есть хирургическое направление лечения (например, имплантация зубов, удаление) и терапевтическое</div>
+        <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
+        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+    </div>
+</a>
+            </li>
+            <li>
+                <a href="#" class="services-card not-hover">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-2.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Протезирование зубов</h3>
+        <div class="services-card__text">Стоматологическая клиника Dana предлагает разумные цены на протезирование зубов и полный комплекс услуг</div>
+        <div class="services-card__price">Стоимость от  <strong>10 000</strong> ₽</div>
+        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+    </div>
+</a>
+            </li>
+            <li>
+                <a href="#" class="services-card not-hover">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-3.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Имплантация</h3>
+        <div class="services-card__text">Ценность сияющей здоровой улыбки осознается, когда возникают проблемы, и эту улыбку приходится прятать от окружающих</div>
+        <div class="services-card__price">Стоимость от  <strong>20 000</strong> ₽</div>
+        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+    </div>
+</a>
+            </li>
+            <li>
+                <a href="#" class="services-card not-hover">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-4.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Ортодонтия</h3>
+        <div class="services-card__text">Исправление прикуса – процесс сложный и успех зависит от квалификации врача, проведенного обследования и индивидуального подхода к проблеме</div>
+        <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
+        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+    </div>
+</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+		<section class="team-carousel padding-wrap">
+    <div class="container">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Наши специалисты</h2>
+            
+            <div class="head__subtitle text text-lg-center">Запишитесь к врачам нашей клиники онлайн</div>
+            
+        </div>
+        <div class="team-carousel__slider" >
+            <div class="swiper" data-team-carousel-slider>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="team-carousel-card not-hover">
+                            <div class="team-carousel-card__calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="team-carousel-card__name">Екимова Мария</div>
+                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                            <div class="team-carousel-card__photo">
+                                <img src="img/photo/team-carousel-card-1.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="team-carousel-card not-hover">
+                            <div class="team-carousel-card__calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="team-carousel-card__name">Шахаев Саид</div>
+                            <div class="team-carousel-card__position">стоматолог-ортопед, хирург</div>
+                            <div class="team-carousel-card__photo">
+                                <img src="img/photo/team-carousel-card-2.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="team-carousel-card not-hover">
+                            <div class="team-carousel-card__calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="team-carousel-card__name">Маргиева Зарина</div>
+                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                            <div class="team-carousel-card__photo">
+                                <img src="img/photo/team-carousel-card-3.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="team-carousel-card not-hover">
+                            <div class="team-carousel-card__calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="team-carousel-card__name">Перельштейн Нина</div>
+                            <div class="team-carousel-card__position">стоматолог-ортодонт</div>
+                            <div class="team-carousel-card__photo">
+                                <img src="img/photo/team-carousel-card-4.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+    <div class="slider-button slider-button--prev hover">
+        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+    </div>
+    <div class="slider-button slider-button--next hover">
+        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+		<section class="quiz padding-wrap">
+    <div class="container-sm">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Ответьте на 3 вопроса и узнайте стоимость лечения</h2>
+            <div class="head__subtitle text text-lg-center">Пройдите тест из 3 вопросов и получите оценку стоимости
+                необходимого лечения</div>
+        </div>
+        <form action="/" id="quiz">
+            <div class="quiz__body swiper" data-quiz>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="quiz__cards-group">
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step1">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Болит зуб?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step1">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Кровоточат десны?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step1">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__cards-group">
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step2">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Болит зуб?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step2">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Кровоточат десны?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step2">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__cards-group">
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step3">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Болит зуб?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step3">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Кровоточат десны?</div>
+                                </div>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-card__radio" type="radio" name="step3">
+                                <div class="quiz-card__img ibg">
+                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="quiz-card__text-wrap">
+                                    <div class="quiz-card__circle"></div>
+                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__message">
+                            <h2 class="quiz__title">Result</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__buttons swiper" data-quiz-buttons>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="btn btn--dark" disabled data-slide-to="1">Далее</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="btn btn--dark" data-slide-to="0">Назад</a>
+                        <a href="#" class="btn btn--dark" data-slide-to="2">Далее</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="quiz__submit btn btn--dark" type="submit">Отправить</button>
+                    </div>
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
+        </form>
+
+        <script>
+            let quizForm = document.querySelector('#quiz');
+            if(quizForm) {
+                quizForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    
+                    setTimeout(() => {
+                        window.quiz.showResult()
+                    }, 1000)
+                })
+            }
+        </script>
+    </div>
+</section>
+
+		<section class="frequently-questions padding-wrap">
+    <div class="container-sm">
+        <div class="head">
+            <h2 class="head__title">Часто задаваемые вопросы</h2>
+        </div>
+        <ul class="frequently-questions__list">
+            <li>
+                <a href="#" class="frequently-questions-card not-hover">
+                    <div class="frequently-questions-card__text">Нужно ли периодически менять зубную пасту?</div>
+                    <div class="frequently-questions-card__icon">
+                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="frequently-questions-card not-hover">
+                    <div class="frequently-questions-card__text">Как часто нужно делать чистку зубов у стоматолога?</div>
+                    <div class="frequently-questions-card__icon">
+                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="frequently-questions-card not-hover">
+                    <div class="frequently-questions-card__text">После одномоментной имплантации в день удаления я уже выйду из клиники с новым зубом?</div>
+                    <div class="frequently-questions-card__icon">
+                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="frequently-questions-card not-hover">
+                    <div class="frequently-questions-card__text">В каких случаях применяете седацию, есть ли противопоказания?</div>
+                    <div class="frequently-questions-card__icon">
+                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="frequently-questions__bottom text-center">
+            <a href="#" class="btn btn--dark">Показать еще</a>
+        </div>
+    </div>
+</section>
+
+		<section class="video-testimonials padding-wrap">
+    <div class="video-testimonials__inner">
+        <div class="container-md">
+            <div class="head">
+                <h2 class="head__title text-center">Отзывы о нас</h2>
+                <div class="head__subtitle text text-center">
+                    Смотрите видео отзывы наших пациентов о клинике и специалистах
+                </div>
+            </div>
+            <ul class="video-testimonials__grid">
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-3.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-6.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-4.jpg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
+                        <img src="img/photo/testimonial-poster-5.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="video-testimonials__bottom">
+                <a href="#" class="btn btn--light"> Читать отзывы</a>
+                <a href="#" class="btn btn--light btn--transparent">Посмотреть отзывы на канале</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+		<section class="rating-section padding-wrap">
+    <div class="container-md">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Независимые рейтинги</h2>
+        </div>
+        <ul class="rating-section__list">
+            <li>
+                <div class="rating-card">
+                    <div class="rating-card__logo">
+                        <img src="img/photo/rating-logo-1.svg" alt="">
+                    </div>
+                    <div class="rating-card__value">4.7 из 5</div>
+                    <div class="rating-card__stars">
+                        <div class="rating" data-rating="4.5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="rating-card">
+                    <div class="rating-card__logo">
+                        <img src="img/photo/rating-logo-2.svg" alt="">
+                    </div>
+                    <div class="rating-card__value">4.7 из 5</div>
+                    <div class="rating-card__stars">
+                        <div class="rating" data-rating="4.5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="rating-card">
+                    <div class="rating-card__logo">
+                        <img src="img/photo/rating-logo-3.svg" alt="">
+                    </div>
+                    <div class="rating-card__value">4.7 из 5</div>
+                    <div class="rating-card__stars">
+                        <div class="rating" data-rating="4.5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="rating-card">
+                    <div class="rating-card__logo">
+                        <img src="img/photo/rating-logo-4.svg" alt="">
+                    </div>
+                    <div class="rating-card__value">4.7 из 5</div>
+                    <div class="rating-card__stars">
+                        <div class="rating" data-rating="4.5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+		<section class="documents-section padding-wrap">
+    <div class="container-sm">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Лицензии и документы</h2>
+            <div class="head__subtitle text text-lg-center">
+                Лицензия на стоматологическую деятельность ООО «Дана»
+            </div>
+        </div>
+        <div class="documents-section__slider" data-documents-slider>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+    <div class="slider-button slider-button--prev hover">
+        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+    </div>
+    <div class="slider-button slider-button--next hover">
+        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+		<section class="cta padding-wrap">
+    <div class="cta__inner">
+        <div class="container-md">
+            <div class="cta__body">
+                <div class="cta__col-1">
+                    <h2 class="cta__title">Мы работаем для Вашего комфорта!</h2>
+                    <div class="cta__text">
+                        Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы
+                        в ближайшее время свяжемся с вами.
+                    </div>
+                    <form action="">
+                        <div class="cta__form-items">
+                            <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                                <input type="text" class="input" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="cta__form-item">
+                                <button class="btn btn--dark">Заказать обратный звонок</button>
+                            </div>
+                        </div>
+                        <div class="cta__form-bottom">
+                            <label class="checkbox-radio">
+                                <input type="checkbox">
+                                <div class="checkbox-radio__square"></div>
+                                <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                        href="#">согласие</a> на обработку персональных данных</div>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta__col-2">
+                    <div class="cta__img">
+                        <img src="img/photo/cta-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+		<section class="contact-section padding-wrap">
+			<div class="contact-section__inner">
+				<div class="container">
+					<div class="contact-section__body">
+						<h2 class="contact-section__title-desk text-center">Контакты</h2>
+						<h2 class="contact-section__title-mob">Как нас найти</h2>
+						<ul class="contact-section__contact-mob">
+							<li>
+								<p>Единый телефон</p>
+								<a href="#">+7 (812) 612-44-54</a>
+							</li>
+							<li>
+								<p>WhatsApp / Telegram / Viber</p>
+								<a href="#">+7 (921) 918-2-918</a>
+							</li>
+						</ul>
+						<ul class="contact-section__list">
+							<li>
+								<div class="contact-section__item">
+									<div class="contact-section__label">
+										<img src="img/icons/clock.svg" alt="">
+										Время работы
+									</div>
+									<div class="contact-section__text">
+										Ежедневно 09.00 - 21.00
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="contact-section__item">
+									<div class="contact-section__label">
+										<img src="img/icons/phone.svg" alt="">
+										Единый телефон
+									</div>
+									<div class="contact-section__text">
+										<a href="#">+7 (812) 612-44-54</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="contact-section__item">
+									<div class="contact-section__label">
+										<img src="img/icons/whatsapp-2.svg" alt="">
+										WhatsApp / Telegram / Viber
+									</div>
+									<div class="contact-section__text">
+										<a href="#">+7 (921) 918-2-918</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="contact-section__item">
+									<div class="contact-section__label">
+										<img src="img/icons/email.svg" alt="">
+										E-mail
+									</div>
+									<div class="contact-section__text">
+										<a href="#">help@danaspb.ru</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="contact-section__map-list">
+							<li>
+								<div class="contact-section__map">
+									<iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+								</div>
+								<div class="contact-section__map-bottom">
+									<div class="contact-section__map-bottom-col-1">
+										<div class="contact-section__map-bottom-label">
+											<img src="img/icons/local-2.svg" alt="">
+											Большая Пороховская, 47
+										</div>
+
+										<div class="contact-section__map-bottom-text">
+											Красногвардейский район
+										</div>
+										<div class="contact-section__map-bottom-time">
+											<img src="img/icons/clock.svg" alt="">
+											Ежедневно 09.00 - 21.00
+										</div>
+									</div>
+									<div class="contact-section__map-bottom-col-2">
+										<a href="#" class="btn btn--dark">Записаться в клинику</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="contact-section__map">
+									<iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDuJXA" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+								</div>
+								<div class="contact-section__map-bottom">
+									<div class="contact-section__map-bottom-col-1">
+										<div class="contact-section__map-bottom-label">
+											<img src="img/icons/local-2.svg" alt="">
+											ул. Адмирала Коновалова, 2-4
+										</div>
+
+										<div class="contact-section__map-bottom-text">
+											Красносельский район, Балтийская жемчужина
+										</div>
+										<div class="contact-section__map-bottom-time">
+											<img src="img/icons/clock.svg" alt="">
+											Ежедневно 09.00 - 21.00
+										</div>
+									</div>
+									<div class="contact-section__map-bottom-col-2">
+										<a href="#" class="btn btn--dark">Записаться в клинику</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	<footer class="footer padding-wrap pb-0">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__col footer__col-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col-2">
+                    <div class="footer__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Лечение зубов под микроскопом</a>
+                        </li>
+                        <li>
+                            <a href="#">Лечение десен</a>
+                        </li>
+                        <li>
+                            <a href="#">Удаление зубов</a>
+                        </li>
+                        <li>
+                            <a href="#">Протезирование</a>
+                        </li>
+                        <li>
+                            <a href="#">All-on-4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Имплантация</a>
+                        </li>
+                        <li>
+                            <a href="#">Исправление прикуса</a>
+                        </li>
+                        <li>
+                            <a href="#">Эстетическая стоматология</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультация и диагностика</a>
+                        </li>
+                        <li>
+                            <a href="#">Оборудование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col-5">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта сайта</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользовательское Соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social" data-da=".footer__col-1,767.98,last">
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <img src="img/icons/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icons/insta.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icons/fb.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy">
+                        Стоматологические центры DANA
+                        2022 © Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<!-- == // FOOTER ================== -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

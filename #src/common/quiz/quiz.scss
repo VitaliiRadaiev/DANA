@@ -1,0 +1,208 @@
+.quiz {
+    &__body {
+        margin-bottom: 5.6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 24px;
+        }
+
+        & .swiper-slide {
+            height: auto;
+        }
+
+        &.show-loader {
+            opacity: 0.6;
+            pointer-events: none;
+            
+            &:before {
+                position: absolute;
+                content: '';
+                z-index: 10;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                border: 4px solid #6e6e6e;
+                border-right: 4px solid #fff;
+                animation: preloadBody 2s linear infinite;
+            }
+        }
+    }
+
+    &__cards-group {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & > * {
+            flex: 0 0 calc(33.3333333% - 2.66666667rem);
+
+            @media (max-width: $md2+px) {
+                flex: 0 0 calc(33.3333333% - 15px);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__title {
+    }
+
+    &__buttons {
+        & .swiper-slide {
+            display: flex;
+            justify-content: center;
+            opacity: 0 !important;
+
+            @media (max-width: $md3+px) {
+                flex-direction: column;
+            }
+
+            &.swiper-slide-active {
+                opacity: 1 !important;
+            }
+
+            & > * {
+                margin: 0 1.2rem;
+
+                @media (max-width: $md3+px) {
+                    margin: 0 0 12px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__submit {
+    }
+}
+
+.quiz-card {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 41.1em;
+    border-radius: 4em;
+    overflow: hidden;
+    padding: 3.9em 2.4em;
+    color: #fff;
+    cursor: pointer;
+
+    @media (max-width: $md2+px) {
+        font-size: 6px;
+    }
+
+    @media (max-width: $md3+px) {
+        font-size: 10px;
+        height: 0;
+        padding-bottom: 49.1%;
+        border-radius: 24px;
+    }
+
+    &__radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+
+        &:checked ~ {
+            & .quiz-card__text-wrap .quiz-card__circle:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 18.7em;
+            z-index: 2;
+            background: linear-gradient(0deg, #10817d 0%, rgba(16, 129, 125, 0) 100%);
+
+            @media (max-width: $md3+px) {
+                height: 95px;
+            }
+        }
+    }
+
+    &__text-wrap {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $md3+px) {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 24px;
+        }
+    }
+
+    &__circle {
+        width: 1.6em;
+        height: 1.6em;
+        flex: 0 0 auto;
+        margin-right: 0.8em;
+        background: #ffffff;
+        border: 1px solid #13b2ad;
+        position: relative;
+        border-radius: 50%;
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%;
+            background-color: #13b2ad;
+            opacity: 0;
+            z-index: 2;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 2.4em;
+        line-height: 1.16em;
+
+        @media (max-width: $md3+px) {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+}

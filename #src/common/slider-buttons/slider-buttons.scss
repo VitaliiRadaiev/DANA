@@ -1,0 +1,50 @@
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.7rem;
+}
+.slider-button {
+    pointer-events: auto;
+    font-size: 3.2rem;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.swiper-button-lock {
+        display: none;
+    }
+
+    &.swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+    &:active {
+
+    }
+
+    & svg, & img {
+
+    }
+
+    &--prev {
+      
+    }
+
+    &--next {
+       
+    }
+}
