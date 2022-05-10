@@ -150,6 +150,7 @@
         background-size: 85%;
         background-repeat: no-repeat;
         transform: translateY(11%);
+        transition: all .15s ease-in-out;
     }
 
     &__text {

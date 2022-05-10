@@ -4,6 +4,7 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
 }
 :focus,
 :active {
@@ -89,7 +90,7 @@ a:visited {
 	text-decoration: none;
 }
 a {
-	transition: all 0.3s ease;
+	transition: all 0.15s ease-in-out;
 	color: inherit;
 }
 a:hover {
@@ -402,9 +403,14 @@ figure {
 			}
 		}
 
-		& img {
-			width: 100%;
-			height: auto;
+		& img, & svg {
+			width: 3.2rem;
+			height: 3.2rem;
+
+			@media (max-width: $md3+px) {
+				width: 24px;
+				height: 24px;
+			}
 		}
 	}
 }

@@ -78,13 +78,13 @@ defer
             <div class="header__address">
                 <div class="header__address-item">
                     <div class="header__address-icon">
-                        <img src="img/icons/local.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
                     </div>
                     ул. Адмирала Коновалова, 2-4
                 </div>
                 <div class="header__address-item">
                     <div class="header__address-icon">
-                        <img src="img/icons/local.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
                     </div>
                     Большая Пороховская, 47
                 </div>
@@ -93,17 +93,17 @@ defer
                 <ul class="social">
                     <li>
                         <a href="#">
-                            <img src="img/icons/telegram.svg" alt="">
+                            <svg><use xlink:href="img/icons/sprites.svg#telegram"></use></svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/icons/whatsapp.svg" alt="">
+                            <svg><use xlink:href="img/icons/sprites.svg#whatsapp"></use></svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/icons/viber.svg" alt="">
+                            <svg><use xlink:href="img/icons/sprites.svg#viber"></use></svg>
                         </a>
                     </li>
                 </ul>
@@ -119,6 +119,7 @@ defer
                 </a>
             </div>
             <nav class="header__menu menu" data-menu>
+                <div class="menu__overlay" data-action="close-menu"></div>
                 <div class="menu__top-line"></div>
                 <div class="menu__head">
                     <div class="menu__phone">
@@ -230,10 +231,10 @@ defer
             </div>
             <div class="slider-buttons">
     <div class="slider-button slider-button--prev hover">
-        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-left"></use></svg>
     </div>
     <div class="slider-button slider-button--next hover">
-        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
     </div>
 </div>
         </div>
@@ -396,7 +397,7 @@ defer
         </div>
         <ul class="our-services__list">
             <li>
-                <a href="#" class="services-card not-hover">
+                <div class="services-card">
     <div class="services-card__bg ibg">
         <img src="img/photo/services-card-img-1.jpg" alt="">
     </div>
@@ -404,12 +405,12 @@ defer
         <h3 class="services-card__title">Лечение зубов и десен </h3>
         <div class="services-card__text">В стоматологии, как и других разделах медицины, есть хирургическое направление лечения (например, имплантация зубов, удаление) и терапевтическое</div>
         <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
-        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
     </div>
-</a>
+</div>
             </li>
             <li>
-                <a href="#" class="services-card not-hover">
+                <div class="services-card">
     <div class="services-card__bg ibg">
         <img src="img/photo/services-card-img-2.jpg" alt="">
     </div>
@@ -417,12 +418,12 @@ defer
         <h3 class="services-card__title">Протезирование зубов</h3>
         <div class="services-card__text">Стоматологическая клиника Dana предлагает разумные цены на протезирование зубов и полный комплекс услуг</div>
         <div class="services-card__price">Стоимость от  <strong>10 000</strong> ₽</div>
-        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
     </div>
-</a>
+</div>
             </li>
             <li>
-                <a href="#" class="services-card not-hover">
+                <div class="services-card">
     <div class="services-card__bg ibg">
         <img src="img/photo/services-card-img-3.jpg" alt="">
     </div>
@@ -430,12 +431,12 @@ defer
         <h3 class="services-card__title">Имплантация</h3>
         <div class="services-card__text">Ценность сияющей здоровой улыбки осознается, когда возникают проблемы, и эту улыбку приходится прятать от окружающих</div>
         <div class="services-card__price">Стоимость от  <strong>20 000</strong> ₽</div>
-        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
     </div>
-</a>
+</div>
             </li>
             <li>
-                <a href="#" class="services-card not-hover">
+                <div class="services-card">
     <div class="services-card__bg ibg">
         <img src="img/photo/services-card-img-4.jpg" alt="">
     </div>
@@ -443,9 +444,9 @@ defer
         <h3 class="services-card__title">Ортодонтия</h3>
         <div class="services-card__text">Исправление прикуса – процесс сложный и успех зависит от квалификации врача, проведенного обследования и индивидуального подхода к проблеме</div>
         <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
-        <div class="services-card__btn btn btn--light">Подробнее об услуге</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
     </div>
-</a>
+</div>
             </li>
         </ul>
     </div>
@@ -459,67 +460,67 @@ defer
             <div class="head__subtitle text text-lg-center">Запишитесь к врачам нашей клиники онлайн</div>
             
         </div>
-        <div class="team-carousel__slider" >
-            <div class="swiper" data-team-carousel-slider>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="team-carousel-card not-hover">
-                            <div class="team-carousel-card__calendar">
-                                <img src="img/icons/calendar.svg" alt="">
-                            </div>
-                            <div class="team-carousel-card__name">Екимова Мария</div>
-                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-1.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="team-carousel-card not-hover">
-                            <div class="team-carousel-card__calendar">
-                                <img src="img/icons/calendar.svg" alt="">
-                            </div>
-                            <div class="team-carousel-card__name">Шахаев Саид</div>
-                            <div class="team-carousel-card__position">стоматолог-ортопед, хирург</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-2.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="team-carousel-card not-hover">
-                            <div class="team-carousel-card__calendar">
-                                <img src="img/icons/calendar.svg" alt="">
-                            </div>
-                            <div class="team-carousel-card__name">Маргиева Зарина</div>
-                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-3.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="team-carousel-card not-hover">
-                            <div class="team-carousel-card__calendar">
-                                <img src="img/icons/calendar.svg" alt="">
-                            </div>
-                            <div class="team-carousel-card__name">Перельштейн Нина</div>
-                            <div class="team-carousel-card__position">стоматолог-ортодонт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-4.png" alt="">
-                            </div>
-                        </a>
-                    </div>
+    </div>
+    <div class="team-carousel__slider">
+        <div class="swiper" data-team-carousel-slider>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="team-carousel-card not-hover">
+                        <div class="team-carousel-card__calendar">
+                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                        </div>
+                        <div class="team-carousel-card__name">Екимова Мария</div>
+                        <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                        <div class="team-carousel-card__photo">
+                            <img src="img/photo/team-carousel-card-1.png" alt="">
+                        </div>
+                    </a>
                 </div>
-                <div class="slider-buttons">
+                <div class="swiper-slide">
+                    <a href="#" class="team-carousel-card not-hover">
+                        <div class="team-carousel-card__calendar">
+                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                        </div>
+                        <div class="team-carousel-card__name">Шахаев Саид</div>
+                        <div class="team-carousel-card__position">стоматолог-ортопед, хирург</div>
+                        <div class="team-carousel-card__photo">
+                            <img src="img/photo/team-carousel-card-2.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="team-carousel-card not-hover">
+                        <div class="team-carousel-card__calendar">
+                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                        </div>
+                        <div class="team-carousel-card__name">Маргиева Зарина</div>
+                        <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                        <div class="team-carousel-card__photo">
+                            <img src="img/photo/team-carousel-card-3.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="team-carousel-card not-hover">
+                        <div class="team-carousel-card__calendar">
+                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                        </div>
+                        <div class="team-carousel-card__name">Перельштейн Нина</div>
+                        <div class="team-carousel-card__position">стоматолог-ортодонт</div>
+                        <div class="team-carousel-card__photo">
+                            <img src="img/photo/team-carousel-card-4.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slider-buttons">
     <div class="slider-button slider-button--prev hover">
-        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-left"></use></svg>
     </div>
     <div class="slider-button slider-button--next hover">
-        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
     </div>
 </div>
-            </div>
         </div>
     </div>
 </section>
@@ -686,7 +687,7 @@ defer
                 <a href="#" class="frequently-questions-card not-hover">
                     <div class="frequently-questions-card__text">Нужно ли периодически менять зубную пасту?</div>
                     <div class="frequently-questions-card__icon">
-                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
                     </div>
                 </a>
             </li>
@@ -694,7 +695,7 @@ defer
                 <a href="#" class="frequently-questions-card not-hover">
                     <div class="frequently-questions-card__text">Как часто нужно делать чистку зубов у стоматолога?</div>
                     <div class="frequently-questions-card__icon">
-                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
                     </div>
                 </a>
             </li>
@@ -702,7 +703,7 @@ defer
                 <a href="#" class="frequently-questions-card not-hover">
                     <div class="frequently-questions-card__text">После одномоментной имплантации в день удаления я уже выйду из клиники с новым зубом?</div>
                     <div class="frequently-questions-card__icon">
-                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
                     </div>
                 </a>
             </li>
@@ -710,7 +711,7 @@ defer
                 <a href="#" class="frequently-questions-card not-hover">
                     <div class="frequently-questions-card__text">В каких случаях применяете седацию, есть ли противопоказания?</div>
                     <div class="frequently-questions-card__icon">
-                        <img class="img-svg"  src="img/icons/circle-arrow-right.svg" alt="">
+                        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
                     </div>
                 </a>
             </li>
@@ -995,10 +996,10 @@ defer
             </div>
             <div class="slider-buttons">
     <div class="slider-button slider-button--prev hover">
-        <img class="img-svg" src="img/icons/circle-arrow-left.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-left"></use></svg>
     </div>
     <div class="slider-button slider-button--next hover">
-        <img class="img-svg" src="img/icons/circle-arrow-right.svg" alt="">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
     </div>
 </div>
         </div>
@@ -1064,7 +1065,7 @@ defer
 							<li>
 								<div class="contact-section__item">
 									<div class="contact-section__label">
-										<img src="img/icons/clock.svg" alt="">
+										<svg><use xlink:href="img/icons/sprites.svg#clock"></use></svg>
 										Время работы
 									</div>
 									<div class="contact-section__text">
@@ -1075,7 +1076,7 @@ defer
 							<li>
 								<div class="contact-section__item">
 									<div class="contact-section__label">
-										<img src="img/icons/phone.svg" alt="">
+										<svg><use xlink:href="img/icons/sprites.svg#phone"></use></svg>
 										Единый телефон
 									</div>
 									<div class="contact-section__text">
@@ -1086,7 +1087,7 @@ defer
 							<li>
 								<div class="contact-section__item">
 									<div class="contact-section__label">
-										<img src="img/icons/whatsapp-2.svg" alt="">
+										<svg><use xlink:href="img/icons/sprites.svg#whatsapp-2"></use></svg>
 										WhatsApp / Telegram / Viber
 									</div>
 									<div class="contact-section__text">
@@ -1097,7 +1098,7 @@ defer
 							<li>
 								<div class="contact-section__item">
 									<div class="contact-section__label">
-										<img src="img/icons/email.svg" alt="">
+										<svg><use xlink:href="img/icons/sprites.svg#email"></use></svg>
 										E-mail
 									</div>
 									<div class="contact-section__text">
@@ -1109,13 +1110,13 @@ defer
 						<ul class="contact-section__map-list">
 							<li>
 								<div class="contact-section__map">
-									<iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
-										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+									<!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe> -->
 								</div>
 								<div class="contact-section__map-bottom">
 									<div class="contact-section__map-bottom-col-1">
 										<div class="contact-section__map-bottom-label">
-											<img src="img/icons/local-2.svg" alt="">
+											<svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
 											Большая Пороховская, 47
 										</div>
 
@@ -1123,7 +1124,7 @@ defer
 											Красногвардейский район
 										</div>
 										<div class="contact-section__map-bottom-time">
-											<img src="img/icons/clock.svg" alt="">
+											<svg><use xlink:href="img/icons/sprites.svg#clock"></use></svg>
 											Ежедневно 09.00 - 21.00
 										</div>
 									</div>
@@ -1134,13 +1135,13 @@ defer
 							</li>
 							<li>
 								<div class="contact-section__map">
-									<iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDuJXA" width="560" height="400"
-										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+									<!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDuJXA" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe> -->
 								</div>
 								<div class="contact-section__map-bottom">
 									<div class="contact-section__map-bottom-col-1">
 										<div class="contact-section__map-bottom-label">
-											<img src="img/icons/local-2.svg" alt="">
+											<svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
 											ул. Адмирала Коновалова, 2-4
 										</div>
 
@@ -1148,7 +1149,7 @@ defer
 											Красносельский район, Балтийская жемчужина
 										</div>
 										<div class="contact-section__map-bottom-time">
-											<img src="img/icons/clock.svg" alt="">
+											<svg><use xlink:href="img/icons/sprites.svg#clock"></use></svg>
 											Ежедневно 09.00 - 21.00
 										</div>
 									</div>
@@ -1249,17 +1250,17 @@ defer
                         <ul class="social">
                             <li>
                                 <a href="#">
-                                    <img src="img/icons/vk.svg" alt="">
+                                    <svg><use xlink:href="img/icons/sprites.svg#vk"></use></svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/icons/insta.svg" alt="">
+                                    <svg><use xlink:href="img/icons/sprites.svg#insta"></use></svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/icons/fb.svg" alt="">
+                                    <svg><use xlink:href="img/icons/sprites.svg#fb"></use></svg>
                                 </a>
                             </li>
                         </ul>

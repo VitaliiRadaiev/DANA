@@ -276,12 +276,12 @@
         line-height: 1.33em;
         margin-bottom: 0.4rem;
 
-        & img {
+        & img, & svg {
             position: absolute;
             top: 50%;
             left: -3rem;
             width: 2.4rem;
-            height: auto;
+            height: 2.4rem;
             transform: translateY(-50%);
         }
     }
@@ -380,13 +380,13 @@
         line-height: 1.2em;
         margin-bottom: 0.8rem;
 
-        & img {
+        & img, & svg {
             position: absolute;
             left: -2.4rem;
             top: 50%;
             transform: translateY(-50%);
             width: 1.6rem;
-            height: auto;
+            height: 1.6rem;
         }
     }
 
@@ -396,13 +396,13 @@
         line-height: 23px;
         position: relative;
 
-        & img {
+        & img, & svg {
             position: absolute;
             left: -2.4rem;
             top: 50%;
             transform: translateY(-50%);
             width: 1.6rem;
-            height: auto;
+            height: 1.6rem;
         }
 
         @media (min-width: 992px) {

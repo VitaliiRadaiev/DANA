@@ -1,5 +1,8 @@
 .promo-header {
     &__slider {
+        @media (max-width: $md3+px) {
+            overflow: visible;
+        }
     }
 
     &__body {

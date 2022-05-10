@@ -92,11 +92,10 @@
     &__address-icon {
         flex: 0 0 auto;
         margin-right: 1rem;
-        width: 1.2rem;
 
-        & img {
-            width: 100%;
-            height: auto;
+        & img, & svg {
+            width: 1.6rem;
+            height: 1.6rem;
         }
     }
 
@@ -204,17 +203,35 @@
         max-width: 288px;
         background-color: #FFFFFF;
         
-        transition: transform 0.6s ease;
+        transition: 0.3s ease-in-out;
+        transition-property: transform, box-shadow;
 
         &--open {
             transform: translateX(-100%);
             box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.25);
+
+            & .menu__overlay {
+                transition: all 0.3s ease-in-out 0.15s;
+                transform: translateX(0%);
+            }
         }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(#000, 0.4);
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
     }
     &__top-line {
         height: 52px;
         background-color: $mainColor;
-
+        position: relative;
+        z-index: 2;
         @media (max-width: $md3+px) {
             height: 48px;
         }
@@ -229,6 +246,9 @@
         align-items: center;
         justify-content: space-between;
         padding: 8px 16px 8px 24px;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
 
         @media (min-width: 992px) {
             display: none;
@@ -265,12 +285,13 @@
     }
 
     &__scroll-wrap {
+        position: relative;
+        z-index: 2;
         @media (max-width: $md2+px) {
-            padding-left: 24px;
-            padding-right: 16px;
+            padding: 16px 16px 32px 24px;
             max-height: calc(100% - 108px - 58px);
-            padding-bottom: 32px;
             overflow-y: auto;
+            background-color: #fff;
         }
 
         @media (max-width: $md3+px) {
@@ -295,7 +316,7 @@
 
                 @media (max-width: $md2+px) {
                     margin-right: 0;
-                    margin-bottom: 32px;
+                    margin-bottom: 28px;
                 }
             }
         }
@@ -316,6 +337,8 @@
     &__bottom {
         padding: 8px 16px 8px 24px;
         background-color: #fff;
+        position: relative;
+        z-index: 2;
         @media (min-width: 992px) {
             display: none;
         }
