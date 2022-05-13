@@ -256,6 +256,7 @@ class App {
 		@@include('../common/technology/technology.js');
 		@@include('../common/quiz/quiz.js');
 		@@include('../common/rating/rating.js');
+		@@include('../common/frequently-questions/frequently-questions.js');
 	}
 
 }

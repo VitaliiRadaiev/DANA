@@ -12,6 +12,7 @@
     line-height: 1.31em;
     letter-spacing: -0.025em;
     transition: all 0.15s ease-in-out;
+    box-shadow: none !important;
 
     @media (min-width: 992px) {
         &:hover {
@@ -21,6 +22,7 @@
 
     @media (max-width: $md2+px) {
         min-height: 50px;
+        opacity: 1 !important;
     }
 
     @media (max-width: $md3+px) {
@@ -28,6 +30,7 @@
         font-size: 16px;
         line-height: 18px;
     }
+
 
     &--dark {
         border: 2px solid $mainColor;
