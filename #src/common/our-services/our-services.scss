@@ -1,7 +1,11 @@
 .our-services {
     &__head {
-        max-width: 50%;
+       
         margin-bottom: 4rem;
+
+        @media (min-width: 992px) {
+            max-width: 50%;
+        }
     }
 
     &__list {

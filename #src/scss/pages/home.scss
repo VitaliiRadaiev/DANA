@@ -22,10 +22,18 @@
         & h3 {
             color: $secondColor;
             font-weight: 400;
+
+            @media (max-width: $md3+px) {
+                font-weight: 500;
+            }
         }
 
         &.text-content {
             line-height: 1.4em;
+
+            @media (max-width: $md3+px) {
+                line-height: 1.5em;
+            }
         }
     }
 
@@ -157,6 +165,14 @@
         margin: 0 auto 6.4rem;
         max-width: 70.6rem;
 
+        &.text-content {
+            line-height: 1.4em;
+
+            @media (max-width: $md3+px) {
+                line-height: 1.5em;
+            }
+        }
+
         @media (max-width: $md3+px) {
             margin-bottom: 24px;
         }
@@ -285,7 +301,8 @@
         line-height: 1.33em;
         margin-bottom: 0.4rem;
 
-        & img, & svg {
+        & img,
+        & svg {
             position: absolute;
             top: 50%;
             left: -3rem;
@@ -379,6 +396,10 @@
 
         & .btn {
             width: auto;
+
+            @media (max-width: $md3+px) {
+                min-width: 252px;
+            }
         }
     }
 
@@ -388,8 +409,16 @@
         font-size: 2rem;
         line-height: 1.2em;
         margin-bottom: 0.8rem;
+        letter-spacing: -0.025em;
 
-        & img, & svg {
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+            line-height: 23px;
+            margin-bottom: 0;
+        }
+
+        & img,
+        & svg {
             position: absolute;
             left: -2.4rem;
             top: 50%;
@@ -404,8 +433,10 @@
         font-size: 18px;
         line-height: 23px;
         position: relative;
+        letter-spacing: -0.025em;
 
-        & img, & svg {
+        & img,
+        & svg {
             position: absolute;
             left: -2.4rem;
             top: 50%;
@@ -422,6 +453,7 @@
     &__map-bottom-text {
         font-size: 1.6rem;
         line-height: 1.12em;
+        letter-spacing: -0.025em;
 
         @media (max-width: $md2+px) {
             margin-bottom: 16px;

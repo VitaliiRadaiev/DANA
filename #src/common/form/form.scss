@@ -83,6 +83,7 @@
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1em;
+    letter-spacing: -0.025em;
 
     @media (max-width: $md3+px) {
         height: 50px;
@@ -108,6 +109,7 @@
     line-height: 1.58em;
     letter-spacing: 0.05em;
     font-weight: 400;
+    letter-spacing: -0.025em;
 
     &:focus {
         border-color: $secondColor;

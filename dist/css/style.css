@@ -2319,7 +2319,7 @@ body {
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.6em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   -webkit-transition: opacity 0.8s ease;
   -o-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
@@ -2415,7 +2415,7 @@ h1 {
 h2 {
   font-size: 4.4rem;
   line-height: 1.14em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   font-weight: 400;
 }
 
@@ -2423,28 +2423,28 @@ h3 {
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 1.06em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 h4 {
   font-weight: 600;
   font-size: 2.6rem;
   line-height: 1.08em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 h5 {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.17em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 h6 {
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 1.31em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 p,
@@ -2662,13 +2662,13 @@ figure {
 .text-content--md {
   font-size: 1.8rem;
   line-height: 1.33em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 .text-content--sm {
   font-size: 1.6rem;
   line-height: 1.25em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 .text-content h1,
@@ -3158,6 +3158,7 @@ figure {
 .footer__list > li {
   font-size: 1.6rem;
   line-height: 1.75em;
+  letter-spacing: -0.025em;
 }
 
 .footer__social .social {
@@ -3375,6 +3376,7 @@ figure {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1em;
+  letter-spacing: -0.025em;
 }
 
 .input::-webkit-input-placeholder {
@@ -3415,6 +3417,7 @@ figure {
   line-height: 1.58em;
   letter-spacing: 0.05em;
   font-weight: 400;
+  letter-spacing: -0.025em;
 }
 
 .textarea:focus {
@@ -3632,7 +3635,7 @@ figure {
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 1.31em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   margin-bottom: 0.8rem;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -3692,7 +3695,6 @@ figure {
 }
 
 .our-services__head {
-  max-width: 50%;
   margin-bottom: 4rem;
 }
 
@@ -4083,6 +4085,7 @@ figure {
   font-size: 2.8rem;
   line-height: 1.28em;
   margin-bottom: 3.2rem;
+  letter-spacing: -0.025em;
 }
 
 .frequently-questions-card__icon {
@@ -4305,7 +4308,7 @@ figure {
 .cta__text {
   font-size: 2.4rem;
   line-height: 1.58em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   color: #6b6b6b;
   margin-bottom: 4rem;
   max-width: 69rem;
@@ -4433,6 +4436,10 @@ figure {
 .about-banner__text {
   margin: 0 auto 6.4rem;
   max-width: 70.6rem;
+}
+
+.about-banner__text.text-content {
+  line-height: 1.4em;
 }
 
 .about-banner__buttons {
@@ -4592,6 +4599,7 @@ figure {
   font-size: 2rem;
   line-height: 1.2em;
   margin-bottom: 0.8rem;
+  letter-spacing: -0.025em;
 }
 
 .contact-section__map-bottom-label img,
@@ -4611,6 +4619,7 @@ figure {
   font-size: 18px;
   line-height: 23px;
   position: relative;
+  letter-spacing: -0.025em;
 }
 
 .contact-section__map-bottom-time img,
@@ -4628,6 +4637,7 @@ figure {
 .contact-section__map-bottom-text {
   font-size: 1.6rem;
   line-height: 1.12em;
+  letter-spacing: -0.025em;
 }
 
 @media (min-width: 576px) {
@@ -4853,6 +4863,10 @@ figure {
   .post-card:hover .post-card__text,
   .post-card:hover .post-card__more {
     color: #fff !important;
+  }
+
+  .our-services__head {
+    max-width: 50%;
   }
 
   .our-services__list {
@@ -5346,7 +5360,6 @@ figure {
     font-weight: 600;
     font-size: 28px;
     line-height: 1.14em;
-    letter-spacing: -0.02em;
   }
 
   .container {
@@ -5385,6 +5398,10 @@ figure {
   .social > li svg {
     width: 24px;
     height: 24px;
+  }
+
+  .text-content--sm {
+    line-height: 1.5em;
   }
 
   .text-content ul {
@@ -5476,6 +5493,8 @@ figure {
 
   .btn {
     width: 100%;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .promo-header__slider {
@@ -5730,6 +5749,14 @@ figure {
     display: block;
   }
 
+  .why-us__col h3 {
+    font-weight: 500;
+  }
+
+  .why-us__col.text-content {
+    line-height: 1.5em;
+  }
+
   .why-us__bottom .btn {
     width: 100%;
   }
@@ -5744,6 +5771,10 @@ figure {
   .about-banner__title {
     font-weight: 600;
     margin-bottom: 16px;
+  }
+
+  .about-banner__text.text-content {
+    line-height: 1.5em;
   }
 
   .about-banner__text {
@@ -5769,6 +5800,16 @@ figure {
   .contact-section__map {
     padding-bottom: 83.84%;
     border-radius: 24px;
+  }
+
+  .contact-section__map-bottom-col-2 .btn {
+    min-width: 252px;
+  }
+
+  .contact-section__map-bottom-label {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 0;
   }
 }
 
