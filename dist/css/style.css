@@ -4664,6 +4664,10 @@ figure {
             justify-content: space-between;
   }
 
+  .quiz__buttons .swiper-slide > * {
+    min-width: 22.9rem;
+  }
+
   .frequently-questions__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4674,6 +4678,10 @@ figure {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 0;
+  }
+
+  .frequently-questions__bottom .btn {
+    min-width: 29.2rem;
   }
 
   .video-testimonials__grid > li:nth-child(3n+1) {

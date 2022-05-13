@@ -36,6 +36,12 @@
 
     &__bottom {
         padding-top: 0.8rem;
+
+        & .btn {
+            @media (min-width: 768px) {
+                min-width: 29.2rem;
+            }
+        }
     }
 }
 
