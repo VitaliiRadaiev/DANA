@@ -196,17 +196,20 @@
     @media (max-width: $md2+px) {
         position: absolute;
         top: 0;
-        left: 100%;
+        left: 0;
         z-index: 1;
         width: 100vw;
         height: 100vh;
         background-color: rgba(#000, 0.4);
-        transform: translateX(0%);
-        transition: transform 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
     
         &.menu-is-open {
-            transition: transform 0.3s ease-in-out 0.15s;
-            transform: translateX(-100%);
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
         }
     }
 
@@ -346,7 +349,6 @@
         background-color: #fff;
         position: relative;
         z-index: 2;
-        box-shadow: 0 0 10px 0 rgba($mainColor, 0.1);
         @media (min-width: 992px) {
             display: none;
         }

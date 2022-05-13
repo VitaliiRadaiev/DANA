@@ -20,7 +20,7 @@
         }
 
         & .slider-buttons {
-            padding: 0;
+            padding: 0 2rem;
 
             @media (max-width: $md2+px) {
                 display: none;
