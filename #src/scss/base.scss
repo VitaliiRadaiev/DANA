@@ -134,6 +134,7 @@ h2 {
 	font-size: 4.4rem;
 	line-height: 1.14em;
 	letter-spacing: -0.02em;
+	font-weight: 400;
 
 	@media (max-width: $md3+px) {
 		font-weight: 600;
@@ -453,7 +454,7 @@ figure {
 	font-weight: 400;
 	font-size: 2.6rem;
 	line-height: 1.3em;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.025em;
 
 	@media (max-width: $md2+px) {
 		font-weight: 400;
@@ -482,7 +483,7 @@ figure {
 	& h4,
 	& h5,
 	& h6 {
-		margin-bottom: 0.75em;
+		margin-bottom: 0.65em;
 	}
 
 	& p,

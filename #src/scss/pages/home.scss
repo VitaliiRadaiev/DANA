@@ -23,6 +23,10 @@
             color: $secondColor;
             font-weight: 400;
         }
+
+        &.text-content {
+            line-height: 1.4em;
+        }
     }
 
     &__col-1 {
@@ -42,6 +46,7 @@
     }
     &__col-3 {
         flex: 0 0 calc(21.54% - 2.4rem);
+        padding-top: 2.8rem;
 
         @media (max-width: $md2+px) {
             display: none;
@@ -49,6 +54,7 @@
     }
     &__col-4 {
         flex: 0 0 calc(25.7% - 2.4rem);
+
         @media (max-width: $md2+px) {
             flex: 0 0 calc(50% - 16px);
         }
@@ -68,7 +74,7 @@
 
     &__img-1 {
         @media (min-width: 992px) {
-            padding-bottom: 83.88%;
+            padding-bottom: 82.88%;
         }
     }
 
@@ -80,6 +86,9 @@
 
     &__bottom {
         & .btn {
+            @media (min-width: 768px) {
+                min-width: 33.8rem;
+            }
             @media (max-width: $md3+px) {
                 width: 100%;
             }

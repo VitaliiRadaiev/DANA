@@ -317,16 +317,19 @@ if (header) {
     if(menu) {
         let burger = document.querySelector('[data-action="open-menu"]');
         let closeBtns = document.querySelectorAll('[data-action="close-menu"]');
+        let overlay = document.querySelector('.menu-overlay');
 
         burger.addEventListener('click', () => {
             menu.classList.add('menu--open');
             document.body.classList.add('overflow-hidden');
+            overlay.classList.add('menu-is-open');
         })
         if(closeBtns.length) {
             closeBtns.forEach(closeBtn => {
                 closeBtn.addEventListener('click', () => {
                     menu.classList.remove('menu--open');
                     document.body.classList.remove('overflow-hidden');
+                    overlay.classList.remove('menu-is-open');
                 })
             })
         }
