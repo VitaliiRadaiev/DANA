@@ -113,8 +113,16 @@
     &__text-collapse {
         padding-bottom: 2.4rem;
         display: none;
+
         & > *:last-child {
             margin-bottom: 0;
+        }
+
+        & a {
+            &:hover {
+                color: inherit !important;
+                opacity: 0.7;
+            }
         }
     }
 

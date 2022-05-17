@@ -4114,6 +4114,11 @@ figure {
   margin-bottom: 0;
 }
 
+.frequently-questions-card__text-collapse a:hover {
+  color: inherit !important;
+  opacity: 0.7;
+}
+
 .frequently-questions-card__icon {
   font-size: 3.2rem;
   -webkit-transition: all 0.3s ease;
