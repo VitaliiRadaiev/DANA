@@ -5,6 +5,7 @@
         let collpase = frequentlyQuestions.querySelector('.frequently-questions__list-collapse');
         let openText = btn.innerText;
         let closeText = btn.dataset.text;
+        let cards = frequentlyQuestions.querySelectorAll('.frequently-questions-card');
 
         if(btn && collpase) {
             btn.addEventListener('click', (e) => {
@@ -19,6 +20,20 @@
                 }
 
                 this.utils.slideToggle(collpase)
+            })
+        }
+
+        if(cards.length) {
+            cards.forEach(card => {
+                let textCollapse = card.querySelector('.frequently-questions-card__text-collapse');
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    if(textCollapse) {
+                        card.classList.toggle('frequently-questions-card--is-open')
+                        this.utils.slideToggle(textCollapse, 300);
+                    }
+                })
             })
         }
     }

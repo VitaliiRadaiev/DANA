@@ -4082,6 +4082,17 @@ figure {
   transition: all 0.15s ease-in-out;
 }
 
+.frequently-questions-card--is-open {
+  background-color: #2F2F2F;
+  color: #fff;
+}
+
+.frequently-questions-card--is-open .frequently-questions-card__icon {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .frequently-questions-card:hover {
   background-color: #2F2F2F;
   color: #fff;
@@ -4094,8 +4105,21 @@ figure {
   letter-spacing: -0.025em;
 }
 
+.frequently-questions-card__text-collapse {
+  padding-bottom: 2.4rem;
+  display: none;
+}
+
+.frequently-questions-card__text-collapse > *:last-child {
+  margin-bottom: 0;
+}
+
 .frequently-questions-card__icon {
   font-size: 3.2rem;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .frequently-questions-card__icon img,

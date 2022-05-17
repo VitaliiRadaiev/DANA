@@ -78,6 +78,15 @@
     padding: 4.8rem;
     transition: all 0.15s ease-in-out;
 
+    &--is-open {
+        background-color: $mainColor;
+        color: #fff;
+
+        & .frequently-questions-card__icon {
+            transform: rotate(-90deg);
+        }
+    }
+
     &:hover {
         background-color: $mainColor;
         color: #fff;
@@ -101,9 +110,18 @@
         }
     }
 
+    &__text-collapse {
+        padding-bottom: 2.4rem;
+        display: none;
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     &__icon {
         font-size: 3.2rem;
-
+        transition: all .3s ease;
+        display: inline-block;
         @media (max-width: $md2+px) {
             font-size: 24px;
         }
