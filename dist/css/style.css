@@ -3823,12 +3823,14 @@ figure {
   position: absolute;
   z-index: 4;
   top: 4rem;
-  right: 3.2rem;
-  width: 4rem;
+  right: 1.2rem;
+  width: 8rem;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.8;
+  padding: 2rem;
+  padding-top: 0;
 }
 
 .team-carousel-card__calendar img,
@@ -5711,8 +5713,9 @@ figure {
 
   .team-carousel-card__calendar {
     top: 24px;
-    right: 8px;
-    width: 32px;
+    right: -8px;
+    width: 64px;
+    padding: 0 16px 16px;
   }
 
   .team-carousel-card__calendar img,
