@@ -296,6 +296,7 @@ class App {
 		this.selectInit();
 		this.spollerInit();
 		this.setFontSize();
+		this.initTooltip();
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
@@ -1044,6 +1045,17 @@ window.popup = {
 				setFontSize();
 
 				window.addEventListener('resize', setFontSize);
+			})
+		}
+	}
+
+	initTooltip() {
+		let elements = document.querySelectorAll('[data-tooltip]');
+		if (elements.length) {
+			elements.forEach(el => {
+				tippy(el, {
+					content: el.dataset.tooltip,
+				});
 			})
 		}
 	}

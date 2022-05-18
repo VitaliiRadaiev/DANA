@@ -83,6 +83,12 @@
         }
     }
 
+    &__body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     &__calendar {
         position: absolute;
         z-index: 4;
