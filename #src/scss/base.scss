@@ -49,6 +49,7 @@ body {
 	position: relative;
 	min-height: 100%;
 	background-color: #f0f0f0;
+	height: 100%;
 
 	@media (max-width: $md3+px) {
 		font-size: 16px;
@@ -185,6 +186,7 @@ figure {
 
 ._page {
 	overflow: hidden;
+	min-height: 100%;
 }
 
 .container {
@@ -421,6 +423,10 @@ figure {
 		margin-bottom: 24px;
 	}
 
+	@media (max-width: $md3+px) {
+		padding-top: 24px;
+	}
+
 	& > *:last-child {
 		margin-bottom: 0;
 	}
@@ -493,7 +499,7 @@ figure {
 	& ul,
 	& ol,
 	& figure {
-		margin-bottom: 1.5em;
+		margin-bottom: 1.3em;
 	}
 
 	& a {
@@ -507,7 +513,7 @@ figure {
 	}
 
 	& ul {
-		padding-left: 3em;
+		padding-left: 1.5em;
 
 		@media (max-width: $md3+px) {
 			padding-left: 1.5em;
@@ -517,7 +523,7 @@ figure {
 			list-style: disc;
 
 			&:not(:last-child) {
-				margin-bottom: 0.7em;
+				//margin-bottom: 0.7em;
 			}
 
 			& > *:last-child {
@@ -527,7 +533,7 @@ figure {
 	}
 
 	& ol {
-		padding-left: 3em;
+		padding-left: 1.5em;
 
 		@media (max-width: $md3+px) {
 			padding-left: 1.5em;
@@ -535,7 +541,7 @@ figure {
 
 		& > li {
 			&:not(:last-child) {
-				margin-bottom: 0.7em;
+				//margin-bottom: 0.7em;
 			}
 
 			& > *:last-child {

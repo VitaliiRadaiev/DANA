@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+<head>
+	<meta charset="UTF-8">
+	<title>DANA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    <header class="header " data-header data-popup="add-right-padding">
+    <div class="header__row-1">
+        <div class="header__row-1-body container">
+            <div class="header__address">
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    ул. Адмирала Коновалова, 2-4
+                </div>
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    Большая Пороховская, 47
+                </div>
+            </div>
+            <div class="header__social">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#telegram"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#whatsapp"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#viber"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="header__mob-phone">+7 (812) 612-44-54</a>
+        </div>
+    </div>
+    <div class="header__row-2"></div>
+    <div class="header__row-2-body container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="menu-overlay" data-action="close-menu"></div>
+            <nav class="header__menu menu" data-menu>
+                <div class="menu__top-line"></div>
+                <div class="menu__head">
+                    <div class="menu__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                    <div class="menu__close-btn" data-action="close-menu">
+                        <img src="img/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">О клинике</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Технологии</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Статьи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__bottom">
+                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                </div>
+            </nav>
+            <div class="header__phone">
+                <a href="#">+7 (812) 612-44-54</a>
+                <p>Ежедневно: 9:00 — 21:00</p>
+            </div>
+            <a href="#" class="header__btn btn btn--dark">
+                Записаться на консультацию
+            </a>
+            <div class="header__burger" data-action="open-menu">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+    </div>
+</header>
+
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        <div class="container-md d-none d-md-block pt-4">
+    <ul class="breadcrumbs">
+         <li><a href="#">Home</a></li>
+             <li>Услуги</li>
+            
+    </ul>
+</div>
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title ">Наши услуги</h2>
+            </div>
+        </div>
+
+        <section class="our-services  pt-0 padding-wrap">
+    <div class="container-md">
+        
+        <ul class="our-services__list">
+            <li>
+                <div class="services-card">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-1.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Лечение зубов и десен </h3>
+        <div class="services-card__text">В стоматологии, как и других разделах медицины, есть хирургическое направление лечения (например, имплантация зубов, удаление) и терапевтическое</div>
+        <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
+    </div>
+</div>
+            </li>
+            <li>
+                <div class="services-card">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-2.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Протезирование зубов</h3>
+        <div class="services-card__text">Стоматологическая клиника Dana предлагает разумные цены на протезирование зубов и полный комплекс услуг</div>
+        <div class="services-card__price">Стоимость от  <strong>10 000</strong> ₽</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
+    </div>
+</div>
+            </li>
+            <li>
+                <div class="services-card">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-3.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Имплантация</h3>
+        <div class="services-card__text">Ценность сияющей здоровой улыбки осознается, когда возникают проблемы, и эту улыбку приходится прятать от окружающих</div>
+        <div class="services-card__price">Стоимость от  <strong>20 000</strong> ₽</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
+    </div>
+</div>
+            </li>
+            <li>
+                <div class="services-card">
+    <div class="services-card__bg ibg">
+        <img src="img/photo/services-card-img-4.jpg" alt="">
+    </div>
+    <div class="services-card__body">
+        <h3 class="services-card__title">Ортодонтия</h3>
+        <div class="services-card__text">Исправление прикуса – процесс сложный и успех зависит от квалификации врача, проведенного обследования и индивидуального подхода к проблеме</div>
+        <div class="services-card__price">Стоимость от  <strong>5 000</strong> ₽</div>
+        <a href="#" class="services-card__btn btn btn--light">Подробнее об услуге</a>
+    </div>
+</div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class="services-questions padding-wrap pt-3" data-tabs>
+            <div class="container-md">
+                <ul class="buttons-group">
+                    <li>
+                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Если болит зуб</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="1">Если зуб разрушен</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="2">Чтобы зубы не болели</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="3">Если вы хотите новые зубы максимально
+                            быстро</a>
+                    </li>
+                </ul>
+                <div data-tab-content="0">
+                    <ul class="services-questions__list">
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-1.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Эндодонтическое
+                                    лечение
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-2.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов без сверления
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-3.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Восстановление зубов
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-content="1">
+                    <ul class="services-questions__list">
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-1.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Эндодонтическое
+                                    лечение
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-2.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов без сверления
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-3.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Восстановление зубов
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-1.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Эндодонтическое
+                                    лечение
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-2.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов без сверления
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-3.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Восстановление зубов
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-content="2">
+                    <ul class="services-questions__list">
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-1.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Эндодонтическое
+                                    лечение
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-2.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов без сверления
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-3.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Восстановление зубов
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-content="3">
+                    <ul class="services-questions__list">
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-3.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Восстановление зубов
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-4.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение зубов под микроскопом
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="services-questions-card">
+                                <div class="services-questions-card__icon">
+                                    <img src="img/icons/ervices-questions-icon-5.svg" alt="">
+                                </div>
+                                <div class="services-questions-card__text">
+                                    Лечение десен
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-wrap">
+            <div class="container-md">
+                <div class="head">
+                    <h2 class="head__title ">Наши врачи</h2>
+                </div>
+                <ul class="team-list">
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-1.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Саид Гаджиевич Шахаев</div>
+        <div class="team-card__position">Врач стоматолог-ортопед, хирург-имплантолог, терапевт</div>
+        <div class="team-card__text">Главный врач центра инновационной стоматологии DANA. Врач высшей категории. Врач стоматолог-ортопед, хирург-имплантолог.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-2.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Нина Владимировна Перельштейн</div>
+        <div class="team-card__position">Врач стоматолог-ортодонт</div>
+        <div class="team-card__text">Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-3.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Керим Гаджимагомедович Гасанов </div>
+        <div class="team-card__position">Врач терапевт-ортопед</div>
+        <div class="team-card__text">Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-4.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Мария Вячеславовна Екимова (Гогия)</div>
+        <div class="team-card__position">Врач стоматолог-терапевт</div>
+        <div class="team-card__text">Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-5.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Зарина Муратовна Маргиева</div>
+        <div class="team-card__position">Врач стоматолог-терапевт</div>
+        <div class="team-card__text">Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+    <li>
+        <a href="#" class="team-card not-hover">
+    <div class="team-card__img">
+        <img src="img/photo/team-card-img-6.png" alt="">
+    </div>
+    <div class="team-card__body">
+        <div class="team-card__name">Имима Гаджимагомедович Магомедов </div>
+        <div class="team-card__position">Врач стоматолог-ортопед, хирург</div>
+        <div class="team-card__text">Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.</div>
+        
+            <div class="team-card__btn btn btn--light" data-text="Записаться на прием">Записаться на прием</div>
+        
+    </div>
+</a>
+    </li>
+</ul>
+            </div>
+        </div>
+
+        <section class="info-block info-block--img-right padding-wrap">
+            <div class="container-md">
+                <div class="info-block__body">
+                    <div class="info-block__content" data-tabs>
+                        <div class="head">
+                            <h2 class="head__title ">Как проходит лечение зубов в нашей клинике?</h2>
+                        </div>
+                        <ul class="buttons-group">
+                            <li>
+                                <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Кариес</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--second " data-tab-trigger="1">Пульпит</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--second " data-tab-trigger="2">Периодонтит</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--second " data-tab-trigger="3">Лечение кисты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--second " data-tab-trigger="4">Реставрация зубов </a>
+                            </li>
+                        </ul>
+                        <div class="info-block__text text-content" data-tab-content="0">
+                            <p>
+                                Процесс разрушения твердых зубных тканей из-за воздействия патогенных бактерий. <br>
+                                Как лечим? <br>
+                                При среднем кариесе удаляем инфицированные ткани из кариозной полости с последующим
+                                пломбированием современным фотополимерным материалом.
+
+                            </p>
+                            <p>
+                                При глубоком кариесе применяем современные методы реставрации зуба: керамические
+                                вкладки, виниры, коронки и др.
+                                Кариес в стадии пятна можем лечить без сверления с помощью реминерализации эмали или
+                                технологии Icon.
+                            </p>
+
+                            <h3>Лечим болезни зубов недорого и качественно</h3>
+
+                            <p>
+                                В штате наших стоматологических клиник работают различные узкоспециализированные
+                                врачи-стоматологи, что позволяет нам вылечить различные заболевания:
+                            </p>
+
+                            <ul>
+                                <li>терапевт — кариес, пульпит, периодонтит, периостит;</li>
+                                <li>ортопед — эстетические и функциональные дефекты зубного ряда;</li>
+                                <li>хирург — удаление зубов и кист, убыль костной ткани, частичная или полная адентия;
+                                </li>
+                                <li>пародонтолог — воспаление десен, гингивит, пародонтоз, пародонтит.</li>
+                            </ul>
+                        </div>
+                        <div class="info-block__text text-content" data-tab-content="1">
+                            <p>
+                                При глубоком кариесе применяем современные методы реставрации зуба: керамические
+                                вкладки, виниры, коронки и др.
+                                Кариес в стадии пятна можем лечить без сверления с помощью реминерализации эмали или
+                                технологии Icon.
+                            </p>
+
+                            <h3>Лечим болезни зубов недорого и качественно</h3>
+
+                            <p>
+                                В штате наших стоматологических клиник работают различные узкоспециализированные
+                                врачи-стоматологи, что позволяет нам вылечить различные заболевания:
+                            </p>
+
+                            <ul>
+                                <li>терапевт — кариес, пульпит, периодонтит, периостит;</li>
+                                <li>ортопед — эстетические и функциональные дефекты зубного ряда;</li>
+                                <li>хирург — удаление зубов и кист, убыль костной ткани, частичная или полная адентия;
+                                </li>
+                                <li>пародонтолог — воспаление десен, гингивит, пародонтоз, пародонтит.</li>
+                            </ul>
+                        </div>
+                        <div class="info-block__text text-content" data-tab-content="2">
+                            <p>
+                                Процесс разрушения твердых зубных тканей из-за воздействия патогенных бактерий. <br>
+                                Как лечим? <br>
+                                При среднем кариесе удаляем инфицированные ткани из кариозной полости с последующим
+                                пломбированием современным фотополимерным материалом.
+
+                            </p>
+                            <p>
+                                При глубоком кариесе применяем современные методы реставрации зуба: керамические
+                                вкладки, виниры, коронки и др.
+                                Кариес в стадии пятна можем лечить без сверления с помощью реминерализации эмали или
+                                технологии Icon.
+                            </p>
+
+                            <h3>Лечим болезни зубов недорого и качественно</h3>
+
+                            <p>
+                                В штате наших стоматологических клиник работают различные узкоспециализированные
+                                врачи-стоматологи, что позволяет нам вылечить различные заболевания:
+                            </p>
+
+                            <ul>
+                                <li>терапевт — кариес, пульпит, периодонтит, периостит;</li>
+                                <li>ортопед — эстетические и функциональные дефекты зубного ряда;</li>
+                                <li>хирург — удаление зубов и кист, убыль костной ткани, частичная или полная адентия;
+                                </li>
+                                <li>пародонтолог — воспаление десен, гингивит, пародонтоз, пародонтит.</li>
+                            </ul>
+                            <p>
+                                При глубоком кариесе применяем современные методы реставрации зуба: керамические
+                                вкладки, виниры, коронки и др.
+                                Кариес в стадии пятна можем лечить без сверления с помощью реминерализации эмали или
+                                технологии Icon.
+                            </p>
+                        </div>
+                        <div class="info-block__text text-content" data-tab-content="3">
+                            <p>
+                                Процесс разрушения твердых зубных тканей из-за воздействия патогенных бактерий. <br>
+                                Как лечим? <br>
+                                При среднем кариесе удаляем инфицированные ткани из кариозной полости с последующим
+                                пломбированием современным фотополимерным материалом.
+
+                            </p>
+                            <p>
+                                При глубоком кариесе применяем современные методы реставрации зуба: керамические
+                                вкладки, виниры, коронки и др.
+                                Кариес в стадии пятна можем лечить без сверления с помощью реминерализации эмали или
+                                технологии Icon.
+                            </p>
+
+                            <h3>Лечим болезни зубов недорого и качественно</h3>
+
+                            <p>
+                                В штате наших стоматологических клиник работают различные узкоспециализированные
+                                врачи-стоматологи, что позволяет нам вылечить различные заболевания:
+                            </p>
+
+                            <ol>
+                                <li>терапевт — кариес, пульпит, периодонтит, периостит;</li>
+                                <li>ортопед — эстетические и функциональные дефекты зубного ряда;</li>
+                                <li>хирург — удаление зубов и кист, убыль костной ткани, частичная или полная адентия;
+                                </li>
+                                <li>пародонтолог — воспаление десен, гингивит, пародонтоз, пародонтит.</li>
+                            </ol>
+                        </div>
+                        <div class="info-block__text text-content" data-tab-content="4">
+
+                            <h3>Лечим болезни зубов недорого и качественно</h3>
+
+                            <p>
+                                В штате наших стоматологических клиник работают различные узкоспециализированные
+                                врачи-стоматологи, что позволяет нам вылечить различные заболевания:
+                            </p>
+
+                            <ul>
+                                <li>терапевт — кариес, пульпит, периодонтит, периостит;</li>
+                                <li>ортопед — эстетические и функциональные дефекты зубного ряда;</li>
+                                <li>хирург — удаление зубов и кист, убыль костной ткани, частичная или полная адентия;
+                                </li>
+                                <li>пародонтолог — воспаление десен, гингивит, пародонтоз, пародонтит.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-block__img ibg">
+                        <img src="img/photo/info-block-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-wrap">
+            <div class="container-md">
+                <div class="head">
+                    <h2 class="head__title ">Отзывы</h2>
+                </div>
+                <div class="testimonials" data-testimonials>
+    <ul class="testimonials-list">
+        
+            <li>
+                <div class="testimonial-card" data-testimonial-card>
+    <div class="testimonial-card__row-1">
+        <div class="testimonial-card__name">Анатолий</div>
+        <div class="testimonial-card__date">22.10.2021</div>
+    </div>
+    <div class="testimonial-card__row-2">
+        <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="testimonial-card__row-3">
+        <div class="testimonial-card__text">
+            Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            
+                Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            
+        </div>
+    </div>
+</div>
+            </li>
+            <li>
+                <div class="testimonial-card" data-testimonial-card>
+    <div class="testimonial-card__row-1">
+        <div class="testimonial-card__name">Светлана Бондаренко</div>
+        <div class="testimonial-card__date">15.09.2021</div>
+    </div>
+    <div class="testimonial-card__row-2">
+        <div class="rating" data-rating="4.5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="testimonial-card__row-3">
+        <div class="testimonial-card__text">
+            Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            
+        </div>
+    </div>
+</div>
+            </li>
+            <li>
+                <div class="testimonial-card" data-testimonial-card>
+    <div class="testimonial-card__row-1">
+        <div class="testimonial-card__name">Константин К.</div>
+        <div class="testimonial-card__date">02.08.2021</div>
+    </div>
+    <div class="testimonial-card__row-2">
+        <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="testimonial-card__row-3">
+        <div class="testimonial-card__text">
+            Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            
+                Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            
+        </div>
+    </div>
+</div>
+            </li>
+        
+    </ul>
+    <div class="testimonials__bottom">
+        <button class="testimonials__mob-btn btn btn--dark btn--transparent">Читать больше отзывов</button>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <section class="frequently-questions padding-wrap" data-frequently-questions>
+    <div class="container-sm">
+        <div class="head">
+            <h2 class="head__title">Часто задаваемые вопросы</h2>
+        </div>
+        <ul class="frequently-questions__list">
+            <li>
+                <div class="frequently-questions-card">
+                    <div class="frequently-questions-card__text">Нужно ли периодически менять зубную пасту?</div>
+                    <div class="frequently-questions-card__text-collapse text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolores voluptates placeat voluptas recusandae magni.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit doloremque delectus repellendus iste sequi quod nesciunt! Molestiae, nisi? Voluptatibus, iure? <a href="#">Читать дальше</a></p>
+                    </div>
+                    <div class="frequently-questions-card__icon">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="frequently-questions-card">
+                    <div class="frequently-questions-card__text">Как часто нужно делать чистку зубов у стоматолога?
+                    </div>
+                    <div class="frequently-questions-card__text-collapse text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolores voluptates placeat voluptas recusandae magni.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit doloremque delectus repellendus iste sequi quod nesciunt! Molestiae, nisi? Voluptatibus, iure? <a href="#">Читать дальше</a></p>
+                    </div>
+                    <div class="frequently-questions-card__icon">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="frequently-questions-card">
+                    <div class="frequently-questions-card__text">После одномоментной имплантации в день удаления я уже
+                        выйду из клиники с новым зубом?</div>
+                    <div class="frequently-questions-card__text-collapse text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolores voluptates placeat voluptas recusandae magni.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit doloremque delectus repellendus iste sequi quod nesciunt! Molestiae, nisi? Voluptatibus, iure? <a href="#">Читать дальше</a></p>
+                    </div>
+                        <div class="frequently-questions-card__icon">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="frequently-questions-card">
+                    <div class="frequently-questions-card__text">В каких случаях применяете седацию, есть ли
+                        противопоказания?</div>
+                    <div class="frequently-questions-card__text-collapse text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolores voluptates placeat voluptas recusandae magni.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit doloremque delectus repellendus iste sequi quod nesciunt! Molestiae, nisi? Voluptatibus, iure? <a href="#">Читать дальше</a></p>
+                    </div>
+                        <div class="frequently-questions-card__icon">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="frequently-questions__bottom text-center">
+            <a href="#" class="frequently-questions__see-more btn btn--dark" data-text="Скрыть">Показать еще</a>
+        </div>
+    </div>
+</section>
+
+        <section class="cta padding-wrap">
+    <div class="cta__inner">
+        <div class="container-md">
+            <div class="cta__body">
+                <div class="cta__col-1">
+                    <h2 class="cta__title">Мы работаем для Вашего комфорта!</h2>
+                    <div class="cta__text">
+                        Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы
+                        в ближайшее время свяжемся с вами.
+                    </div>
+                    <form action="">
+                        <div class="cta__form-items">
+                            <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                                <input type="text" class="input" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="cta__form-item">
+                                <button class="btn btn--dark">Заказать обратный звонок</button>
+                            </div>
+                        </div>
+                        <div class="cta__form-bottom">
+                            <label class="checkbox-radio">
+                                <input type="checkbox">
+                                <div class="checkbox-radio__square"></div>
+                                <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                        href="#">согласие</a> на обработку персональных данных</div>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta__col-2">
+                    <div class="cta__img">
+                        <img src="img/photo/cta-img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer padding-wrap pb-0">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__col footer__col-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col-2">
+                    <div class="footer__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Лечение зубов под микроскопом</a>
+                        </li>
+                        <li>
+                            <a href="#">Лечение десен</a>
+                        </li>
+                        <li>
+                            <a href="#">Удаление зубов</a>
+                        </li>
+                        <li>
+                            <a href="#">Протезирование</a>
+                        </li>
+                        <li>
+                            <a href="#">All-on-4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Имплантация</a>
+                        </li>
+                        <li>
+                            <a href="#">Исправление прикуса</a>
+                        </li>
+                        <li>
+                            <a href="#">Эстетическая стоматология</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультация и диагностика</a>
+                        </li>
+                        <li>
+                            <a href="#">Оборудование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col-5">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта сайта</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользовательское Соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social" data-da=".footer__col-1,767.98,last">
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#insta"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#fb"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy">
+                        Стоматологические центры DANA
+                        2022 © Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

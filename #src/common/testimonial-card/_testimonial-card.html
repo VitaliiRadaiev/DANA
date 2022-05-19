@@ -1,0 +1,22 @@
+<div class="testimonial-card" data-testimonial-card>
+    <div class="testimonial-card__row-1">
+        <div class="testimonial-card__name">@@name</div>
+        <div class="testimonial-card__date">@@date</div>
+    </div>
+    <div class="testimonial-card__row-2">
+        @@include('../rating/_rating.html', {
+            "value": "@@starsValue"
+        })
+        @@if (source === true) {
+            <div class="testimonial-card__source">Источник: <a href="#">Google</a></div>
+        }
+    </div>
+    <div class="testimonial-card__row-3">
+        <div class="testimonial-card__text">
+            Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            @@if (button === true) {
+                Несколько месяцев лечусь в этой клинике. Хочу отметить высокую квалификацию врачей, вежливость персонала. Отдельное спасибо Марии Вячеславовне Екимовой
+            }
+        </div>
+    </div>
+</div>

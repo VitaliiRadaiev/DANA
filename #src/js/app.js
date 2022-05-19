@@ -32,12 +32,34 @@ class App {
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
 			this.componentsScripts();
+			this.setPageMinHeight();
 		});
 
 	}
 
 	headerHandler() {
 		@@include('../common/header/header.js');
+	}
+
+	setPageMinHeight() {
+		let page = document.querySelector('._page');
+		if(page) {
+			let footer = document.querySelector('.footer');
+			const setHeight = () => {
+				if(footer) {
+					page.style.minHeight = document.documentElement.clientHeight - footer.clientHeight + 'px';
+				}
+			}
+
+			setHeight();
+
+			let id = setInterval(setHeight, 10);
+			setTimeout(() => {
+				clearInterval(id);
+			}, 200)
+
+			window.addEventListener('resize', setHeight);
+		}
 	}
 
 	popupHandler() {
@@ -77,7 +99,8 @@ class App {
 					}
 
 					triggerItems.forEach(item => {
-						item.addEventListener('click', () => {
+						item.addEventListener('click', (e) => {
+							e.preventDefault();
 							item.classList.add('tab-active');
 							getContentItem(item.dataset.tabTrigger).classList.add('tab-active');
 
@@ -87,14 +110,6 @@ class App {
 								i.classList.remove('tab-active');
 								getContentItem(i.dataset.tabTrigger).classList.remove('tab-active');
 							})
-
-							// update locomotive scroll
-							let id = setInterval(() => {
-								window.locomotivePageScroll.update();
-							}, 20);
-							setTimeout(() => {
-								clearInterval(id);
-							}, 200)
 						})
 					})
 				}
@@ -269,8 +284,9 @@ class App {
 		@@include('../common/quiz/quiz.js');
 		@@include('../common/rating/rating.js');
 		@@include('../common/frequently-questions/frequently-questions.js');
+		@@include('../common/testimonials/testimonials.js');
+		@@include('../common/testimonial-card/testimonial-card.js');
 	}
-
 }
 
 window.addEventListener('DOMContentLoaded', function () {

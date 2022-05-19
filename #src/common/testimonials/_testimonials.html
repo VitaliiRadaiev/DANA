@@ -1,0 +1,36 @@
+<div class="testimonials" data-testimonials>
+    <ul class="testimonials-list">
+        @@if (type === 'type-1') {
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Анатолий",
+                    "date": "22.10.2021",
+                    "starsValue": "5",
+                    "source": false,
+                    "button": true
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Светлана Бондаренко",
+                    "date": "15.09.2021",
+                    "starsValue": "4.5",
+                    "source": false,
+                    "button": false
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Константин К.",
+                    "date": "02.08.2021",
+                    "starsValue": "5",
+                    "source": false,
+                    "button": true
+                })
+            </li>
+        }
+    </ul>
+    <div class="testimonials__bottom">
+        <button class="testimonials__mob-btn btn btn--dark btn--transparent">Читать больше отзывов</button>
+    </div>
+</div>

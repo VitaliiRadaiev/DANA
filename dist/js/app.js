@@ -303,6 +303,7 @@ class App {
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
 			this.componentsScripts();
+			this.setPageMinHeight();
 		});
 
 	}
@@ -347,6 +348,27 @@ if (header) {
     }
 }
 ;
+	}
+
+	setPageMinHeight() {
+		let page = document.querySelector('._page');
+		if(page) {
+			let footer = document.querySelector('.footer');
+			const setHeight = () => {
+				if(footer) {
+					page.style.minHeight = document.documentElement.clientHeight - footer.clientHeight + 'px';
+				}
+			}
+
+			setHeight();
+
+			let id = setInterval(setHeight, 10);
+			setTimeout(() => {
+				clearInterval(id);
+			}, 200)
+
+			window.addEventListener('resize', setHeight);
+		}
 	}
 
 	popupHandler() {
@@ -643,7 +665,8 @@ window.popup = {
 					}
 
 					triggerItems.forEach(item => {
-						item.addEventListener('click', () => {
+						item.addEventListener('click', (e) => {
+							e.preventDefault();
 							item.classList.add('tab-active');
 							getContentItem(item.dataset.tabTrigger).classList.add('tab-active');
 
@@ -653,14 +676,6 @@ window.popup = {
 								i.classList.remove('tab-active');
 								getContentItem(i.dataset.tabTrigger).classList.remove('tab-active');
 							})
-
-							// update locomotive scroll
-							let id = setInterval(() => {
-								window.locomotivePageScroll.update();
-							}, 20);
-							setTimeout(() => {
-								clearInterval(id);
-							}, 200)
 						})
 					})
 				}
@@ -1083,6 +1098,12 @@ window.popup = {
 
             setMaxHeight();
 
+            setMaxHeight();
+            let id = setInterval(setMaxHeight, 10);
+            setTimeout(() => {
+                clearInterval(id);
+            }, 200)
+
             window.addEventListener('resize', setMaxHeight);
 
             btn.addEventListener('click', (e) => {
@@ -1215,8 +1236,73 @@ window.popup = {
         }
     }
 };
-	}
+		{
+    let testimonialsSection = document.querySelector('[data-testimonials]');
+    if(testimonialsSection) {
+        let list = testimonialsSection.querySelector('.testimonials-list');
+        let listItems = testimonialsSection.querySelectorAll('.testimonials-list li');
+        let btn = testimonialsSection.querySelector('.testimonials__mob-btn');
+        let margin = 8;
 
+        if(list && btn && listItems.length) {
+            const setMaxHeight = () => {
+                if(document.documentElement.clientWidth < 768) {
+                    let height = listItems[0].clientHeight + margin;
+
+                    if(listItems[1]) {
+                        height += listItems[1].clientHeight + margin;
+                    }
+                    
+                    list.style.maxHeight = height - 1 + 'px';
+                }
+            }
+
+            setMaxHeight();
+            let id = setInterval(setMaxHeight, 10);
+            setTimeout(() => {
+                clearInterval(id);
+            }, 200)
+
+            window.addEventListener('resize', setMaxHeight);
+
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                list.style.maxHeight = list.scrollHeight + margin + 'px';
+                list.style.overflow = 'visible';
+                btn.style.display = 'none';
+
+                setTimeout(() => {
+                    list.removeAttribute('style');
+                }, 300)
+            })
+        }
+    }
+};
+		{
+    let testimonialCards = document.querySelectorAll('[data-testimonial-card]');
+    if(testimonialCards.length) {
+        testimonialCards.forEach(testimonialCard => {
+            let text = testimonialCard.querySelector('.testimonial-card__text');
+            let stringLength = 151;
+            let str = text.innerText;
+
+			if (str.length <= stringLength) return;
+			text.innerText = [...str].slice(0, stringLength).join('') + '...';
+
+            text.insertAdjacentHTML('beforeend', '<br> <a href="#" class="testimonial-card__read-more">Читать полностью</a>');
+
+            let btn = testimonialCard.querySelector('.testimonial-card__read-more');
+            if(btn) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    text.innerHTML = str;
+                })
+            }
+        })
+    }
+};
+	}
 }
 
 window.addEventListener('DOMContentLoaded', function () {

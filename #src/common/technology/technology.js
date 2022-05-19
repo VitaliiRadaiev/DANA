@@ -20,6 +20,12 @@
 
             setMaxHeight();
 
+            setMaxHeight();
+            let id = setInterval(setMaxHeight, 10);
+            setTimeout(() => {
+                clearInterval(id);
+            }, 200)
+
             window.addEventListener('resize', setMaxHeight);
 
             btn.addEventListener('click', (e) => {

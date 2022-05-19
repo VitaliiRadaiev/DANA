@@ -1,0 +1,155 @@
+.services-questions {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin: 0 -1.2rem -2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin: 0 -4px -8px;
+        }
+
+        & li {
+            flex: 0 1 20%;
+            padding: 0 1.2rem;
+            margin-bottom: 2.4rem;
+
+            @media (max-width: $md2+px) {
+                flex: 0 1 33.3333%;
+            }
+
+            @media (max-width: $md3+px) {
+                flex: 0 1 50%;
+                padding: 0 4px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.services-questions-card {
+    display: block;
+    background-color: #fff;
+    min-height: 20rem;
+    border-radius: 2.4rem;
+    padding: 4rem 2.4rem 3.2rem;
+    height: 100%;
+
+    @media (max-width: $md3+px) {
+        padding: 16px 12px;
+        min-height: 136px;
+    }
+
+    &__icon {
+        height: 4.8rem;
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 8px;
+        }
+
+        & img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+    }
+
+    &__text {
+        font-size: 2.2rem;
+        line-height: 1.27em;
+        letter-spacing: -0.025em;
+
+        @media (max-width: $md2+px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+
+        @media (max-width: 374.98px) {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.info-block {
+    & .head {
+        @media (min-width: 768px) {
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    & .buttons-group {
+        @media (min-width: 768px) {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        flex: 1 1 auto;
+    }
+
+    &__text {
+        line-height: 1.4em;
+        max-width: 90.4rem;
+
+        @media (max-width: $md2+px) {
+            max-width: none;
+        }
+
+        @media (max-width: $md3+px) {
+            line-height: 1.5em;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+
+        & h3 {
+            margin-bottom: 3.2rem;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 4rem;
+        height: 0;
+        padding-bottom: 55%;
+        margin-top: 5rem;
+        flex: 0 0 100%;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 103%;
+            border-radius: 24px;
+            margin-top: 24px;
+        }
+    }
+
+    &--img-right {
+        @media (min-width: 992px) {
+            & .info-block__body {
+                flex-wrap: nowrap;
+            }
+            & .info-block__img {
+                margin-top: 0;
+                flex: 0 0 35.10%;
+                padding-bottom: 0;
+                height: 70.8rem;
+                margin-left: 9rem;
+            }
+        }
+    }
+}

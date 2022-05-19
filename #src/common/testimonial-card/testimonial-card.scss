@@ -1,0 +1,90 @@
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 4rem;
+    padding: 3.2rem 4rem;
+    height: 100%;
+
+    @media (max-width: $md2+px) {
+        padding: 28px 30px;
+    }
+
+    @media (max-width: $md3+px) {
+        border-radius: 16px;
+        padding: 16px;
+    }
+
+    &__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__row-2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        & .rating {
+            margin-bottom: 1.6rem;
+            font-size: 2.4rem;
+            margin-right: 3.2rem;
+
+            @media (max-width: $md3+px) {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__row-3 {
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.27em;
+        margin-right: 1.6rem;
+        margin-bottom: 1.2rem;
+        letter-spacing: -0.025em;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 9px;
+        }
+    }
+
+    &__date {
+        font-size: 2rem;
+        line-height: 1.4em;
+        margin-bottom: 1.2rem;
+        letter-spacing: -0.025em;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 9px;
+        }
+    }
+
+    &__source {
+    }
+
+    &__text {
+        color: $textColorThird;
+        font-size: 1.8rem;
+        line-height: 1.33em;
+        letter-spacing: -0.025em;
+
+        @media (max-width: $md3+px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__read-more {
+        color: $textColorSecondary;
+        text-decoration: underline;
+        display: inline-block;
+        margin-top: 0.4rem;
+    }
+}
