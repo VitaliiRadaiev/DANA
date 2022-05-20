@@ -26,6 +26,7 @@ class App {
 		this.spollerInit();
 		this.setFontSize();
 		this.initTooltip();
+		this.filterInit();
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
@@ -171,6 +172,49 @@ class App {
 		}
 	}
 
+	filterInit() {
+		let filters = document.querySelectorAll('[data-filter]');
+		if(filters.length) {
+			filters.forEach(filter => {
+				let triggers = filter.querySelectorAll('[data-filter-trigger]');
+				let filterItems = Array.from(filter.querySelectorAll('[data-filter-content]')).map(item => {
+					return {
+						el: item,
+						multipleId: item.dataset.filterContent.split(',')
+					}
+				})
+
+				triggers.forEach(trigger => {
+					trigger.addEventListener('click', (e) => {
+						e.preventDefault();
+
+						trigger.classList.add('active');
+
+						triggers.forEach(i => {
+							if(i === trigger) return;
+
+							i.classList.remove('active');
+						})
+
+						if(trigger.dataset.filterTrigger === '*') {
+							filterItems.forEach(item => {
+								item.el.classList.remove('d-none');
+							})
+						} else {
+							filterItems.forEach(item => {
+								if(item.multipleId.includes(trigger.dataset.filterTrigger)) {
+									item.el.classList.remove('d-none');
+								} else {
+									item.el.classList.add('d-none');
+								}
+							})
+						}
+					})
+				})
+			})
+		}
+	}
+
 	inputMaskInit() {
 		let items = document.querySelectorAll('[data-mask]');
 		if (items.length) {
@@ -286,6 +330,14 @@ class App {
 		@@include('../common/frequently-questions/frequently-questions.js');
 		@@include('../common/testimonials/testimonials.js');
 		@@include('../common/testimonial-card/testimonial-card.js');
+
+		{
+			let lastSection = document.querySelector('[data-last-section]');
+			let footer = document.querySelector('.footer');
+			if (lastSection && footer) {
+				footer.classList.add('pt-0-mob');
+			}
+		}
 	}
 }
 

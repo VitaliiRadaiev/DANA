@@ -15,7 +15,7 @@
     box-shadow: none !important;
 
     @media (min-width: 992px) {
-        &:hover:not(.tab-active):not(.not-hover) {
+        &:hover:not(.tab-active):not(.not-hover):not(.active) {
             opacity: 0.7;
         }
     }
@@ -100,7 +100,7 @@
             min-height: 36px;
         }
 
-        &.tab-active {
+        &.tab-active, &.active {
             background: $mainColor;
             color: #fff;
             opacity: 1 !important;
@@ -117,6 +117,10 @@
 
     @media (max-width: $md3+px) {
         margin-bottom: 20px;
+    }
+
+    & + .team-list {
+        padding-top: 6rem;
     }
 
     & > li {

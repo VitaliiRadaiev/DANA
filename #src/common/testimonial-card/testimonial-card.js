@@ -4,7 +4,7 @@
         testimonialCards.forEach(testimonialCard => {
             let text = testimonialCard.querySelector('.testimonial-card__text');
             let stringLength = 151;
-            let str = text.innerText;
+            let str = text.innerText.trim();
 
 			if (str.length <= stringLength) return;
 			text.innerText = [...str].slice(0, stringLength).join('') + '...';

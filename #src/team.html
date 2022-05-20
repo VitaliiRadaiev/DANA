@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Home</a>', 'Врачи']
+        })
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title ">Наша команда</h2>
+            </div>
+        </div>
+
+        <div class="team-section padding-wrap pt-0" data-tabs>
+            <div class="container-md">
+                <ul class="buttons-group">
+                    <li>
+                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Филиал Большая Пороховская</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="1">Филиал ул. Адмирала Коновалова</a>
+                    </li>
+                </ul>
+                <div data-tab-content="0" data-filter>
+                    <ul class="buttons-group">
+                        <li>
+                            <a href="#" class="btn btn--second active" data-filter-trigger="*">Вся команда</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="0">Терапевты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="1">Хирурги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="2">Ортопеды</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="3">Ортодонты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="4">Имплантологи</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="5">Ассистенты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="6">Администраторы</a>
+                        </li>
+                    </ul>
+                    <ul class="team-list">
+                        <li data-filter-content="0,1,2,4">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-1.png",
+                                "name": "Саид Гаджиевич Шахаев",
+                                "position": "Врач стоматолог-ортопед, хирург-имплантолог, терапевт",
+                                "text": "Главный врач центра инновационной стоматологии DANA. Врач высшей категории. Врач стоматолог-ортопед, хирург-имплантолог.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="3">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-2.png",
+                                "name": "Нина Владимировна Перельштейн",
+                                "position": "Врач стоматолог-ортодонт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0,2">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-3.png",
+                                "name": "Керим Гаджимагомедович Гасанов ",
+                                "position": "Врач терапевт-ортопед",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-4.png",
+                                "name": "Мария Вячеславовна Екимова (Гогия)",
+                                "position": "Врач стоматолог-терапевт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-5.png",
+                                "name": "Зарина Муратовна Маргиева",
+                                "position": "Врач стоматолог-терапевт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="1,2">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-6.png",
+                                "name": "Имима Гаджимагомедович Магомедов ",
+                                "position": "Врач стоматолог-ортопед, хирург",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-7.png",
+                                "name": "Наргиз Теймуровна Яхьяева ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-8.png",
+                                "name": "Илона Валерьевна Ростова ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-9.png",
+                                "name": "Алиса Дмитриевна Кондакова ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-10.png",
+                                "name": "Аржа Сузана Абдер Насыр",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="6">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-11.png",
+                                "name": "Юлия Игоревна Дмитренко",
+                                "position": "Старший администратор",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="6">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-12.png",
+                                "name": "Мария Олеговна Джураева ",
+                                "position": "Администратор",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-content="1" data-filter>
+                    <ul class="buttons-group">
+                        <li>
+                            <a href="#" class="btn btn--second active" data-filter-trigger="*">Вся команда</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="0">Терапевты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="1">Хирурги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="2">Ортопеды</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="3">Ортодонты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="4">Имплантологи</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="5">Ассистенты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second " data-filter-trigger="6">Администраторы</a>
+                        </li>
+                    </ul>
+                    <ul class="team-list">
+                        <li data-filter-content="0,1,2,4">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-1.png",
+                                "name": "Саид Гаджиевич Шахаев",
+                                "position": "Врач стоматолог-ортопед, хирург-имплантолог, терапевт",
+                                "text": "Главный врач центра инновационной стоматологии DANA. Врач высшей категории. Врач стоматолог-ортопед, хирург-имплантолог.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="3">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-2.png",
+                                "name": "Нина Владимировна Перельштейн",
+                                "position": "Врач стоматолог-ортодонт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0,2">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-3.png",
+                                "name": "Керим Гаджимагомедович Гасанов ",
+                                "position": "Врач терапевт-ортопед",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-4.png",
+                                "name": "Мария Вячеславовна Екимова (Гогия)",
+                                "position": "Врач стоматолог-терапевт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="0">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-5.png",
+                                "name": "Зарина Муратовна Маргиева",
+                                "position": "Врач стоматолог-терапевт",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="1,2">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-6.png",
+                                "name": "Имима Гаджимагомедович Магомедов ",
+                                "position": "Врач стоматолог-ортопед, хирург",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": true,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-7.png",
+                                "name": "Наргиз Теймуровна Яхьяева ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-8.png",
+                                "name": "Илона Валерьевна Ростова ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-9.png",
+                                "name": "Алиса Дмитриевна Кондакова ",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="5">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-10.png",
+                                "name": "Аржа Сузана Абдер Насыр",
+                                "position": "Ассистент",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="6">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-11.png",
+                                "name": "Юлия Игоревна Дмитренко",
+                                "position": "Старший администратор",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                        <li data-filter-content="6">
+                            @@include('common/team-card/_team-card.html', {
+                                "img": "img/photo/team-card-img-12.png",
+                                "name": "Мария Олеговна Джураева ",
+                                "position": "Администратор",
+                                "text": "Специалист по работе с мягкими тканями и направленной костной регенерации. Кандидат медицинских наук.",
+                                "button": false,
+                                "buttonText": "Подробнее о враче"
+                            })
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

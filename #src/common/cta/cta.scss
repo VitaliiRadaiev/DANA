@@ -89,27 +89,106 @@
     &__form-items {
         margin-bottom: 12px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             margin-bottom: 1.6rem;
             display: flex;
+            flex-wrap: wrap;
             width: 100%;
             max-width: 68.4rem;
             justify-content: space-between;
         }
+
+        &:last-child {
+            margin-bottom: -2.4rem;
+
+            @media (max-width: $md2+px) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__form-item {
-        flex: 0 1 calc(50% - 1.2rem);
+        flex: 0 1 100%;
+        margin-bottom: 24px;
 
-        &:not(:last-child) {
+        @media (max-width: $md3+px) {
             margin-bottom: 12px;
+        }
+        &:last-child {
+            @media (max-width: $md3+px) {
+                margin-bottom: 0;
+            }
         }
 
         & .btn {
             width: 100%;
         }
+
+        &--half {
+            flex: 0 1 calc(50% - 1.2rem);
+
+        }
     }
 
     &__form-bottom {
+    }
+
+    &--feedback {
+
+        & .cta__inner {
+            padding-top: 0;
+        }
+
+        & .cta__title {
+            @media (max-width: $md3+px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        & .cta__col-1 {
+            @media (min-width: 992px) {
+                flex: 0 0 54.2%;
+                padding: 4.8rem 4rem 4.8rem 11.5rem;
+            }
+        }
+
+        & .cta__form-items {
+            @media (min-width: 992px) {
+                max-width: 71rem;
+            }
+        }
+
+        & .cta__text {
+            max-width: 68rem;
+
+            @media (min-width: 768px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        & .cta__col-1 {
+            @media (max-width: $md3+px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        & .cta__col-2 {
+            @media (max-width: $md3+px) {
+                background-color: transparent;
+                margin: 0 -16px;
+                padding-bottom: 93.88%;
+            }
+        }
+
+        & .cta__img {
+            @media (min-width: 992px) {
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            @media (max-width: $md3+px) {
+                height: 100%;
+            }
+        }
     }
 }

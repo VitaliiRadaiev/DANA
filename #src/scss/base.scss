@@ -187,6 +187,8 @@ figure {
 ._page {
 	overflow: hidden;
 	min-height: 100%;
+	position: relative;
+	z-index: 3;
 }
 
 .container {
@@ -238,6 +240,21 @@ figure {
 [disabled] {
 	pointer-events: none;
 	opacity: 0.7;
+}
+
+[data-filter-content] {
+	animation: filterContentAnim .4s ease-in-out;
+}
+
+@keyframes filterContentAnim {
+	from {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .padding-wrap {
@@ -382,6 +399,11 @@ figure {
 		padding-bottom: 0 !important;
 	}
 }
+.pt-0-mob {
+	@media (max-width: $md3+px) {
+		padding-top: 0 !important;
+	}
+}
 
 .social {
 	display: flex;
@@ -445,6 +467,18 @@ figure {
 
 		@media (max-width: $md2+px) {
 			margin-bottom: 12px;
+		}
+
+		&:not(.text-lg-center) {
+			max-width: 101.9rem;
+		}
+	}
+
+	&--sm {
+		margin-bottom: 3.2rem;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 16px;
 		}
 	}
 }

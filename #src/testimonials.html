@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Home</a>', 'Врачи']
+        })
+
+        <div class="padding-wrap pt-0">
+            <div class="container-md">
+                <div class="head head--top">
+                    <h2 class="head__title ">Отзывы</h2>
+                    <div class="head__subtitle text">
+                        Первое время нам казалось, что классно иметь хорошие отзывы.
+                        Но позже мы осознали, что хорошие отзывы — это про прошлое. Они не помогают становиться лучше в
+                        будущем.
+                        Так мы перестали стремиться получить хорошую оценку, и в то же время настроили процесс опроса
+                        каждого пациента после визита в клинику.
+
+                    </div>
+                </div>
+                <div class="rating-section">
+                    <div class="head head--sm">
+                        <h3 class="head__title ">Независимые рейтинги</h3>
+                    </div>
+                    <ul class="rating-section__list">
+                        <li>
+                            <div class="rating-card">
+                                <div class="rating-card__logo">
+                                    <img src="img/photo/rating-logo-1.svg" alt="">
+                                </div>
+                                <div class="rating-card__value">4.7 из 5</div>
+                                <div class="rating-card__stars">
+                                    @@include('common/rating/_rating.html', {
+                                    "value": "4.5"
+                                    })
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-card">
+                                <div class="rating-card__logo">
+                                    <img src="img/photo/rating-logo-2.svg" alt="">
+                                </div>
+                                <div class="rating-card__value">4.7 из 5</div>
+                                <div class="rating-card__stars">
+                                    @@include('common/rating/_rating.html', {
+                                    "value": "4.5"
+                                    })
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-card">
+                                <div class="rating-card__logo">
+                                    <img src="img/photo/rating-logo-3.svg" alt="">
+                                </div>
+                                <div class="rating-card__value">4.7 из 5</div>
+                                <div class="rating-card__stars">
+                                    @@include('common/rating/_rating.html', {
+                                    "value": "4.5"
+                                    })
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-card">
+                                <div class="rating-card__logo">
+                                    <img src="img/photo/rating-logo-4.svg" alt="">
+                                </div>
+                                <div class="rating-card__value">4.7 из 5</div>
+                                <div class="rating-card__stars">
+                                    @@include('common/rating/_rating.html', {
+                                    "value": "4.5"
+                                    })
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-wrap" data-tabs>
+            <div class="container-md">
+                <div class="head head--sm">
+                    <h3 class="head__title ">Отзывы с независимых ресурсов</h3>
+                </div>
+                <ul class="buttons-group">
+                    <li>
+                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Филиал ул. Адмирала
+                            Коновалова</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="1">Филиал Большая Пороховская</a>
+                    </li>
+                </ul>
+                <div data-tab-content="0">
+                    <ul class="testimonials-list">
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Анатолий",
+                            "date": "22.10.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Светлана Бондаренко",
+                            "date": "15.09.2021",
+                            "starsValue": "4.5",
+                            "source": true,
+                            "button": false
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Константин К.",
+                            "date": "02.08.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Анатолий",
+                            "date": "22.10.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Светлана Бондаренко",
+                            "date": "15.09.2021",
+                            "starsValue": "4.5",
+                            "source": true,
+                            "button": false
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Константин К.",
+                            "date": "02.08.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Анатолий",
+                            "date": "22.10.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Светлана Бондаренко",
+                            "date": "15.09.2021",
+                            "starsValue": "4.5",
+                            "source": true,
+                            "button": false
+                            })
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-content="1">
+                    <ul class="testimonials-list">
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Анатолий",
+                            "date": "22.10.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Светлана Бондаренко",
+                            "date": "15.09.2021",
+                            "starsValue": "4.5",
+                            "source": true,
+                            "button": false
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Константин К.",
+                            "date": "02.08.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Анатолий",
+                            "date": "22.10.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Светлана Бондаренко",
+                            "date": "15.09.2021",
+                            "starsValue": "4.5",
+                            "source": true,
+                            "button": false
+                            })
+                        </li>
+                        <li>
+                            @@include('common/testimonial-card/_testimonial-card.html', {
+                            "name": "Константин К.",
+                            "date": "02.08.2021",
+                            "starsValue": "5",
+                            "source": true,
+                            "button": true
+                            })
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @@include('common/video-testimonials/_video-testimonials.html')
+
+        <section class="cta cta--feedback padding-wrap pb-0-mob" data-last-section>
+            <div class="cta__inner">
+                <div class="container-md">
+                    <div class="cta__body">
+                        <div class="cta__col-1">
+                            <h2 class="cta__title">Написать отзыв управляющим</h2>
+                            <div class="cta__text">
+                                Ваши замечания и пожелания помогают нам улучшать качество и сервис. Напишите, нам, и мы сделаем всё возможное, чтобы стать ещё лучше!
+                            </div>
+                            <form action="">
+                                <div class="cta__form-items">
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <input type="text" class="input" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <input type="email" class="input" placeholder="Ваш Email">
+                                    </div>
+                                    <div class="cta__form-item">
+                                        <textarea class="textarea" placeholder="Ваш отзыв"></textarea>
+                                    </div>
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <button class="btn btn--dark">Отправить управляющим</button>
+                                    </div>
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <label class="checkbox-radio">
+                                            <input type="checkbox">
+                                            <div class="checkbox-radio__square"></div>
+                                            <div class="checkbox-radio__text">Нажимая на кнопку «Отправить управляющим» я даю <a href="#">согласие</a> на обработку персональных данных</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="cta__col-2">
+                            <div class="cta__img">
+                                <img src="img/photo/feedback-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

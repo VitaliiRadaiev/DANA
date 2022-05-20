@@ -297,6 +297,7 @@ class App {
 		this.spollerInit();
 		this.setFontSize();
 		this.initTooltip();
+		this.filterInit();
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
@@ -733,6 +734,49 @@ window.popup = {
 						})
 					})
 				}
+			})
+		}
+	}
+
+	filterInit() {
+		let filters = document.querySelectorAll('[data-filter]');
+		if(filters.length) {
+			filters.forEach(filter => {
+				let triggers = filter.querySelectorAll('[data-filter-trigger]');
+				let filterItems = Array.from(filter.querySelectorAll('[data-filter-content]')).map(item => {
+					return {
+						el: item,
+						multipleId: item.dataset.filterContent.split(',')
+					}
+				})
+
+				triggers.forEach(trigger => {
+					trigger.addEventListener('click', (e) => {
+						e.preventDefault();
+
+						trigger.classList.add('active');
+
+						triggers.forEach(i => {
+							if(i === trigger) return;
+
+							i.classList.remove('active');
+						})
+
+						if(trigger.dataset.filterTrigger === '*') {
+							filterItems.forEach(item => {
+								item.el.classList.remove('d-none');
+							})
+						} else {
+							filterItems.forEach(item => {
+								if(item.multipleId.includes(trigger.dataset.filterTrigger)) {
+									item.el.classList.remove('d-none');
+								} else {
+									item.el.classList.add('d-none');
+								}
+							})
+						}
+					})
+				})
 			})
 		}
 	}
@@ -1285,7 +1329,7 @@ window.popup = {
         testimonialCards.forEach(testimonialCard => {
             let text = testimonialCard.querySelector('.testimonial-card__text');
             let stringLength = 151;
-            let str = text.innerText;
+            let str = text.innerText.trim();
 
 			if (str.length <= stringLength) return;
 			text.innerText = [...str].slice(0, stringLength).join('') + '...';
@@ -1302,6 +1346,14 @@ window.popup = {
         })
     }
 };
+
+		{
+			let lastSection = document.querySelector('[data-last-section]');
+			let footer = document.querySelector('.footer');
+			if (lastSection && footer) {
+				footer.classList.add('pt-0-mob');
+			}
+		}
 	}
 }
 
