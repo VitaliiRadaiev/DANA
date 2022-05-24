@@ -30,6 +30,12 @@ class App {
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
+
+			// let wrapper = document.createElement('div');
+			// wrapper.className = 'wrapper';
+			// wrapper.append(...document.body.children);
+			// document.body.append(wrapper);
+
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
 			this.componentsScripts();
@@ -72,6 +78,7 @@ class App {
 		@@include('../common/promo-header/promo-header.js');
 		@@include('../common/team-carousel/team-carousel.js');
 		@@include('../common/documents-section/documents-section.js');
+		@@include('../common/info-cards-list/info-cards-list.js');
 	}
 
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Home</a>', '<a href="#">Услуги</a>', 'Протезирование зубов']
+        })
+
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title ">Протезирование зубов</h2>
+            </div>
+        </div>
+
+        <div class="padding-wrap pt-0">
+            <div class="container-md">
+                <div class="main-grid">
+                    <div class="main-grid__content">
+                        <div class="main-grid__content-row">
+                            <div class="services-card services-card--big">
+                                <div class="services-card__inner">
+                                    <div class="services-card__bg ibg">
+                                        <img src="img/photo/services-card-img-2.jpg" alt="">
+                                    </div>
+                                    <div class="services-card__body">
+                                        <h3 class="services-card__title">Протезирование зубов</h3>
+                                        <div class="services-card__text">Быстрый способ восстановить естественный вид
+                                            зубов</div>
+                                        <div class="services-card__label label bg-warning"> Скидка 10% до 31 марта</div>
+                                        <a href="#" class="services-card__btn btn btn--light"
+                                            data-da=".services-card--big,767.98,last">Записаться на консультацию</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box">
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">Показания к проведению процедуры</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Протезирование зубов: виды и стоимость</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Услуги протезирования зубов: этапы и стоимость в клинике Dana</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Цены </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Фотогалерея</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <div class="text-content last">
+                                    <h3>Показания к проведению процедуры</h3>
+                                    <p>
+                                        Болезненные ощущения во время пережевывания пищи, травмы челюстно-лицевой
+                                        системы и врожденные патологии зубного ряда – ситуации, которые требуют участия
+                                        профессионального стоматолога. При описанных клинических проявлениях зачастую
+                                        рекомендуется установка ортопедических конструкций – протезов. К проведению
+                                        процедуры также обязывают следующие показания:
+                                    </p>
+                                    <ul>
+
+                                        <li>патологическая стираемость эмали;</li>
+                                        <li>частичное или полное разрушение коронки (например, вследствие кариеса);</li>
+                                        <li>адентия (потеря всех или нескольких зубов);</li>
+                                        <li>множественные дефекты ряда;</li>
+                                        <li>надломы и сколы, образовавшиеся в результате травмы.</li>
+                                    </ul>
+                                    <p>
+                                        Стоматолог-ортопед помогает не только восстановить функционал зубочелюстной системы, но и проводит эстетическую коррекцию путем установки виниров или коронок. С помощью качественных протезов также удастся оптимизировать ортодонтическое лечение, направленное на исправление прикуса.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            @@include('common/info-cards-list/_info-cards-list.html')
+                        </div>
+                    </div>
+                    <div class="main-grid__side-column">
+                        <div class="main-grid__sticky-box">
+                            sticky-box
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

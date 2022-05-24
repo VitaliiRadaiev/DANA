@@ -535,155 +535,334 @@ defer
     </div>
 </section>
 
-		<section class="quiz padding-wrap">
-    <div class="container-sm">
+		<section class="quiz padding-wrap" data-quiz>
+    <div class="container-md">
         <div class="head">
             <h2 class="head__title text-lg-center">Ответьте на 3 вопроса и узнайте стоимость лечения</h2>
             <div class="head__subtitle text text-lg-center">Пройдите тест из 3 вопросов и получите оценку стоимости
                 необходимого лечения</div>
         </div>
-        <form action="/" id="quiz">
-            <div class="quiz__body swiper" data-quiz>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="quiz__cards-group">
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step1">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Болит зуб?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step1">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Кровоточат десны?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step1">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
-                                </div>
-                            </label>
+        <form action="/">
+            <div class="container-sm">
+                <div class="quiz__head">
+                    <div class="quiz-card" data-quiz-trigger="0">
+                        <div class="quiz-card__img ibg">
+                            <img src="img/photo/quiz-card-img-1.jpg" alt="">
+                        </div>
+                        <div class="quiz-card__text-wrap">
+                            <div class="quiz-card__circle"></div>
+                            <div class="quiz-card__text">Болит зуб?</div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="quiz__cards-group">
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step2">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Болит зуб?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step2">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Кровоточат десны?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step2">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
-                                </div>
-                            </label>
+                    <div class="quiz-card" data-quiz-trigger="1">
+                        <div class="quiz-card__img ibg">
+                            <img src="img/photo/quiz-card-img-2.jpg" alt="">
+                        </div>
+                        <div class="quiz-card__text-wrap">
+                            <div class="quiz-card__circle"></div>
+                            <div class="quiz-card__text">Кровоточат десны?</div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="quiz__cards-group">
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step3">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-1.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Болит зуб?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step3">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-2.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Кровоточат десны?</div>
-                                </div>
-                            </label>
-                            <label class="quiz-card">
-                                <input class="quiz-card__radio" type="radio" name="step3">
-                                <div class="quiz-card__img ibg">
-                                    <img src="img/photo/quiz-card-img-3.jpg" alt="">
-                                </div>
-                                <div class="quiz-card__text-wrap">
-                                    <div class="quiz-card__circle"></div>
-                                    <div class="quiz-card__text">Плохой запах изо рта?</div>
-                                </div>
-                            </label>
+                    <div class="quiz-card" data-quiz-trigger="2">
+                        <div class="quiz-card__img ibg">
+                            <img src="img/photo/quiz-card-img-3.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="quiz__message">
-                            <h2 class="quiz__title">Result</h2>
+                        <div class="quiz-card__text-wrap">
+                            <div class="quiz-card__circle"></div>
+                            <div class="quiz-card__text">Плохой запах изо рта?</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="quiz__buttons swiper" data-quiz-buttons>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="btn btn--dark" disabled data-slide-to="1">Далее</a>
+            <div class="quiz__content" data-quiz-content="0">
+                <div class="quiz__content-body">
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Цены</h3>
+                            <ul class="quiz-content-card__price-list">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            Культевая вкладка простая Co-Cr
+                                        </a>
+                                    </p>
+                                    <strong> от 6800 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">Культевая вкладка разборная циркониевая (разборная)</a>
+                                    </p>
+                                    <strong>от 21000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Цельнолитая коронка Co-Cr
+                                    </p>
+                                    <strong>от 10000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Металлокерамическая коронка Co-Cr
+                                    </p>
+                                    <strong>15000 ₽</strong>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="btn btn--dark" data-slide-to="0">Назад</a>
-                        <a href="#" class="btn btn--dark" data-slide-to="2">Далее</a>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Статьи по теме</h3>
+                            <ul class="quiz-content-card__posts">
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <button class="quiz__submit btn btn--dark" type="submit">Отправить</button>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Сяжитесь с нами</h3>
+                            <div class="quiz-content-card__text">
+                                Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте
+                                заявку и мы в ближайшее время свяжемся с вами.
+                            </div>
+                            <div class="cta__form-items">
+                                <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                                    <input type="text" class="input" placeholder="Ваш номер телефона" inputmode="text">
+                                </div>
+                                <div class="cta__form-item">
+                                    <button class="btn btn--dark">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide"></div>
+                </div>
+                <div class="quiz__content-bottom">
+                    <button class="quiz__btn-back btn btn--dark">Назад</button>
+                </div>
+            </div>
+            <div class="quiz__content" data-quiz-content="1">
+                <div class="quiz__content-body">
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Цены 2</h3>
+                            <ul class="quiz-content-card__price-list">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            Культевая вкладка простая Co-Cr
+                                        </a>
+                                    </p>
+                                    <strong> от 6800 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">Культевая вкладка разборная циркониевая (разборная)</a>
+                                    </p>
+                                    <strong>от 21000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Цельнолитая коронка Co-Cr
+                                    </p>
+                                    <strong>от 10000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Металлокерамическая коронка Co-Cr
+                                    </p>
+                                    <strong>15000 ₽</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Статьи по теме</h3>
+                            <ul class="quiz-content-card__posts">
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Сяжитесь с нами</h3>
+                            <div class="quiz-content-card__text">
+                                Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте
+                                заявку и мы в ближайшее время свяжемся с вами.
+                            </div>
+                            <div class="cta__form-items">
+                                <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                                    <input type="text" class="input" placeholder="Ваш номер телефона" inputmode="text">
+                                </div>
+                                <div class="cta__form-item">
+                                    <button class="btn btn--dark">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__content-bottom">
+                    <button class="quiz__btn-back btn btn--dark">Назад</button>
+                </div>
+            </div>
+            <div class="quiz__content" data-quiz-content="2">
+                <div class="quiz__content-body">
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Цены 3</h3>
+                            <ul class="quiz-content-card__price-list">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            Культевая вкладка простая Co-Cr
+                                        </a>
+                                    </p>
+                                    <strong> от 6800 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">Культевая вкладка разборная циркониевая (разборная)</a>
+                                    </p>
+                                    <strong>от 21000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Цельнолитая коронка Co-Cr
+                                    </p>
+                                    <strong>от 10000 ₽</strong>
+                                </li>
+                                <li>
+                                    <p>
+                                        Металлокерамическая коронка Co-Cr
+                                    </p>
+                                    <strong>15000 ₽</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Статьи по теме</h3>
+                            <ul class="quiz-content-card__posts">
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="quiz-content-card__posts-img ibg">
+                                        <img src="img/photo/post-img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-content-card__posts-text-wrap">
+                                        <div class="quiz-content-card__posts-title">Зубные импланты: виды и цены, что
+                                            выбрать?</div>
+                                        <a href="#" class="quiz-content-card__posts-link">Советы врачей</a>
+                                        <div class="quiz-content-card__posts-views">
+                                            <svg>
+                                                <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                            </svg>
+                                            360
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quiz__content-col">
+                        <div class="quiz-content-card">
+                            <h3 class="quiz-content-card__title">Сяжитесь с нами</h3>
+                            <div class="quiz-content-card__text">
+                                Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте
+                                заявку и мы в ближайшее время свяжемся с вами.
+                            </div>
+                            <div class="cta__form-items">
+                                <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                                    <input type="text" class="input" placeholder="Ваш номер телефона" inputmode="text">
+                                </div>
+                                <div class="cta__form-item">
+                                    <button class="btn btn--dark">Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__content-bottom">
+                    <button class="quiz__btn-back btn btn--dark">Назад</button>
                 </div>
             </div>
         </form>
-
-        <script>
-            let quizForm = document.querySelector('#quiz');
-            if(quizForm) {
-                quizForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-
-                    
-                    setTimeout(() => {
-                        window.quiz.showResult()
-                    }, 1000)
-                })
-            }
-        </script>
     </div>
 </section>
 
@@ -1059,21 +1238,21 @@ defer
                         в ближайшее время свяжемся с вами.
                     </div>
                     <form action="">
-                        <div class="cta__form-items">
-                            <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                        <div class="cta__form-items mb-0">
+                            <div class="cta__form-item cta__form-item--half" data-mask="+7(999)-999-99-99">
                                 <input type="text" class="input" placeholder="Ваш номер телефона">
                             </div>
-                            <div class="cta__form-item">
+                            <div class="cta__form-item cta__form-item--half">
                                 <button class="btn btn--dark">Заказать обратный звонок</button>
                             </div>
-                        </div>
-                        <div class="cta__form-bottom">
-                            <label class="checkbox-radio">
-                                <input type="checkbox">
-                                <div class="checkbox-radio__square"></div>
-                                <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
-                                        href="#">согласие</a> на обработку персональных данных</div>
-                            </label>
+                            <div class="cta__form-item">
+                                <label class="checkbox-radio">
+                                    <input type="checkbox">
+                                    <div class="checkbox-radio__square"></div>
+                                    <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                            href="#">согласие</a> на обработку персональных данных</div>
+                                </label>
+                            </div>
                         </div>
                     </form>
                 </div>
