@@ -466,9 +466,12 @@ figure {
 	}
 
 	& h3.head__title {
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 32px;
+		@media (max-width: $md3+px) {
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 32px;
+		}
+
 	}
 
 	&__title {

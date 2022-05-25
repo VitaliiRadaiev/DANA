@@ -2695,12 +2695,6 @@ figure {
   margin-bottom: 0;
 }
 
-.head h3.head__title {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 32px;
-}
-
 .head__title {
   margin-bottom: 1.6rem;
 }
@@ -7432,6 +7426,12 @@ figure {
   .social > li svg {
     width: 24px;
     height: 24px;
+  }
+
+  .head h3.head__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .head--sm {
