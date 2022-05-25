@@ -471,7 +471,6 @@ figure {
 			font-size: 28px;
 			line-height: 32px;
 		}
-
 	}
 
 	&__title {
@@ -500,6 +499,12 @@ figure {
 
 		@media (max-width: $md3+px) {
 			margin-bottom: 16px;
+		}
+	}
+
+	&--top {
+		@media (max-width: $md3+px) {
+			padding-top: 24px;
 		}
 	}
 }
@@ -536,6 +541,12 @@ figure {
 	line-height: 1em;
 	letter-spacing: -0.025em;
 	align-self: flex-start;
+
+	@media (max-width: $md3+px) {
+		padding: 6px 16px;
+		font-size: 12px;
+		line-height: 16px;
+	}
 }
 
 .box {

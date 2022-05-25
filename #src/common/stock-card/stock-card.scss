@@ -1,0 +1,119 @@
+.stock-card {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 4rem;
+        overflow: hidden;
+
+        @media (max-width: $md3+px) {
+            border-radius: 16px;
+        }
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        padding: 4rem 11.5rem 8rem;
+
+        @media (max-width: $md2+px) {
+            padding: 4rem 40px;
+        }
+
+        @media (max-width: $md3+px) {
+            padding: 24px 16px 16px;
+        }
+    }
+
+    &__text-wrap {
+        min-height: 50.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 52%;
+
+        @media (max-width: $md2+px) {
+            min-height: 30.3rem;
+        }
+
+        @media (max-width: $md3+px) {
+            width: 100%;
+            min-height: 250px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 1.26em;
+        letter-spacing: -0.025em;
+        color: #07bea6;
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md2+px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 8px;
+        }
+
+        & span {
+            color: #e31151;
+        }
+    }
+
+    &__text {
+        line-height: 1.46em;
+        color: $textColorThird;
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 166px;
+        }
+    }
+
+    &__btn {
+        margin-top: auto;
+        &.btn {
+            width: auto !important;
+
+            @media (max-width: $md3+px) {
+                min-height: 42px;
+                min-width: 137px;
+            }
+        }
+    }
+
+    &--content-right {
+        & .stock-card__label {
+            align-self: flex-end;
+        }
+        & .stock-card__body {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        & .stock-card__text-wrap {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Главная</a>', 'Акции']
+        })
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title">Акции</h2>
+                <div class="head__subtitle text">
+                    Клиника «Дана» предлагает различные акции на платные медицинские услуги. Скидки на услуги врачей,
+                    бесплатные консультации специалистов.
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-wrap pt-0">
+            <div class="container-md">
+                <div class="main-grid">
+                    <div class="main-grid__content">
+                        <div class="main-grid__content-row">
+                            <div class="stock-card stock-card--content-right">
+                                <div class="stock-card__bg ibg">
+                                    <picture>
+                                        <source srcset="img/photo/ctock-card-img-1.jpg" media="(min-width: 576px)">
+                                        <img src="img/photo/ctock-card-img-1-mob.jpg" alt="img">
+                                    </picture>
+                                </div>
+                                <div class="stock-card__body">
+                                    <div class="stock-card__text-wrap">
+                                        <div class="stock-card__label label bg-warning">до 31 марта</div>
+                                        <h2 class="stock-card__title">
+                                            All-on-4 имплантация <br>
+                                            от <span>188</span> тыс. рублей
+                                        </h2>
+                                        <div class="stock-card__text text">Новые зубы в день посещения</div>
+                                        <a href="#" class="stock-card__btn btn btn--gradient">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="stock-card">
+                                <div class="stock-card__bg ibg">
+                                    <picture>
+                                        <source srcset="img/photo/ctock-card-img-2.jpg" media="(min-width: 576px)">
+                                        <img src="img/photo/ctock-card-img-2-mob.jpg" alt="img">
+                                    </picture>
+                                </div>
+                                <div class="stock-card__body">
+                                    <div class="stock-card__text-wrap">
+                                        <div class="stock-card__label label bg-warning">до 31 марта</div>
+                                        <h2 class="stock-card__title text-white">
+                                            All-on-4 имплантация <br>
+                                            от 188 тыс. рублей
+                                        </h2>
+                                        <div class="stock-card__text text text-white">Новые зубы в день посещения</div>
+                                        <a href="#" class="stock-card__btn btn btn--light">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="stock-card">
+                                <div class="stock-card__bg ibg">
+                                    <picture>
+                                        <source srcset="img/photo/ctock-card-img-3.jpg" media="(min-width: 576px)">
+                                        <img src="img/photo/ctock-card-img-3-mob.jpg" alt="img">
+                                    </picture>
+                                </div>
+                                <div class="stock-card__body">
+                                    <div class="stock-card__text-wrap">
+                                        <div class="stock-card__label label bg-warning">до 31 марта</div>
+                                        <h2 class="stock-card__title">
+                                            Компьютерная <br> томография зубов (КТ) <br> от <span>1600</span> рублей
+                                        </h2>
+                                        <div class="stock-card__text text">на аппарате Vatech PaX-i3d (Южная Корея)</div>
+                                        <a href="#" class="stock-card__btn btn btn--gradient">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="stock-card stock-card--content-right">
+                                <div class="stock-card__bg ibg">
+                                    <picture>
+                                        <source srcset="img/photo/ctock-card-img-4.jpg" media="(min-width: 576px)">
+                                        <img src="img/photo/ctock-card-img-4-mob.jpg" alt="img">
+                                    </picture>
+                                </div>
+                                <div class="stock-card__body">
+                                    <div class="stock-card__text-wrap">
+                                        <div class="stock-card__label label bg-warning">до 31 марта</div>
+                                        <h2 class="stock-card__title">
+                                            Гарантия до <span>5 лет</span> <br> на все виды услуг
+                                        </h2>
+                                        <div class="stock-card__text text">Новые зубы в день посещения</div>
+                                        <a href="#" class="stock-card__btn btn btn--light">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-grid__side-column">
+                        <div class="main-grid__sticky-box">
+                            @@include('common/services-side-panel/_services-side-panel.html')
+                            @@include('common/cta-card/_cta-card.html', {
+                            "title": "Запишитесь к врачу"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('common/cta/_cta.html', {
+        "img": "img/photo/cta-img-5.png"
+        })
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>
