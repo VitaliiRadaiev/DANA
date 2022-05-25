@@ -183,7 +183,7 @@
             min-width: 33.8rem;
 
             @media (max-width: $md3+px) {
-                min-width: none;
+                min-width: auto;
                 margin-top: 16px;
             }
         }

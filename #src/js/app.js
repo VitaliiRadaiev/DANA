@@ -31,10 +31,6 @@ class App {
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
 
-			// let wrapper = document.createElement('div');
-			// wrapper.className = 'wrapper';
-			// wrapper.append(...document.body.children);
-			// document.body.append(wrapper);
 
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
@@ -79,6 +75,8 @@ class App {
 		@@include('../common/team-carousel/team-carousel.js');
 		@@include('../common/documents-section/documents-section.js');
 		@@include('../common/info-cards-list/info-cards-list.js');
+		@@include('../common/gallery/gallery.js');
+		@@include('../common/certificates/certificates.js');
 	}
 
 
@@ -261,7 +259,7 @@ class App {
 	initSmoothScroll() {
 		let anchors = document.querySelectorAll('a[href^="#"]:not([data-popup="open-popup"])');
 		if (anchors.length) {
-			let header = document.querySelector('.header');
+			let header = document.querySelector('[data-header]');
 
 			anchors.forEach(anchor => {
 				if (!anchor.getAttribute('href').match(/#\w+$/gi)) return;
@@ -274,7 +272,7 @@ class App {
 					if (el) {
 						e.preventDefault();
 						let top = Math.abs(document.body.getBoundingClientRect().top) + el.getBoundingClientRect().top;
-
+						
 						if (header) {
 							top = top - header.clientHeight;
 						}

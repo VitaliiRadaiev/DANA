@@ -1,0 +1,182 @@
+.certificates {
+    @media (max-width: $md3+px) {
+        overflow: hidden;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+
+        @media (max-width: $md3+px) {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__body {
+        padding: 5.3rem 0 14.3rem;
+        position: relative;
+
+        @media (max-width: $md2+px) {
+            margin: 0 -32px;
+            padding: 0 32px;
+
+        }
+
+        @media (min-width: 992px) {
+            &:before {
+                position: absolute;
+                content: "";
+                z-index: 4;
+                top: 0;
+                left: -4.8rem;
+                width: 35.2rem;
+                height: 100%;
+                background: linear-gradient(90deg, #f0f0f0 31.54%, rgba(240, 240, 240, 0) 100%);
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                z-index: 4;
+                top: 0;
+                right: -4.8rem;
+                width: 35.2rem;
+                height: 100%;
+                background: linear-gradient(-90deg, #f0f0f0 31.54%, rgba(240, 240, 240, 0) 100%);
+            }
+        }
+    }
+
+    &__slider-mob {
+        @media (max-width: $md2+px) {
+            overflow: visible;
+        }
+        & .swiper-slide {
+            width: auto;
+
+            @media (min-width: 992px) {
+                padding: 0 1.3rem;
+            }
+        }
+    }
+
+    &__slider-mob-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        width: 35rem;
+        height: 24.6rem;
+
+        @media (max-width: $md3+px) {
+            width: 229px;
+            height: 162px;
+        }
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__slider-desk {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50.2rem;
+        overflow: visible;
+
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+
+        & .swiper-slide {
+            opacity: 0 !important;
+
+            &.swiper-slide-active {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    &__slider-desk-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        height: 35.2rem;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__slider-desk-controllers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -8.8rem;
+    }
+
+    &__slider-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 50%;
+        background-color: $secondColor;
+        transition: all 0.15s ease-in-out;
+        color: #fff;
+        cursor: pointer;
+
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        & svg {
+            height: 1.6rem;
+            width: auto;
+        }
+    }
+
+    & .swiper-pagination {
+        position: static;
+        display: flex;
+        align-items: center;
+        font-size: 0;
+        margin: 0 2.4rem;
+
+        & span {
+            font-size: 1.8rem;
+            line-height: 1.56em;
+            letter-spacing: -0.025em;
+
+            &:first-child {
+                &:after {
+                    content: "из";
+                    margin: 0 0.6rem;
+                }
+            }
+        }
+    }
+}

@@ -141,6 +141,14 @@ h2 {
 		font-size: 28px;
 		line-height: 1.14em;
 	}
+
+	&.mb-3 {
+		margin-bottom: 2.4rem !important;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 16px !important;
+		}
+	}
 }
 
 h3 {
@@ -453,12 +461,14 @@ figure {
 		margin-bottom: 24px;
 	}
 
-	@media (max-width: $md3+px) {
-		padding-top: 24px;
-	}
-
 	& > *:last-child {
 		margin-bottom: 0;
+	}
+
+	& h3.head__title {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 32px;
 	}
 
 	&__title {
@@ -530,12 +540,29 @@ figure {
 	padding: 4rem;
 	border-radius: 2.4rem;
 
+	@media (max-width: $md2+px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
 	@media (max-width: $md3+px) {
 		padding: 16px 12px;
 		border-radius: 16px;
 	}
 
 	&--has-text {
+		@media (max-width: $md3+px) {
+			padding: 40px 12px;
+		}
+	}
+
+	&--big-padding {
+		padding: 4.8rem 11.5rem;
+
+		@media (max-width: $md2+px) {
+			padding: 4.8rem 32px;
+		}
+
 		@media (max-width: $md3+px) {
 			padding: 40px 12px;
 		}
@@ -551,7 +578,6 @@ figure {
 	@media (max-width: $md3+px) {
 		margin-bottom: -16px;
 	}
-
 
 	& > li {
 		margin-bottom: 2.4rem;
@@ -574,7 +600,8 @@ figure {
 		line-height: 1.4em;
 		letter-spacing: -0.025em;
 		color: $secondColor;
-		text-decoration: underline dashed;
+		display: inline-block;
+		text-decoration: dashed underline;
 
 		@media (max-width: $md3+px) {
 			font-weight: 500;
@@ -616,11 +643,33 @@ figure {
 		margin-bottom: 0.65em;
 	}
 
+	& h3,
+	& h5 {
+		margin-bottom: 2.4rem;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 16px;
+			font-weight: 500;
+		}
+
+		& + figure {
+			margin-top: 0;
+		}
+
+		& + h5 {
+			margin-top: 3.2rem !important;
+		}
+	}
+
 	& p,
 	& ul,
 	& ol,
 	& figure {
-		margin-bottom: 1.3em;
+		margin-bottom: 2.4rem;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 16px;
+		}
 	}
 
 	& a {
@@ -651,6 +700,14 @@ figure {
 				margin-bottom: 0;
 			}
 		}
+
+		&.with-margin {
+			& > li {
+				&:not(:last-child) {
+					margin-bottom: 1.6rem;
+				}
+			}
+		}
 	}
 
 	& ol {
@@ -669,24 +726,39 @@ figure {
 				margin-bottom: 0;
 			}
 		}
+
+		&.with-margin {
+			& > li {
+				&:not(:last-child) {
+					margin-bottom: 1.6rem;
+				}
+			}
+		}
 	}
 
 	& figure {
 		display: block;
 		width: 100%;
-		margin: 8rem 0;
+		margin: 3.2rem 0;
+		overflow: hidden;
+		background: #eeeeee;
+		border-radius: 4rem;
+		padding-bottom: max(50.63%, 227px);
+		position: relative;
 
-		@media (max-width: $md2+px) {
-			margin: 80px 0;
-		}
 		@media (max-width: $md3+px) {
-			margin: 50px 0;
+			margin: 24px 0;
+			border-radius: 16px;
 		}
 
-		& > img {
-			display: block;
+		& img {
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 100%;
-			height: auto;
+			height: 100%;
+			z-index: 1;
+			object-fit: cover;
 		}
 
 		& + h1,
@@ -768,7 +840,11 @@ figure {
 		& ~ h4,
 		& ~ h5,
 		& ~ h6 {
-			margin-top: 1.4em;
+			margin-top: 5.6rem;
+
+			@media (max-width: $md3+px) {
+				margin-top: 32px;
+			}
 		}
 	}
 }

@@ -55,6 +55,13 @@
 @import "../common/testimonial-card/testimonial-card";
 @import "../common/main-grid/main-grid";
 @import "../common/info-cards-list/info-cards-list";
+@import "../common/board/board";
+@import "../common/info-card/info-card";
+@import "../common/price-section/price-section";
+@import "../common/gallery/gallery";
+@import "../common/services-side-panel/services-side-panel";
+@import "../common/cta-card/cta-card";
+@import "../common/certificates/certificates";
 // ==== // COMMON BLOCKS =====================================================
 
 // ==== PAGES =====================================================
@@ -63,5 +70,6 @@
 @import "pages/team";
 @import "pages/testimonials";
 @import "pages/services-detail";
+@import "pages/team-detail";
 // ==== AND PAGES =====================================================
 

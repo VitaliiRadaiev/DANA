@@ -29,6 +29,54 @@
                 })
             </li>
         }
+
+        @@if (type === 'type-2') {
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Анатолий",
+                    "date": "22.10.2021",
+                    "starsValue": "5",
+                    "source": true,
+                    "button": true
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Светлана Бондаренко",
+                    "date": "15.09.2021",
+                    "starsValue": "4.5",
+                    "source": true,
+                    "button": false
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Константин К.",
+                    "date": "02.08.2021",
+                    "starsValue": "5",
+                    "source": true,
+                    "button": true
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Анатолий",
+                    "date": "22.10.2021",
+                    "starsValue": "5",
+                    "source": true,
+                    "button": true
+                })
+            </li>
+            <li>
+                @@include('../testimonial-card/_testimonial-card.html', {
+                    "name": "Светлана Бондаренко",
+                    "date": "15.09.2021",
+                    "starsValue": "4.5",
+                    "source": true,
+                    "button": false
+                })
+            </li>
+        }
     </ul>
     <div class="testimonials__bottom">
         <button class="testimonials__mob-btn btn btn--dark btn--transparent">Читать больше отзывов</button>

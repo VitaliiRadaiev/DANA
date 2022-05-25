@@ -41,5 +41,9 @@
         position: sticky; 
         position:-webkit-sticky;
         top: 17rem;
+
+        & > *:not(:last-child) {
+            margin-bottom: 4.2rem;
+        }
     }
 }

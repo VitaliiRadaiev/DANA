@@ -302,10 +302,6 @@ class App {
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
 
-			// let wrapper = document.createElement('div');
-			// wrapper.className = 'wrapper';
-			// wrapper.append(...document.body.children);
-			// document.body.append(wrapper);
 
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
@@ -684,6 +680,88 @@ window.popup = {
         })
     }
 };
+		{
+    let gallery = document.querySelector('[data-slider="gallery"]');
+    if(gallery) {
+        let sliderData = new Swiper(gallery.querySelector('.swiper'), {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            speed: 400,
+
+            navigation: {
+                nextEl: gallery.querySelector('.gallery__btn.next'),
+                prevEl: gallery.querySelector('.gallery__btn.prev'),
+            },
+        });
+    }
+};
+		{
+    let certificates = document.querySelector('[data-slider="certificates"]');
+    if(certificates) {
+        let desk = certificates.querySelector('.certificates__slider-desk');
+        let mob = certificates.querySelector('.certificates__slider-mob');
+
+        if(desk && mob) {
+            let mobSwiper = new Swiper(mob, {
+                observer: true,
+                observeParents: true,
+                speed: 600,
+                loopAdditionalSlides: 1,
+                
+                breakpoints: {
+                    320: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 16,
+                        centeredSlides: false,
+                        touchRatio: 1,
+                        loop: false,
+                    },
+                    768: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 32,
+                        centeredSlides: false,
+                        touchRatio: 1,
+                        loop: false,
+                    },
+                    992: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 0,
+                        centeredSlides: true,
+                        touchRatio: 0,
+                        loop: true,
+                    }
+                },
+            });
+
+            let deskSwiper = new Swiper(desk, {
+                effect: 'fade',
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                speed: 600,
+                loop: true,
+                loopAdditionalSlides: 3,
+                pagination: {
+                	el: desk.querySelector('.swiper-pagination'),
+                    type: 'fraction',
+                },
+                navigation: {
+                    nextEl: desk.querySelector('.certificates__slider-btn.next'),
+                    prevEl: desk.querySelector('.certificates__slider-btn.prev'),
+                },
+                // on: {
+                //     activeIndexChange: function (e) {
+                //         console.log(e);
+                //         //mobSwiper.slideTo(e.activeIndex);
+                //     },
+                // }
+            });
+
+            deskSwiper.controller.control = mobSwiper
+        }
+    }
+};
 	}
 
 
@@ -866,7 +944,7 @@ window.popup = {
 	initSmoothScroll() {
 		let anchors = document.querySelectorAll('a[href^="#"]:not([data-popup="open-popup"])');
 		if (anchors.length) {
-			let header = document.querySelector('.header');
+			let header = document.querySelector('[data-header]');
 
 			anchors.forEach(anchor => {
 				if (!anchor.getAttribute('href').match(/#\w+$/gi)) return;
@@ -879,7 +957,7 @@ window.popup = {
 					if (el) {
 						e.preventDefault();
 						let top = Math.abs(document.body.getBoundingClientRect().top) + el.getBoundingClientRect().top;
-
+						
 						if (header) {
 							top = top - header.clientHeight;
 						}

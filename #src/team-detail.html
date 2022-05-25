@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Главная</a>', '<a href="#">Врачи</a>', 'Врачи']
+        })
+
+        <div class="team-detail padding-wrap" data-tabs>
+            <div class="container-md">
+                <div class="team-detail__row">
+                    <div class="team-detail-head">
+                        <div class="team-detail-head__bg"></div>
+                        <div class="team-detail-head__col-1">
+                            <h2 class="team-detail-head__title">Мария Вячеславовна Екимова</h2>
+                            <div class="team-detail-head__subtitle text">
+                                Врач стоматолог-терапевт <br>
+                                Опыт работы 8 лет
+                            </div>
+                            <div class="team-detail-head__tags">
+                                <div class="team-detail-head__tag">Поет в караоке</div>
+                                <div class="team-detail-head__tag">Играет в шахматы</div>
+                            </div>
+                            <div class="team-detail-head__address">
+                                <svg>
+                                    <use xlink:href="img/icons/sprites.svg#local"></use>
+                                </svg>
+                                Врач принимает по адресу Большая Пороховская, 47
+                            </div>
+                            <a href="#" class="team-detail-head__btn btn btn--dark" data-da=".team-detail-head__col-1,767.98,2">Записаться на прием</a>
+                        </div>
+                        <div class="team-detail-head__col-2">
+                            <div class="team-detail-head__img" data-da=".team-detail-head__col-1,767.98,2">
+                                <img src="img/photo/team-detail-head-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-detail__row">
+                    <div class="box">
+                        <ul class="links-group">
+                            <li>
+                                <a href="#anchor1">Образование</a>
+                            </li>
+                            <li>
+                                <a href="#anchor2">Сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#anchor3">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-detail__row">
+                    <div class="main-grid">
+                        <div class="main-grid__content">
+                            <div id="anchor1" class="main-grid__content-row">
+                                <div class="box box--has-text box--big-padding">
+                                    <div class="text-content last">
+                                        <h3>Образование</h3>
+                                        <h5>Высшее образование</h5>
+                                        <p>
+                                            Мария Вячеславовна окончила Санкт-Петербургский Государственный Педиатрический медицинский университет. Ещё в 2017 году Мария Вячеславовна выбрала нашу клинику для начала своего пути к профессии врача-стоматолога. Начиная с работы ассистента стоматолога, еще будучи студенткой, она прошла весь путь, учась у лучших стоматологов города. За это время она получила огромную базу знаний, так как всю теорию, изученную в университете, она подкрепляла практикой на стоматологическом приёме.
+                                        </p>
+
+                                        <h5>
+                                            Повышение квалификации
+                                        </h5>
+
+                                        <ul>
+                                            <li>Dentsply Sirona Academy: «Эстетическая реставрация боковой группы зубов»</li>
+                                            <li>Северная Каролина: «Современный взгляд на профессиональную гигиену полости рта»</li>
+                                            <li>Philips Zoom!: «Курс по отбеливанию зубов по технологиям Philips Zoom! Chairside, DayWhite, NiteWhite»</li>
+                                            <li>Dentsply Sirona Academy: «Секреты повторной эндодонтии»</li>
+                                        </ul>
+                                        
+                                        <figure>
+                                            <img src="img/photo/text-img-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__side-column">
+                            <div class="main-grid__sticky-box">
+                                @@include('common/cta-card/_cta-card.html', {
+                                    "title": "Рассчитать стоимость лечения"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('common/certificates/_certificates.html')
+
+        <div class="padding-wrap">
+            <div class="container-md">
+                <div class="head">
+                    <h3 class="head__title ">Отзывы</h3>
+                </div>
+                @@include('common/testimonials/_testimonials.html', {
+                    "type": "type-2"
+                })
+            </div>
+        </div>
+
+        @@include('common/cta/_cta.html', {
+            "img": "img/photo/cta-img-4.png"
+        })
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>
