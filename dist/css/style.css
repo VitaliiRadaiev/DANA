@@ -5842,6 +5842,68 @@ figure {
   text-align: right;
 }
 
+.faq-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.faq-list > li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.faq-list > li.text-is-show .faq-list__title {
+  margin-bottom: 3.2rem;
+}
+
+.faq-list > li.text-is-show .faq-list__title::before {
+  -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.faq-list > li.text-is-show .faq-list__btn {
+  margin-top: 2.4rem;
+}
+
+.faq-list__title {
+  color: #0ABEB9;
+  margin-bottom: 1.6rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-list__title:before {
+  position: absolute;
+  content: "";
+  top: 0.3rem;
+  right: -6rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzIDZMOCAxMUwzIDYiIHN0cm9rZT0iIzJGMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.faq-list__collaps {
+  display: none;
+}
+
+.faq-list__btn {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.33em;
+  letter-spacing: -0.025em;
+  display: block;
+  margin-top: 0.5rem;
+  color: #0ABEB9;
+}
+
 .why-us__body {
   margin-bottom: 6.4rem;
   display: -webkit-box;
@@ -7353,6 +7415,15 @@ figure {
     font-size: 28px;
   }
 
+  .faq-list__title:before {
+    right: -1rem;
+  }
+
+  .faq-list__btn {
+    color: #0ABEB9 !important;
+    opacity: 1 !important;
+  }
+
   .why-us__body {
     margin-bottom: 24px;
   }
@@ -8418,6 +8489,33 @@ figure {
   .stock-card__btn.btn {
     min-height: 42px;
     min-width: 137px;
+  }
+
+  .faq-list > li.text-is-show .faq-list__title {
+    margin-bottom: 16px;
+  }
+
+  .faq-list > li.text-is-show .faq-list__btn {
+    margin-top: 16px;
+  }
+
+  .faq-list > li .box {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .faq-list__title {
+    padding-right: 30px;
+  }
+
+  .faq-list__title:before {
+    right: 0;
+  }
+
+  .faq-list__btn {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
   }
 
   .why-us__body {

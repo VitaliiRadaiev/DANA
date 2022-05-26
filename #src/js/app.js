@@ -27,10 +27,10 @@ class App {
 		this.setFontSize();
 		this.initTooltip();
 		this.filterInit();
+		this.componentsScriptsBeforeLoad();
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
-
 
 			this.setPaddingTopHeaderSize();
 			this.slidersInit();
@@ -343,6 +343,10 @@ class App {
 				footer.classList.add('pt-0-mob');
 			}
 		}
+	}
+
+	componentsScriptsBeforeLoad() {
+		@@include('../common/faq-list/faq-list.js');
 	}
 }
 

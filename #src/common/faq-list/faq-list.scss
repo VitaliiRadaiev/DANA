@@ -1,0 +1,99 @@
+.faq-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    & > li {
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &.text-collapsed {
+        }
+
+        &.text-is-show {
+            & .faq-list__title {
+                margin-bottom: 3.2rem;
+
+                @media (max-width: $md3+px) {
+                    margin-bottom: 16px;
+                }
+
+                &::before {
+                    transform: scale(1, -1);
+                }
+            }
+
+            & .faq-list__btn {
+                margin-top: 2.4rem;
+
+                @media (max-width: $md3+px) {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        & .box {
+            @media (max-width: $md3+px) {
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+    &__title {
+        color: $secondColor;
+        margin-bottom: 1.6rem;
+        transition: all 0.15s ease-in-out;
+        position: relative;
+        cursor: pointer;
+
+        @media (max-width: $md3+px) {
+            padding-right: 30px;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0.3rem;
+            right: -6rem;
+            height: 2.4rem;
+            width: 2.4rem;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzIDZMOCAxMUwzIDYiIHN0cm9rZT0iIzJGMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.15s ease-in-out;
+
+            @media (max-width: $md2+px) {
+                right: -1rem;
+            }
+
+            @media (max-width: $md3+px) {
+                right: 0;
+            }
+        }
+    }
+
+    &__collaps {
+        display: none;
+    }
+
+    &__btn {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.33em;
+        letter-spacing: -0.025em;
+        display: block;
+        margin-top: 0.5rem;
+        color: $textColorSecondary;
+
+        @media (max-width: $md2+px) {
+            color: $textColorSecondary !important;
+            opacity: 1 !important;
+        }
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 16px;
+        }
+    }
+}
