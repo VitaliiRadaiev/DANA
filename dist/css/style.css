@@ -2994,6 +2994,8 @@ figure {
 
 .header--is-scroll {
   background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(47, 47, 47, 0.2);
+          box-shadow: 0px 0px 20px rgba(47, 47, 47, 0.2);
 }
 
 .header__row-1 {
@@ -5518,6 +5520,10 @@ figure {
   overflow: hidden;
 }
 
+.gallery__title:not(.mb-3) {
+  margin-bottom: 4rem;
+}
+
 .gallery .swiper-slide {
   width: auto;
   padding-right: 1.6rem;
@@ -5954,6 +5960,247 @@ figure {
   display: block;
   margin-top: 0.5rem;
   color: #0ABEB9;
+}
+
+.portfolio-card__col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48.9%;
+          flex: 0 0 48.9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.portfolio-card__col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-card__img {
+  height: 0;
+  background-color: #fff;
+  border-radius: 4rem;
+  overflow: hidden;
+  padding-bottom: 54.49%;
+  width: 100%;
+}
+
+.portfolio-card__review {
+  margin: -5.6rem 8rem 0 8rem;
+  width: 100%;
+  max-width: 49.5rem;
+  background-color: #0ABEB9;
+  border-radius: 2.4rem;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.4rem;
+}
+
+.portfolio-card__review-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding-top: 1.3rem;
+  margin-right: 2.4rem;
+}
+
+.portfolio-card__review-icon svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.portfolio-card__review-text {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.22em;
+  letter-spacing: -0.025em;
+}
+
+.portfolio-card__name {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.06em;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio-card__name span {
+  color: #0ABEB9;
+}
+
+.portfolio-card__services {
+  margin-bottom: 1.6rem;
+}
+
+.portfolio-card__services a {
+  font-size: 1.8rem;
+  line-height: 1.33em;
+  letter-spacing: -0.025em;
+  color: #0ABEB9;
+  text-decoration: underline;
+}
+
+.portfolio-card__services a:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.portfolio-card__description {
+  font-size: 2rem;
+  line-height: 1.4em;
+  letter-spacing: -0.025em;
+  margin-bottom: 3.2rem;
+}
+
+.portfolio-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-card__buttons a {
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.portfolio-card__buttons a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.portfolio-card__team-label {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.56em;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio-card__team-list {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -2.4rem;
+}
+
+.portfolio-card__team-list > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  height: 8.8rem;
+  width: 8.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+.portfolio-card__team-list > li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.portfolio-card__team-list > li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-block {
+  height: 100%;
+  width: 100%;
+}
+
+.video-block__video-wrap {
+  position: relative;
+  min-height: 31.7rem;
+  margin: 0 auto;
+}
+
+.video-block__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-block__controll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video-block__controll--play {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkiIGhlaWdodD0iMTE0IiB2aWV3Qm94PSIwIDAgOTkgMTE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOTguNzMzNCA1Ny4xNTE1TDAuNjMyOTY3IDExMy44NjhMMC42MzI5NzIgMC40MzUzODJMOTguNzMzNCA1Ny4xNTE1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+}
+
+.video-block__controll--pause {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODQiIGhlaWdodD0iMTE0IiB2aWV3Qm94PSIwIDAgODQgMTE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTE0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSI2NCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjExNCIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+}
+
+.video-wrap {
+  height: 0;
+  padding-bottom: 48.26%;
+  background-color: #fff;
+  border-radius: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .why-us__body {
@@ -6548,6 +6795,69 @@ figure {
   height: auto;
 }
 
+.portfolio__list {
+  padding-top: 0.8rem;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.portfolio__list > li:not(:last-child) {
+  margin-bottom: 8.8rem;
+}
+
+.patient-history__row:not(:last-child) {
+  margin-bottom: 5.6rem;
+}
+
+.patient-history__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 33rem;
+  grid-template-columns: 1fr 33rem;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2.4rem;
+}
+
+.patient-history__grid-item .box {
+  height: 100%;
+}
+
+.patient-history__grid-item--content {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
+.patient-history__top-text {
+  color: #6B6B6B;
+  margin-bottom: 3.2rem;
+}
+
+.patient-history__rating .rating {
+  font-size: 2.4rem;
+  color: #0ABEB9;
+}
+
+.patient-history__rating:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.patient-history__rating .patient-history__label {
+  display: inline-block;
+}
+
+.patient-history__label {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.18em;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.8rem;
+}
+
+.patient-history__grid-item--team .patient-history__label {
+  margin-bottom: 1.6rem;
+}
+
 @media (min-width: 576px) {
   .w-sm-auto {
     width: auto !important;
@@ -6671,6 +6981,10 @@ figure {
 
   .board__img-mob {
     display: none;
+  }
+
+  .gallery--big .gallery__img {
+    width: 28.6rem;
   }
 
   .why-us__bottom .btn {
@@ -6997,6 +7311,42 @@ figure {
     opacity: 0.7;
   }
 
+  .portfolio-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .portfolio-card__col-2 {
+    padding-left: 13rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding-top: 6.4rem;
+  }
+
+  .portfolio-card--revers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .portfolio-card--revers .portfolio-card__col-2 {
+    padding-left: 0;
+    padding-right: 1.3rem;
+  }
+
+  .portfolio-card--revers .portfolio-card__description {
+    max-width: 67.4rem;
+  }
+
+  .video-block__controll:hover {
+    -webkit-transform: translate(-50%, -50%) scale(1.05);
+        -ms-transform: translate(-50%, -50%) scale(1.05);
+            transform: translate(-50%, -50%) scale(1.05);
+  }
+
   .why-us__img-1 {
     padding-bottom: 82.88%;
   }
@@ -7056,6 +7406,14 @@ figure {
 
   .team-detail-head {
     padding-top: 6.4rem;
+  }
+
+  .patient-history__grid-item--rating .box {
+    padding: 2.4rem;
+  }
+
+  .patient-history__grid-item--team .box {
+    padding: 2.4rem;
   }
 }
 
@@ -7476,6 +7834,16 @@ figure {
     opacity: 1 !important;
   }
 
+  .portfolio-card__col-1 {
+    margin-bottom: 32px;
+  }
+
+  .portfolio-card__buttons a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - 12px);
+            flex: 0 1 calc(50% - 12px);
+  }
+
   .why-us__body {
     margin-bottom: 24px;
   }
@@ -7594,6 +7962,22 @@ figure {
   .team-detail-head__img {
     width: calc(100% - 32px);
     height: 100%;
+  }
+
+  .patient-history__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .patient-history__grid-item--rating {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -8484,6 +8868,16 @@ figure {
     padding: 0 20px;
   }
 
+  .gallery__title:not(.mb-3) {
+    margin-bottom: 16px;
+  }
+
+  .gallery h3.gallery__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   .gallery .swiper-slide {
     padding-right: 1.8rem;
   }
@@ -8568,6 +8962,106 @@ figure {
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
+  }
+
+  .portfolio-card__col-1 {
+    margin-bottom: 24px;
+  }
+
+  .portfolio-card__img {
+    padding-bottom: 62.5%;
+    border-radius: 16px;
+  }
+
+  .portfolio-card__review {
+    margin: -32px 16px 0;
+    border-radius: 16px;
+    padding: 16px 12px;
+    max-width: none;
+    width: calc(100% - 32px);
+  }
+
+  .portfolio-card__review-icon {
+    padding-top: 8px;
+    margin-right: 8px;
+  }
+
+  .portfolio-card__review-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .portfolio-card__review-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .portfolio-card__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .portfolio-card__services {
+    margin-bottom: 12px;
+  }
+
+  .portfolio-card__services a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .portfolio-card__services a:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .portfolio-card__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .portfolio-card__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .portfolio-card__buttons a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .portfolio-card__buttons a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-card__team {
+    margin-bottom: 24px;
+  }
+
+  .portfolio-card__team-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .video-block__controll {
+    width: 77px;
+    height: 77px;
+  }
+
+  .video-wrap {
+    border-radius: 24px;
+    padding-bottom: 61.72%;
   }
 
   .why-us__body {
@@ -8793,6 +9287,59 @@ figure {
     max-height: none;
     max-width: none;
   }
+
+  .portfolio__list > li:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  .patient-history__row:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .patient-history__grid-item--content .box {
+    padding: 24px 12px;
+  }
+
+  .patient-history__grid-item--content .with-margin > li {
+    margin-bottom: 0 !important;
+  }
+
+  .patient-history__grid-item--content .buttons-group {
+    margin-bottom: 6px;
+  }
+
+  .patient-history__top-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .patient-history__grid-item--rating .box {
+    padding: 16px;
+  }
+
+  .patient-history__rating .rating {
+    font-size: 16px;
+  }
+
+  .patient-history__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .patient-history__grid-item--team .box {
+    background: transparent;
+    padding: 0;
+  }
+
+  .patient-history__grid-item--team .patient-history__label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -8820,6 +9367,10 @@ figure {
 
   .form__submit {
     margin-top: 11px;
+  }
+
+  .video-block__video-wrap {
+    min-height: 190px;
   }
 }
 

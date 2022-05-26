@@ -102,4 +102,11 @@
     <path d="M1.7998 18.5234L10.3239 9.99934L1.7998 1.47523" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </symbol>
 
+    <symbol id="review" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.1851 28.9599L7.05435 33.273C6.87214 33.4262 6.64998 33.5242 6.414 33.5554C6.17801 33.5866 5.93802 33.5498 5.72224 33.4493C5.50646 33.3488 5.32386 33.1888 5.19591 32.9881C5.06797 32.7873 5 32.5542 5 32.3162V7.5C5 7.16848 5.1317 6.85054 5.36612 6.61612C5.60054 6.3817 5.91848 6.25 6.25 6.25H33.75C34.0815 6.25 34.3995 6.3817 34.6339 6.61612C34.8683 6.85054 35 7.16848 35 7.5V27.5C35 27.8315 34.8683 28.1495 34.6339 28.3839C34.3995 28.6183 34.0815 28.75 33.75 28.75H12.7611L12.1851 28.9599Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 15H25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 20H25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+
 </svg>

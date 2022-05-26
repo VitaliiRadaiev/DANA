@@ -1,0 +1,134 @@
+.patient-history {
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 5.6rem;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 33rem;
+        grid-template-rows: auto 1fr;
+        gap: 2.4rem;
+
+        @media (max-width: $md2+px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__grid-item {
+        & .box {
+            height: 100%;
+        }
+    }
+
+    &__grid-item--content {
+        grid-row: span 2;
+
+        & .box {
+            @media (max-width: $md3+px) {
+                padding: 24px 12px;
+            }
+        }
+
+        & .with-margin > li {
+            @media (max-width: $md3+px) {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        & .buttons-group {
+            @media (max-width: $md3+px) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    &__top-text {
+        color: $textColorThird;
+        margin-bottom: 3.2rem;
+
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__grid-item--rating {
+        @media (max-width: $md2+px) {
+            order: -1;
+        }
+        & .box {
+            @media (min-width: 992px) {
+                padding: 2.4rem;
+            }
+
+            @media (max-width: $md3+px) {
+                padding: 16px;
+            }
+        }
+    }
+
+    &__rating {
+        & .rating {
+            font-size: 2.4rem;
+            color: $secondColor;
+
+            @media (max-width: $md3+px) {
+                font-size: 16px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        & .patient-history__label {
+            display: inline-block;
+        }
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.18em;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.8rem;
+
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__grid-item--team {
+        & .box {
+            @media (min-width: 992px) {
+                padding: 2.4rem;
+            }
+
+            @media (max-width: $md3+px) {
+                background: transparent;
+                padding: 0;
+            }
+        }
+
+        & .patient-history__label {
+            margin-bottom: 1.6rem;
+
+            @media (max-width: $md3+px) {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

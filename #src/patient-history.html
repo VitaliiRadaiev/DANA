@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Главная</a>', '<a href="#">Портфолио</a>', 'История Марии']
+        })
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title">История Марии</h2>
+            </div>
+        </div>
+
+        <div class="patient-history padding-wrap pt-0">
+            <div class="container-md">
+                <div class="patient-history__row">
+                    <div class="video-wrap">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BlOXiHTjIlk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="patient-history__row">
+                    <div class="patient-history__grid">
+                        <div class="patient-history__grid-item patient-history__grid-item--content">
+                            <div class="box" data-tabs>
+                                <div class="patient-history__top-text text">
+                                    Светлане требовалось комплексное лечение, в том числе хирургическое, для
+                                    корректировки размера зубов.
+                                </div>
+                                <ul class="buttons-group">
+                                    <li>
+                                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Жалобы
+                                            пациента</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn--second " data-tab-trigger="1">Что было сделано</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn--second " data-tab-trigger="2">Результат работы</a>
+                                    </li>
+                                </ul>
+                                <div data-tab-content="0">
+                                    <div class="text-content last">
+                                        <ul class="with-margin">
+                                            <li>Стертые и измененные в размерах зубы.</li>
+                                            <li>Отсутствие некоторых зубов.</li>
+                                            <li>Неправильный прикус.</li>
+                                            <li>Наличие кариеса и старых, изношенных пломб.</li>
+                                            <li>Желтый цвет зубов.</li>
+                                            <li>Сколы.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div data-tab-content="1">
+                                    <div class="text-content last">
+                                        <ul class="with-margin">
+                                            <li>Стертые и измененные в размерах зубы.</li>
+                                            <li>Отсутствие некоторых зубов.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div data-tab-content="2">
+                                    <div class="text-content last">
+                                        <ul class="with-margin">
+                                            <li>Стертые и измененные в размерах зубы.</li>
+                                            <li>Отсутствие некоторых зубов.</li>
+                                            <li>Неправильный прикус.</li>
+                                            <li>Наличие кариеса и старых, изношенных пломб.</li>
+                                            <li>Желтый цвет зубов.</li>
+                                            <li>Сколы.</li>
+                                            <li>Неправильный прикус.</li>
+                                            <li>Наличие кариеса и старых, изношенных пломб.</li>
+                                            <li>Желтый цвет зубов.</li>
+                                            <li>Сколы.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-history__grid-item patient-history__grid-item--rating">
+                            <div class="box">
+                                <div class="patient-history__rating">
+                                    <div class="patient-history__label" data-tooltip="До 500 000 ₽">Стоимость лечения:
+                                    </div>
+                                    <div>
+                                        @@include('common/rating/_rating.html', {
+                                        "value": "3"
+                                        })
+                                    </div>
+                                </div>
+                                <div class="patient-history__rating">
+                                    <div class="patient-history__label " data-tooltip="До 200 000 ₽">Длительность
+                                        лечения:</div>
+                                    <div>
+                                        @@include('common/rating/_rating.html', {
+                                        "value": "2"
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-history__grid-item patient-history__grid-item--team">
+                            <div class="box">
+                                <div class="patient-history__label">Команда:</div>
+                                <ul class="portfolio-card__team-list">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/photo/portfolio-team-img-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/photo/portfolio-team-img-2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/photo/portfolio-team-img-3.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-wrap">
+            <div class="container-md">
+                <section class="gallery gallery--big">
+                    <h3 class="gallery__title">
+                        Фотогалерея
+                    </h3>
+                    <div class="gallery__carousel" data-slider="gallery">
+                        <div class="gallery__btn prev">
+                            <svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+                        </div>
+                        <div class="gallery__btn next">
+                            <svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img ibg">
+                                        <picture>
+                                            <source srcset="img/photo/gallery-img.jpg" media="(min-width: 768px)" >
+                                            <img src="img/photo/gallery-img-mob.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        @@include('common/cta/_cta.html', {
+        "img": "img/photo/cta-img-4.png"
+        })
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+.portfolio-card {
+    @media (min-width: 992px) {
+        display: flex;
+    }
+
+    &__col-1 {
+        flex: 0 0 48.9%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 32px;
+        }
+        @media (max-width: $md3+px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__col-2 {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            padding-left: 13rem;
+            flex: 1 1 auto;
+            padding-top: 6.4rem;
+        }
+    }
+
+    &__img {
+        height: 0;
+        background-color: #fff;
+        border-radius: 4rem;
+        overflow: hidden;
+        padding-bottom: 54.49%;
+        width: 100%;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 62.5%;
+            border-radius: 16px;
+        }
+    }
+
+    &__review {
+        margin: -5.6rem 8rem 0 8rem;
+        width: 100%;
+        max-width: 49.5rem;
+        background-color: $secondColor;
+        border-radius: 2.4rem;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        padding: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin: -32px 16px 0;
+            border-radius: 16px;
+            padding: 16px 12px;
+            max-width: none;
+            width: calc(100% - 32px);
+        }
+    }
+
+    &__review-icon {
+        flex: 0 0 auto;
+        padding-top: 1.3rem;
+        margin-right: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            padding-top: 8px;
+            margin-right: 8px;
+        }
+
+        & svg {
+            width: 4rem;
+            height: 4rem;
+
+            @media (max-width: $md3+px) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    &__review-text {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.22em;
+        letter-spacing: -0.025em;
+
+        @media (max-width: $md3+px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__head {
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 1.06em;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.8rem;
+
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        & span {
+            color: $secondColor;
+        }
+    }
+
+    &__services {
+        margin-bottom: 1.6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 12px;
+        }
+        & a {
+            font-size: 1.8rem;
+            line-height: 1.33em;
+            letter-spacing: -0.025em;
+            color: $secondColor;
+            text-decoration: underline;
+
+            @media (max-width: $md3+px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.6rem;
+
+                @media (max-width: $md3+px) {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    &__description {
+        font-size: 2rem;
+        line-height: 1.4em;
+        letter-spacing: -0.025em;
+        margin-bottom: 3.2rem;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            order: 1;
+        }
+        & a {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+            margin-bottom: 2.4rem;
+
+            @media (max-width: $md2+px) {
+                flex: 0 1 calc(50% - 12px);
+            }
+
+            @media (max-width: $md3+px) {
+                flex: 0 1 100%;
+            }
+            &:not(:last-child) {
+                margin-right: 2.4rem;
+
+                @media (max-width: $md3+px) {
+                    margin-right: 0;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    &__team {
+        @media (max-width: $md3+px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__team-label {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.56em;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.8rem;
+
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__team-list {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -2.4rem;
+
+        & > li {
+            flex: 0 0 auto;
+            position: relative;
+            height: 8.8rem;
+            width: 8.8rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 2.4rem;
+
+            &:not(:last-child) {
+                margin-right: 2.4rem;
+            }
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &--revers {
+        @media (min-width: 992px) {
+            flex-direction: row-reverse;
+
+            & .portfolio-card__col-2 {
+                padding-left: 0;
+                padding-right: 1.3rem;
+            }
+
+            & .portfolio-card__description {
+                max-width: 67.4rem;
+            }
+        }
+    }
+}

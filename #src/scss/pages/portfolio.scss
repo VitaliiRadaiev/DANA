@@ -1,0 +1,17 @@
+.portfolio {
+    &__list {
+        padding-top: 0.8rem;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        & > li {
+            &:not(:last-child) {
+                margin-bottom: 8.8rem;
+
+                @media (max-width: $md3+px) {
+                    margin-bottom: 64px;
+                }
+            }
+        }
+    }
+}
