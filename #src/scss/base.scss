@@ -55,7 +55,7 @@ body {
 		line-height: 1.5em;
 	}
 
-	& a:not(.not-hover):hover {
+	& a:not(.not-hover):not(.mobile):hover {
 		opacity: 0.7;
 	}
 }
@@ -91,12 +91,13 @@ a:visited {
 }
 a {
 	transition: all 0.15s ease-in-out;
-	color: inherit;
+	color: currentColor;
 }
+
 a:hover {
-	text-decoration: none;
-	color: inherit;
+	color: currentColor;
 }
+
 ul li {
 	list-style: none;
 }
