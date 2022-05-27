@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Home</a>', 'Контакты']
+        })
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title ">Контакты</h2>
+            </div>
+        </div>
+
+        <div class="contact padding-wrap pt-0">
+            <div class="container-md">
+                <div class="contact__row">
+                    <div class="contact__top-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="contact__row" data-tabs>
+                    <ul class="buttons-group">
+                        <li>
+                            <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Филиал Большая
+                                Пороховская</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn--second" data-tab-trigger="1">Филиал ул. Адмирала Коновалова</a>
+                        </li>
+                    </ul>
+                    <div data-tab-content="0">
+                        <div class="box box--big-padding">
+                            <h3 class="contact__title">
+                                Клиника на Большой Пороховской
+                            </h3>
+                            <ul class="contact__list">
+                                <li class="contact__list-address">
+                                    <div class="contact__list-title">Адрес:</div>
+                                    <div class="contact__list-text">
+                                        195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                                        <div class="small">Красногвардейский район</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">Телефон:</div>
+                                    <div class="contact__list-text">
+                                        <a href="#">+7 (812) 612-44-54</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">График работы:</div>
+                                    <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">
+                                        Мессенджеры:
+                                    </div>
+                                    <div class="contact__list-text">
+                                        +7 (921) 918-2-918
+                                        <div class="simple-social">
+                                            <a href="#">WhatsApp</a> / <a href="#">Telegram</a> / <a href="#">Viber</a>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                                </li>
+                            </ul>
+                            <ul class="contact__routes">
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Ладожская:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Новочеркасская:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Площадь Ленина:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-tab-content="1">
+                        <div class="box box--big-padding">
+                            <h3 class="contact__title">
+                                Клиника на Большой Пороховской
+                            </h3>
+                            <ul class="contact__list">
+                                <li class="contact__list-address">
+                                    <div class="contact__list-title">Адрес:</div>
+                                    <div class="contact__list-text">
+                                        195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                                        <div class="small">Красногвардейский район</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">Телефон:</div>
+                                    <div class="contact__list-text">
+                                        <a href="#">+7 (812) 612-44-54</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">График работы:</div>
+                                    <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">
+                                        Мессенджеры:
+                                    </div>
+                                    <div class="contact__list-text">
+                                        +7 (921) 918-2-918
+                                        <div class="simple-social">
+                                            <a href="#">WhatsApp</a> / <a href="#">Telegram</a> / <a href="#">Viber</a>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                                </li>
+                            </ul>
+                            <ul class="contact__routes">
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Ладожская:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Новочеркасская:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="route-card">
+                                        <div class="route-card__title">Маршрут от метро Площадь Ленина:</div>
+                                        <div class="route-card__body">
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>1.</span> 
+                                                        <div>
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>2.</span> 
+                                                        <div>
+                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <ul class="route-card__steps">
+                                                    <li>
+                                                        <span>3.</span> 
+                                                        <div>
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>4.</span> 
+                                                        <div>
+                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="route-card__item">
+                                                <div class="route-card__map">
+                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                                                        style="position:relative;"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

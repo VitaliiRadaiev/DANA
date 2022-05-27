@@ -7090,6 +7090,152 @@ figure {
   text-decoration: underline;
 }
 
+.contact__row:not(:last-child) {
+  margin-bottom: 5.6rem;
+}
+
+.contact__top-map {
+  height: 0;
+  position: relative;
+  border-radius: 4rem;
+  overflow: hidden;
+  padding-bottom: 47.17%;
+  background-color: #fff;
+}
+
+.contact__top-map iframe {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact__title {
+  margin-bottom: 4rem;
+}
+
+.contact__list {
+  padding-left: 0;
+  margin-bottom: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__list > li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.contact__list .btn {
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+}
+
+.contact__list-address {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
+
+.contact__list-title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.42em;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.4rem;
+}
+
+.contact__list-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+.contact__list-text .simple-social {
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+.contact__routes {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.contact__routes > li:not(:last-child) {
+  margin-bottom: 10.4rem;
+}
+
+.route-card__title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.42em;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.6rem;
+}
+
+.route-card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4rem 4.8rem;
+}
+
+.route-card__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 2.4rem);
+          flex: 0 1 calc(50% - 2.4rem);
+}
+
+.route-card__steps {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.route-card__steps > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  line-height: 1.6em;
+  letter-spacing: -0.025em;
+}
+
+.route-card__steps > li span {
+  min-width: 2.4rem;
+}
+
+.route-card__steps > li a {
+  color: #0ABEB9 !important;
+  text-decoration: underline;
+}
+
+.route-card__map {
+  background: #EBE8E4;
+  position: relative;
+  height: 0;
+  border-radius: 4rem;
+  overflow: hidden;
+  padding-bottom: 91.94%;
+}
+
+.route-card__map iframe {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 @media (min-width: 576px) {
   .w-sm-auto {
     width: auto !important;
@@ -7248,6 +7394,10 @@ figure {
 
   .info-block .buttons-group {
     margin-bottom: 0.8rem;
+  }
+
+  .contact__list > li:not(:last-child) {
+    margin-right: 2.4rem;
   }
 }
 
@@ -8254,6 +8404,15 @@ figure {
 
   .articles__authors-list > li:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .route-card__body {
+    display: block;
+  }
+
+  .route-card__item:nth-child(3) {
+    margin-bottom: 4rem;
+    margin-top: 3.2rem;
   }
 }
 
@@ -9704,6 +9863,89 @@ figure {
   .articles__authors-list a {
     font-size: 16px;
     line-height: 21px;
+  }
+
+  .contact__row:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .contact__top-map {
+    padding-bottom: 100%;
+    border-radius: 16px;
+  }
+
+  .contact__title {
+    margin-bottom: 24px;
+  }
+
+  .contact__list {
+    display: block;
+  }
+
+  .contact__list .btn {
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contact__list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .contact__list-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact__list-text .small {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.025em;
+  }
+
+  .contact__routes > li:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  .contact .buttons-group {
+    margin-bottom: 12px;
+  }
+
+  .contact .box {
+    margin: 0 -16px;
+    padding: 40px 16px;
+    border-radius: 0;
+  }
+
+  .route-card__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .route-card__item:nth-child(3) {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .route-card__steps > li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .route-card__steps > li span {
+    min-width: 20px;
+  }
+
+  .route-card__map {
+    border-radius: 16px;
+    padding-bottom: 85.36%;
   }
 }
 
