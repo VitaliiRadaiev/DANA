@@ -46,4 +46,19 @@
             margin-bottom: 4.2rem;
         }
     }
+
+    &--not-hide-side-column {
+        @media (max-width: $md2+px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        & .main-grid__side-column {
+            @media (max-width: $md2+px) {
+                display: block;
+                margin-left: 0;
+                margin-bottom: 40px;
+            }
+        }
+    }
 }

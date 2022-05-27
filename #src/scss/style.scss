@@ -66,6 +66,8 @@
 @import "../common/faq-list/faq-list";
 @import "../common/portfolio-card/portfolio-card";
 @import "../common/video/video";
+@import "../common/article-card/article-card";
+@import "../common/pagination/pagination";
 // ==== // COMMON BLOCKS =====================================================
 
 // ==== PAGES =====================================================
@@ -79,5 +81,6 @@
 @import "pages/faq";
 @import "pages/portfolio";
 @import "pages/patient-history";
+@import "pages/articles";
 // ==== AND PAGES =====================================================
 
