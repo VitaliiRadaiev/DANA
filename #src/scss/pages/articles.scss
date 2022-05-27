@@ -5,6 +5,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 4.8rem;
+        margin-bottom: 5.6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 42px;
+        }
 
         & > li {
             flex: 0 1 calc(50% - 2.4rem);

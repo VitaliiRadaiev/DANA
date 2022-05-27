@@ -1,12 +1,8 @@
 .pagination {
-    padding-top: 5.6rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media (max-width: $md3+px) {
-        padding-top: 42px;
-    }
 
     &__arrow {
         height: 3.2rem;

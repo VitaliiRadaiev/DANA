@@ -105,21 +105,7 @@
     }
 
     &--second {
-        @media (min-width: 992px) {
-            &:hover {
-                & .info-card__icon {
-                    background: rgba(46, 46, 46, 0.3);
-                }
 
-                & .info-card__inner {
-                    color: #fff;
-
-                    &::before {
-                        opacity: 0;
-                    }
-                }
-            }
-        }
 
         & .info-card__icon {
             transition: all 0.15s ease-in-out;
@@ -190,6 +176,24 @@
             @media (max-width: $md2+px) {
                 font-size: 14px;
                 line-height: 20px;
+            }
+        }
+    }
+}
+
+a.info-card--second {
+    @media (min-width: 992px) {
+        &:hover {
+            & .info-card__icon {
+                background: rgba(46, 46, 46, 0.3);
+            }
+
+            & .info-card__inner {
+                color: #fff;
+
+                &::before {
+                    opacity: 0;
+                }
             }
         }
     }

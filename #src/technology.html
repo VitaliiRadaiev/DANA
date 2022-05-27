@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+@@include('_head.html',{
+"title": "DANA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    @@include('common/header/_header.html',{
+    "mod": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/breadcrumbs/_breadcrumbs.html', {
+        "arr": ['<a href="#">Главная</a>', 'Технологии']
+        })
+
+        <div class="container-md">
+            <div class="head head--top">
+                <h2 class="head__title ">Технологии</h2>
+            </div>
+        </div>
+
+        <section class="technology-list padding-wrap pt-0" data-tabs>
+            <div class="container-md">
+                <ul class="technology__list">
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-1.jpg",
+                            "title": "Лечение под микроскопом",
+                            "text": "Лечение зубов под микроскопом – современная методика, которая получает все большее распространение благодаря возможности детального осмотра поверхности зуба"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-2.jpg",
+                            "title": "Навигационная система для имплантации",
+                            "text": "Даже самые сложные клинические случаи можно решить с помощью такого планирования и навигации. Все протоколы лечения прорабатываются виртуально"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-3.jpg",
+                            "title": "3D моделирование улыбки",
+                            "text": "Процедура моделирования улыбки предоставит пациенту возможность увидеть заранее результат реставрации зубного ряда в зоне улыбки еще до выполнения процесса."
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-4.jpg",
+                            "title": "Аппарат Vector",
+                            "text": "«Vector-терапия» – одна из самых эффективных технологий лечения пародонтита и снятие поддесневых отложений и профилактики заболевания пародонта"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-5.jpg",
+                            "title": "Комплексная гигиена для инструментов",
+                            "text": "Все задачи по очистке, стерилизации, смазке и сушке инструментов этот аппарат выполняет в полностью автоматическом режиме"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-5.jpg",
+                            "title": "Комплексная гигиена для инструментов",
+                            "text": "Все задачи по очистке, стерилизации, смазке и сушке инструментов этот аппарат выполняет в полностью автоматическом режиме"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-1.jpg",
+                            "title": "Лечение под микроскопом",
+                            "text": "Лечение зубов под микроскопом – современная методика, которая получает все большее распространение благодаря возможности детального осмотра поверхности зуба"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-2.jpg",
+                            "title": "Навигационная система для имплантации",
+                            "text": "Даже самые сложные клинические случаи можно решить с помощью такого планирования и навигации. Все протоколы лечения прорабатываются виртуально"
+                        })
+                    </li>
+                    <li>
+                        @@include('common/post-card/_post-card.html', {
+                            "img": "img/photo/technology-img-3.jpg",
+                            "title": "3D моделирование улыбки",
+                            "text": "Процедура моделирования улыбки предоставит пациенту возможность увидеть заранее результат реставрации зубного ряда в зоне улыбки еще до выполнения процесса."
+                        })
+                    </li>
+                </ul>
+                @@include('common/pagination/_pagination.html')
+            </div>
+        </section>
+
+        @@include('common/cta/_cta.html', {
+            "img": "img/photo/cta-img-4.png"
+            })
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

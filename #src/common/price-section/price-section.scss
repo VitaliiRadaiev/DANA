@@ -1,5 +1,11 @@
 .price-section {
     &__title {
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 15px;
+            font-weight: 500 !important;
+        }
     }
 
     &__list {
@@ -71,6 +77,12 @@
             }
             &:first-child {
                 margin-right: 2.4rem;
+            }
+
+            &:last-child {
+                & strong {
+                    white-space: nowrap;
+                }
             }
         }
 
