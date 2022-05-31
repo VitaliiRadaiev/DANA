@@ -1411,6 +1411,7 @@ window.popup = {
                 list.style.maxHeight = list.scrollHeight + margin + 'px';
                 list.style.overflow = 'visible';
                 btn.style.display = 'none';
+                testimonialsSection.classList.add('testimonials--showed')
 
                 setTimeout(() => {
                     list.removeAttribute('style');

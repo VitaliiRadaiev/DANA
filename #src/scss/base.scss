@@ -631,6 +631,17 @@ figure {
 		margin-bottom: 0;
 	}
 }
+
+.button-wrap {
+
+	&--bottom {
+		padding-top: 4rem;
+
+		@media (max-width: $md3+px) {
+			padding-top: 24px;
+		}
+	}
+}
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
 	&--md {

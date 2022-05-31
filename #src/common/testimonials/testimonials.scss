@@ -8,6 +8,12 @@
     &__mob-btn {
 
     }
+
+    &--showed {
+        & .testimonials__bottom {
+            display: none;
+        }
+    }
 }
 
 .testimonials-list {

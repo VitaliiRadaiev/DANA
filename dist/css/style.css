@@ -2782,6 +2782,10 @@ figure {
   margin-bottom: 0;
 }
 
+.button-wrap--bottom {
+  padding-top: 4rem;
+}
+
 .text-content--md {
   font-size: 1.8rem;
   line-height: 1.33em;
@@ -3917,7 +3921,7 @@ figure {
 
 .services-card__text {
   margin-bottom: 1.6rem;
-  max-width: 41.1rem;
+  max-width: 58%;
   line-height: 1.4em;
 }
 
@@ -3926,7 +3930,8 @@ figure {
   font-size: 1.8rem;
   line-height: 1.56em;
   letter-spacing: -0.02em;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
+  margin-top: auto;
 }
 
 .services-card__price strong {
@@ -3946,7 +3951,6 @@ figure {
 }
 
 .services-card__btn {
-  margin-top: auto;
   min-width: 27rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -4754,9 +4758,9 @@ figure {
 
 .cta__col-1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 57.2%;
-          flex: 0 0 57.2%;
-  padding: 8rem 4rem 8rem 11.5rem;
+      -ms-flex: 0 0 55.2%;
+          flex: 0 0 55.2%;
+  padding: 8rem 2rem 8rem 11.5rem;
 }
 
 .cta__col-2 {
@@ -4772,6 +4776,7 @@ figure {
   left: 0;
   bottom: 0;
   width: 100%;
+  max-width: 65.3rem;
   height: calc(100% + 9.8rem);
   padding: 0 1rem;
   display: -webkit-box;
@@ -4811,7 +4816,7 @@ figure {
 }
 
 .cta__form-items:last-child {
-  margin-bottom: -2.4rem;
+  margin-bottom: -2.4rem !important;
 }
 
 .cta__form-item {
@@ -5036,6 +5041,10 @@ figure {
 
 .testimonials__bottom {
   padding-top: 16px;
+}
+
+.testimonials--showed .testimonials__bottom {
+  display: none;
 }
 
 .testimonials-list {
@@ -8137,7 +8146,7 @@ figure {
 
   .cta__col-1 {
     padding: 0;
-    margin-bottom: 53px;
+    margin-bottom: 80px;
   }
 
   .cta__col-2 {
@@ -8149,6 +8158,7 @@ figure {
 
   .cta__img {
     height: calc(100% + 4rem);
+    max-width: none;
   }
 
   .cta__form-items:last-child {
@@ -8160,6 +8170,10 @@ figure {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-bottom: 24px;
+  }
+
+  .team-card__img {
+    height: calc(100% - 20px);
   }
 
   .testimonials-list > li {
@@ -8535,6 +8549,10 @@ figure {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .button-wrap--bottom {
+    padding-top: 24px;
   }
 
   .text-content--sm {

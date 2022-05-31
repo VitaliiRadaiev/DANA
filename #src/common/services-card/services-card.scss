@@ -64,7 +64,7 @@
 
     &__text {
         margin-bottom: 1.6rem;
-        max-width: 41.1rem;
+        max-width: 58%;
         line-height: 1.4em;
 
         @media (max-width: $md3+px) {
@@ -81,8 +81,8 @@
         font-size: 1.8rem;
         line-height: 1.56em;
         letter-spacing: -0.02em;
-        margin-bottom: 1.2rem;
-
+        margin-bottom: 1.6rem;
+        margin-top: auto;
         @media (max-width: $md3+px) {
             margin-bottom: 16px;
         }
@@ -105,7 +105,6 @@
     }
 
     &__btn {
-        margin-top: auto;
         min-width: 27rem;
         align-self: flex-start;
 
