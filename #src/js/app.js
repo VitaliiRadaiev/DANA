@@ -278,7 +278,7 @@ class App {
 						}
 
 						window.scrollTo({
-							top: top,
+							top: top - 30,
 							behavior: 'smooth',
 						})
 					} else {

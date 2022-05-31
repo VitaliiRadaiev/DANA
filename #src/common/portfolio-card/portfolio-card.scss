@@ -37,7 +37,6 @@
         width: 100%;
 
         @media (max-width: $md3+px) {
-            padding-bottom: 62.5%;
             border-radius: 16px;
         }
     }
@@ -54,8 +53,12 @@
         display: flex;
         padding: 2.4rem;
 
+        @media (max-width: $md2+px) {
+            margin-top: -5.6rem !important;
+        }
+
         @media (max-width: $md3+px) {
-            margin: -32px 16px 0;
+            margin: -32px 16px 0 !important;
             border-radius: 16px;
             padding: 16px 12px;
             max-width: none;

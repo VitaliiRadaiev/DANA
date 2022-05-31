@@ -6,16 +6,42 @@
     &__row {
         &:not(:last-child) {
             margin-bottom: 4.8rem;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 32px;
+            }
         }
     }
 }
 
 .team-detail-head {
-    display: flex;
-    position: relative;
-
     @media (min-width: 992px) {
         padding-top: 6.4rem;
+    }
+
+    &__inner {
+        position: relative;
+        padding: 24px 12px;
+    
+        @media (min-width: 992px) {
+            padding-top: 6.4rem;
+            padding: 9.6rem 0rem 9.6rem 11.5rem;
+        }
+
+        @media (min-width: 768px) {
+            padding: 48px 0 48px 32px;
+        }
+    
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 47%;
+            grid-template-areas: 'title img' 'subtitle img' 'tags img' 'adress img' 'btn img';
+        }
+
+        & > *:not(.team-detail-head__bg) {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     &__bg {
@@ -23,15 +49,12 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: calc(100% - 6.4rem);
+        height: 100%;
         z-index: 1;
         background: linear-gradient(88.34deg, #d1eae8 1.09%, #c9f1e8 99.02%);
         border-radius: 4rem;
         overflow: hidden;
 
-        @media (max-width: $md2+px) {
-            height: 100%;
-        }
 
         @media (max-width: $md3+px) {
             border-radius: 16px;
@@ -53,44 +76,18 @@
         }
     }
 
-    &__col-1 {
-        position: relative;
-        z-index: 2;
-        flex: 1 1 auto;
-        padding: 9.6rem 11.5rem;
 
-        @media (max-width: $md2+px) {
-            padding: 48px 32px;
-        }
-
-        @media (max-width: $md3+px) {
-            padding: 24px 12px;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    &__col-2 {
-        position: relative;
-        z-index: 2;
-        flex: 0 0 42.31%;
-        min-height: 53.8rem;
-
-        @media (max-width: $md2+px) {
-            flex: 0 0 34%;
-            min-height: auto;
-        }
-
-        @media (max-width: $md3+px) {
-            display: none;
-        }
-    }
 
     &__title {
         font-weight: 500;
         font-size: 4.8rem;
         line-height: 1.04em;
         margin-bottom: 1.6rem;
+
+        @media (min-width: 768px) {
+            order: 1;
+            grid-area: title;
+        }
 
         @media (max-width: $md2+px) {
             font-size: 28px;
@@ -107,6 +104,11 @@
         max-width: 31.2rem;
         margin-bottom: 2.4rem;
 
+        @media (min-width: 768px) {
+            order: 2;
+            grid-area: subtitle;
+        }
+
         @media (max-width: $md2+px) {
             font-size: 18px;
             line-height: 26px;
@@ -120,10 +122,14 @@
     &__tags {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 768px) {
+            order: 3;
+            grid-area: tags;
+        }
 
         @media (max-width: $md3+px) {
-            order: 1;
             margin-bottom: -8px;
         }
     }
@@ -168,7 +174,12 @@
         font-size: 2rem;
         line-height: 1em;
         letter-spacing: -0.025em;
-        margin-bottom: 3.2rem;
+        margin-bottom: 2.9rem;
+
+        @media (min-width: 768px) {
+            order: 4;
+            grid-area: adress;
+        }
 
         @media (max-width: $md2+px) {
             font-weight: 600;
@@ -194,26 +205,40 @@
 
     &__btn {
         min-width: 27.2rem;
-
+        @media (min-width: 768px) {
+            order: 5;
+            grid-area: btn;
+            justify-self: flex-start;
+        }
         @media (max-width: $md3+px) {
             min-width: auto;
             margin-bottom: 12px;
         }
     }
 
+    &__img-wrap {
+        @media (min-width: 768px) {
+            order: 6;
+            grid-area: img;
+        }
+    }
+
     &__img {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -9.6rem;
         width: calc(100% - 11.5rem);
-        height: calc(100% + 6.4rem);
+        height: calc(100% + 25.6rem);
         display: flex;
         align-items: flex-end;
         justify-content: center;
 
+
+
         @media (max-width: $md2+px) {
             width: calc(100% - 32px);
-            height: 100%;
+            height: calc(100% + 96px);
+            bottom: -48px;
         }
 
         @media (max-width: $md3+px) {
@@ -223,6 +248,7 @@
             width: 100%;
             max-width: 280px;
             margin: 0 auto;
+            bottom: 0;
         }
 
         & img {

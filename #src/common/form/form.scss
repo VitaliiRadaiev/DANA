@@ -93,6 +93,13 @@
 
     &::placeholder {
         color: #9d9d9d;
+        transition: all .15s ease-in-out;
+    }
+
+    &:focus {
+        &::placeholder {
+            opacity: 0;
+        }
     }
 }
 .textarea {
@@ -120,6 +127,13 @@
 
     &::placeholder {
         color: #9d9d9d;
+        transition: all .15s ease-in-out;
+    }
+
+    &:focus {
+        &::placeholder {
+            opacity: 0;
+        }
     }
 }
 
@@ -127,7 +141,7 @@
     display: flex;
     position: relative;
     cursor: pointer;
-
+    user-select: none;
     & input {
         position: absolute;
         z-index: -1;

@@ -116,6 +116,23 @@
 
         & .social {
             justify-content: flex-end;
+
+            & > li {
+                @media (max-width: $md3+px) {
+                    width: 32px;
+
+                    &:not(:last-child) {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            & svg {
+                @media (max-width: $md3+px) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
         }
     }
 

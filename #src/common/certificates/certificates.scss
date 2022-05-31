@@ -1,7 +1,6 @@
 .certificates {
-    @media (max-width: $md3+px) {
-        overflow: hidden;
-    }
+    overflow: hidden;
+
     &__title {
         text-align: center;
         margin-bottom: 6rem;

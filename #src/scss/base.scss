@@ -478,7 +478,7 @@ figure {
 		margin-bottom: 1.6rem;
 
 		@media (max-width: $md2+px) {
-			margin-bottom: 12px;
+			margin-bottom: 8px;
 		}
 	}
 
@@ -490,7 +490,7 @@ figure {
 			margin-bottom: 12px;
 		}
 
-		&:not(.text-lg-center) {
+		&:not(.text-lg-center):not(.text-center) {
 			max-width: 101.9rem;
 		}
 	}
@@ -583,7 +583,14 @@ figure {
 		}
 	}
 }
-
+.links-group-wrap {
+	&.box {
+		@media (max-width: $md3+px) {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+}
 .links-group {
 	padding-left: 0;
 	display: flex;
