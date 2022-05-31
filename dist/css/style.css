@@ -5222,6 +5222,10 @@ figure {
   margin-left: 1.6rem;
 }
 
+.main-grid__side-column .cta__form-items {
+  margin-bottom: 0 !important;
+}
+
 .main-grid__content-row:not(:last-child) {
   margin-bottom: 4.8rem;
 }
@@ -5238,6 +5242,47 @@ figure {
 
 .main-grid__sticky-box > *:not(:last-child) {
   margin-bottom: 4.2rem;
+}
+
+.main-grid--col-3 .main-grid__side-column {
+  margin-left: 0;
+}
+
+.main-grid--col-3 .main-grid__side-column:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20.62%;
+          flex: 0 0 20.62%;
+}
+
+.main-grid--col-3 .main-grid__side-column:first-child .services-side-panel {
+  padding-left: 0;
+}
+
+.main-grid--col-3 .main-grid__side-column:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20.43%;
+          flex: 0 0 20.43%;
+}
+
+.main-grid--col-3 .main-grid__side-column .cta-card {
+  padding: 2.4rem 1.6rem;
+  border-radius: 2.4rem;
+}
+
+.main-grid--col-3 .main-grid__side-column .cta-card__title {
+  font-size: 2.6rem;
+  line-height: 1.08em;
+}
+
+.main-grid--col-3 .main-grid__side-column .cta-card__text {
+  font-size: 1.6rem;
+  line-height: 1.38em;
+  margin-bottom: 2.4rem;
+}
+
+.main-grid--col-3 .main-grid__content {
+  margin-right: 1.6rem;
+  margin-left: 1.6rem;
 }
 
 .info-cards-list .swiper {
@@ -6422,7 +6467,15 @@ figure {
           justify-content: center;
 }
 
-.pagination__arrow {
+.pagination__arrow:first-child {
+  margin-right: 2.4rem !important;
+}
+
+.pagination__arrow:last-child {
+  margin-left: 0.8rem !important;
+}
+
+.pagination__arrow a {
   height: 3.2rem;
   width: 3.2rem;
   border-radius: 50%;
@@ -6447,17 +6500,20 @@ figure {
           flex: 0 0 auto;
 }
 
-.pagination__arrow svg {
+.pagination__arrow a svg {
   height: 1em;
   width: auto;
 }
 
 .pagination__list {
-  margin: 0 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .pagination__list > li {
@@ -6470,7 +6526,7 @@ figure {
   margin-right: 1.6rem;
 }
 
-.pagination__item.active {
+.pagination__list > li .current {
   color: #0ABEB9;
   text-decoration: underline;
 }
@@ -7902,7 +7958,7 @@ figure {
             transform: translate(-50%, -50%) scale(1.05);
   }
 
-  .pagination__arrow:hover {
+  .pagination__arrow a:hover {
     opacity: 0.7;
   }
 
@@ -9752,7 +9808,7 @@ figure {
     margin-bottom: 4px;
   }
 
-  .pagination__arrow {
+  .pagination__arrow a {
     width: 24px;
     height: 24px;
     font-size: 14px;
