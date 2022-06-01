@@ -30,7 +30,7 @@
             margin-bottom: 4.8rem;
 
             @media (max-width: $md3+px) {
-                margin-bottom: 36px;
+                margin-bottom: 24px;
             }
         }
 
@@ -49,6 +49,14 @@
         }
     }
 
+    &__title {
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 16px;
+        }
+    }
+
     &--not-hide-side-column {
         @media (max-width: $md2+px) {
             display: flex;
@@ -64,41 +72,55 @@
         }
     }
 
-    &--col-3 {
-        & .main-grid__side-column {
-            margin-left: 0;
-            &:first-child {
-                flex: 0 0 20.62%;
-
-                & .services-side-panel {
-                    padding-left: 0;
-                }
+    &--not-hide-side-column-left {
+        & .main-grid__side-column:first-child {
+            @media (max-width: $md2+px) {
+                display: block;
+                margin-left: 0;
+                margin-bottom: 24px;
             }
-
-            &:last-child {
-                flex: 0 0 20.43%;
-            }
-
-            & .cta-card {
-                padding: 2.4rem 1.6rem;
-                border-radius: 2.4rem;
-            }
-
-            & .cta-card__title {
-                font-size: 2.6rem;
-                line-height: 1.08em;
-            }
-
-            & .cta-card__text {
-                font-size: 1.6rem;
-                line-height: 1.38em;
-                margin-bottom: 2.4rem;
-            }
-        }
-
-        & .main-grid__content {
-            margin-right: 1.6rem;
-            margin-left: 1.6rem;
         }
     }
+
+    &--col-3 {
+        @media (min-width: 992px) {
+            & .main-grid__side-column {
+                margin-left: 0;
+                &:first-child {
+                    flex: 0 0 20.62%;
+    
+                    & .services-side-panel {
+                        padding-left: 0;
+                    }
+                }
+    
+                &:last-child {
+                    flex: 0 0 20.43%;
+                }
+    
+                & .cta-card {
+                    padding: 2.4rem 1.6rem;
+                    border-radius: 2.4rem;
+                }
+    
+                & .cta-card__title {
+                    font-size: 2.6rem;
+                    line-height: 1.08em;
+                }
+    
+                & .cta-card__text {
+                    font-size: 1.6rem;
+                    line-height: 1.38em;
+                    margin-bottom: 2.4rem;
+                }
+            }
+    
+            & .main-grid__content {
+                margin-right: 1.6rem;
+                margin-left: 1.6rem;
+            }
+        }
+
+    }
+
 }

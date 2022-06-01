@@ -635,7 +635,7 @@ figure {
 
 .last {
 	& > *:last-child {
-		margin-bottom: 0;
+		margin-bottom: 0 !important; 
 	}
 }
 
@@ -766,6 +766,25 @@ figure {
 					margin-bottom: 1.6rem;
 				}
 			}
+		}
+	}
+
+	& .quote {
+		width: 100%;
+		max-width: 67.4rem;
+		margin: 4.8rem auto;
+
+		@media (max-width: $md3+px) {
+			margin: 24px auto;
+		}
+
+		& + h1,
+		& + h2,
+		& + h3,
+		& + h4,
+		& + h5,
+		& + h6 {
+			margin-top: 0rem !important;
 		}
 	}
 

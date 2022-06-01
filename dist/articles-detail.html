@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+<head>
+	<meta charset="UTF-8">
+	<title>DANA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    <header class="header " data-header data-popup="add-right-padding">
+    <div class="header__row-1">
+        <div class="header__row-1-body container">
+            <div class="header__address">
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    ул. Адмирала Коновалова, 2-4
+                </div>
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    Большая Пороховская, 47
+                </div>
+            </div>
+            <div class="header__social">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#telegram"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#whatsapp"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#viber"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="header__mob-phone">+7 (812) 612-44-54</a>
+        </div>
+    </div>
+    <div class="header__row-2"></div>
+    <div class="header__row-2-body container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="menu-overlay" data-action="close-menu"></div>
+            <nav class="header__menu menu" data-menu>
+                <div class="menu__top-line"></div>
+                <div class="menu__head">
+                    <div class="menu__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                    <div class="menu__close-btn" data-action="close-menu">
+                        <img src="img/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">О клинике</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Технологии</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Статьи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__bottom">
+                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                </div>
+            </nav>
+            <div class="header__phone">
+                <a href="#">+7 (812) 612-44-54</a>
+                <p>Ежедневно: 9:00 — 21:00</p>
+            </div>
+            <a href="#" class="header__btn btn btn--dark">
+                Записаться на консультацию
+            </a>
+            <div class="header__burger" data-action="open-menu">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+    </div>
+</header>
+
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page home-page" data-padding-top-header-size>
+        <div class="container-md d-none d-md-block pt-4">
+    <ul class="breadcrumbs">
+         <li><a href="#">Главная</a></li>
+             <li><a href="#">Статьи</a></li>
+             <li><a href="#">Лечение зубов</a></li>
+             <li>Удаление зуба или восстановление: обзор популярных методов от стоматологов клиники DANA</li>
+            
+    </ul>
+</div>
+
+        <div class="article padding-wrap">
+            <div class="container-md">
+                <div class="article-hero box">
+                    <div class="article-hero__inner">
+                        <h2 class="article-hero__title">
+                            Удаление зуба или восстановление: обзор популярных методов от стоматологов клиники DANA
+                        </h2>
+                        <div class="article-hero__meta">
+                            <div class="article-hero__meta-col-1">
+                                <ul class="article-card__meta-list" data-da=".article-hero__bottom-mob,767.98,last">
+                                    <li>
+                                        <svg>
+                                            <use xlink:href="img/icons/sprites.svg#calendar-simple"></use>
+                                        </svg>
+                                        Дата публикации: 15.01.2022
+                                    </li>
+                                    <li>
+                                        <svg>
+                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                        </svg>
+                                        Время чтения: 10 минут
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-hero__meta-col-2">
+                                <div class="article-hero__reviews" data-da=".article-hero__bottom-mob,767.98,last">
+                                    <div class="article-card__reviews">
+                                        <svg>
+                                            <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                        </svg>
+                                        1540
+                                    </div>
+                                </div>
+                                <div class="article-hero__rating">
+                                    <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                    <div class="article-hero__rating-info">
+                                        Рейтинг: 4.5/5 - 2 голосов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-hero__img ibg">
+                            <div class="article-hero__rubric">
+                                <a href="#">Технологии</a>
+                            </div>
+                            <img src="img/photo/article-hero-img.jpg" alt="">
+                        </div>
+                        <div class="article-hero__bottom-mob"></div>
+                    </div>
+                </div>
+                <div class="main-grid main-grid--col-3 main-grid--not-hide-side-column-left">
+                    <div class="main-grid__side-column ">
+                        <div class="main-grid__sticky-box">
+                            <div class="box checked-by">
+                                <div class="checked-by__title">Статья проверена доктором:</div>
+                                <div class="checked-by__body">
+                                    <div class="checked-by__photo ibg">
+                                        <img src="img/photo/portfolio-team-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="checked-by__inner">
+                                        <div class="checked-by__name">Саид Гаджиевич Шахаев</div>
+                                        <div class="checked-by__position">
+                                            Врач стоматолог-ортопед, хирург-имплантолог, терапевт
+                                        </div>
+                                        <a href="#" class="checked-by__link">Подробнее о враче</a>
+                                        <a href="#" class="checked-by__link">
+                                            Все статьи, проверенные доктором
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-grid__content">
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <div class="text-content last">
+                                    <h3>Содержание</h3>
+                                    <ul class="content-list">
+                                        <li>
+                                            <a href="anchor1">1. Вместо вступления: когда без удаления не обойтись и почему?</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor2">2. Восстановление 1 зуба и всей челюсти: основные методы</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor3">3. Восстановление утраченного зуба и устранение адентии съемными протезами</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor4">4. Восстановление зуба при наличии соседних элементов: коротко о съемных протезах</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor5">5. Восстановление зубов имплантами: особенности и этапы</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor6">6. Быстрое восстановление челюсти и зубов методом моментальной нагрузки: что это?</a>
+                                        </li>
+                                        <li>
+                                            <a href="anchor7">7. Нестандартные случаи восстановления зубов и подведение итогов</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <div class="text-content last">
+                                    <p>
+                                        Заболевания зубочелюстной системы не всегда удается устранить «меньшей кровью», несмотря на профессионализм и старания стоматолога предоставить пациенту комплексное лечение. Порой восстановление разрушенного зуба оказывается невозможным или нецелесообразным. В подобных ситуациях проводится удаление элемента, а затем – протезирование или имплантация. О том, какие техники восстановления зубов применимы в современной стоматологии, какой вариант лучше в конкретном случае, а также о «подводных камнях» рассказывают специалисты клиники Dana.
+                                    </p>
+                                    <h3>Вместо вступления: когда без удаления не обойтись и почему?</h3>
+                                    <p>
+                                        Откладывать в долгий ящик поход к стоматологу – заведомо плохая идея, но очень популярное явление. Притупление боли с помощью лекарств и народных методов работает поначалу, но результаты могут оказаться печальными: придется удалять зуб. В отдельных случаях подобная манипуляция требуется при травмах, полученных в спорте.
+                                    </p>
+                                    <div class="quote">
+                                        Статистические данные: потребность в протезировании испытывают не только пожилые люди, но и пациенты в возрасте 30 – 35 лет.
+                                    </div>
+                                    <p>
+                                        Поскольку при отсутствии своевременной диагностики и лечения естественное восстановление зубов невозможно, единственным способом нормализовать эстетику и функционал костных структур становится протезирование (имплантация).
+                                    </p>
+
+                                    <h3>Восстановление 1 зуба и всей челюсти: основные методы</h3>
+                                    <p>
+                                        В современной стоматологии применяется 3 основных способа: съемное или постоянное протезирование, имплантация. Конкретный метод подбирается с учетом специфики клинической картины, пожеланий и финансовых возможностей пациента. Если требуется восстановление части зуба, нет нужды в имплантации, но при полной потере элемента без этой процедуры не обойтись. Каждый из вариантов имеет свои особенности, преимущества и недостатки, поэтому давайте разбираться вместе: что, как и зачем.
+                                    </p>
+                                    <div class="quote">
+                                        Отсутствие своевременного лечения чревато атрофией костной ткани. Потребуется как минимум установка протезов с искусственной десной или костная пластика с последующей имплантацией.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <div class="text-content last">
+                                    <h3>
+                                        Восстановление зубов имплантами: особенности и этапы
+                                    </h3>
+                                    <figure>
+                                        <img src="img/photo/article-img-1.jpg" alt="">
+                                    </figure>
+                                    <p>
+                                        Поскольку съемные и постоянные конструкции не защищают ткани от атрофии, часто единственным методом, позволяющим провести качественное восстановление жевательных зубов и других элементов в ряду, становится имплантация. Процедура подразумевает установку искусственного корня прямо в кость, а затем уже протезирование. Штифт из титана вживляется в ткани, наступает процесс реабилитации. 
+                                    </p>
+
+                                    <h5>
+                                        Классическая имплантация зубов: этапы и реабилитация
+                                    </h5>
+                                    <p>
+                                        Уже более полувека стоматологи по всему миру возвращают пациентам здоровую улыбку и функционал зубного ряда посредством традиционной методики замены корневой и коронковой части искусственными аналогами. Этот способ оптимален в тех случаях, когда требуется восстановление удаленных зубов (одного или нескольких). Посредством классической имплантации получается добиться максимально эстетичного результата.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="board">
+    <div class="board__col-1">
+        <div class="board__text">
+            <h3>Совет врача</h3>
+            <p>Хотите предотвратить заболевания зубов?</p>
+            <p>Во-первых, тщательно их чистите 2 раза в день и не забывайте полоскать рот по окончании каждого приёма пищи.</p>
+            <p>Во-вторых, минимум раз в полгода приходите к стоматологу на профилактический осмотр и проведение профессиональной гигиены полости рта.</p>
+        </div>
+        <div class="board__bottom">
+            <div class="board__img-mob ibg">
+                <img src="img/photo/board-img-mob.png" alt="">
+            </div>
+            <div class="board__bottom-text-wrap">
+                <div class="board__name">Саид Гаджиевич Шахаев</div>
+                <div class="board__position">Врач стоматолог-ортопед, хирург-имплантолог, терапевт</div>
+                <a href="#" class="board__btn btn btn--dark">Подробнее о враче</a>
+            </div>
+        </div>
+    </div>
+    <div class="board__col-2">
+        <div class="board__img">
+            <img src="img/photo/board-img.png" alt="">
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <div class="text-content last">
+                                    <h5>
+                                        Лечение проводится в несколько этапов:
+                                    </h5>
+                                    <p>
+                                        <strong>1. Диагностический.</strong> После осмотра ротовой полости врач дает направление на сдачу анализов (общий анализ крови и мочи – в обязательном порядке) и рентгенологические исследования (КТ, ортопантомограмма – панорамный снимок обеих челюстей), в ходе которых выявляются показания/противопоказания к процедуре. По результатам составляется план лечения, выбираются модели имплантов. При необходимости проводится удаление зуба с восстановлением костной ткани.
+                                    </p>
+                                    <p>
+                                        <strong>2. Подготовительный.</strong> Когда противопоказания к операции исключены и согласован план лечения, врач назначает восстановление костной ткани (при диагностированной атрофии). После подсадки костного блока в среднем проходит около 4 – 6 месяцев до момента, когда можно будет установить имплант.
+                                    </p>
+                                    <p>
+                                        <strong>3. Хирургический.</strong> Перед операцией пациенту вводится анестезия. Время процедуры (при установке одного импланта) – около 30 минут. Когда обезболивающее подействует, стоматолог делает надрез десны скальпелем или лазером, отслаивает надкостницу. В твердых тканях создается отверстие под будущий искусственный корень, формируется ложе. Затем туда помещается штифт, его покрывают костной стружкой.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box share">
+                                <div class="share__label">Поделиться статьей:</div>
+                                <ul class="share__list">
+                                    <li>
+                                        <a href="#">
+                                            <svg><use xlink:href="img/icons/sprites.svg#vk-color"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg><use xlink:href="img/icons/sprites.svg#fb-color"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg><use xlink:href="img/icons/sprites.svg#ok-color"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg><use xlink:href="img/icons/sprites.svg#tw-color"></use></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-grid__content-row">
+                            <div class="box box--has-text">
+                                <h3 class="main-grid__title">Комментарии</h3>
+                                <div class="comments">
+                                    <div class="comments__items">
+                                        <div class="comments__item">
+                                            <div class="comment">
+                                                <div class="comment__row-1">
+                                                    <div class="comment__photo ibg" style="background-color: #DA6868;">
+                                                        g
+                                                    </div>
+                                                    <div>
+                                                        <div class="comment__name">Georgy P.</div>
+                                                        <div class="comment__time">22 ч назад</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment__row-2">
+                                                    <div class="comment__text">Спасибо большое за интересную статью. </div>
+                                                </div>
+                                                <div class="comment__row-3">
+                                                    <a href="#" class="comment__reply">Ответить</a>
+                                                    <div class="comment__like">1 лайк</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments__item">
+                                            <div class="comment">
+                                                <div class="comment__row-1">
+                                                    <div class="comment__photo ibg" style="background-color: #68DA7B;">
+                                                        a
+                                                    </div>
+                                                    <div>
+                                                        <div class="comment__name">Александр Матвеев</div>
+                                                        <div class="comment__time">1 д незад</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment__row-2">
+                                                    <div class="comment__text">
+                                                        Во-первых, тщательно их чистите 2 раза в день и не забывайте полоскать рот по окончании каждого приёма пищи.
+                                                    </div>
+                                                </div>
+                                                <div class="comment__row-3">
+                                                    <a href="#" class="comment__reply">Ответить</a>
+                                                    <div class="comment__like">2 лайка</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="/">
+                                        <div class="comments__form" data-comment-form>
+                                            <textarea class="textarea" placeholder="Напишите комментарий"></textarea>
+                                            <button type="submit" class="comments__form-btn disabled">
+                                                <svg><use xlink:href="img/icons/sprites.svg#arrow-up"></use></svg>
+                                                Отправить
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-grid__side-column">
+                        <div class="main-grid__sticky-box">
+                            <div class="cta-card">
+    <h3 class="cta-card__title">Запишитесь к врачу</h3>
+    <div class="cta-card__text">
+        Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы в ближайшее время свяжемся с вами.
+    </div>
+    <form action="">
+        <div class="cta__form-items mb-0">
+            <div class="cta__form-item" data-mask="+7(999)-999-99-99">
+                <input type="text" class="input" placeholder="Ваш номер телефона">
+            </div>
+            <div class="cta__form-item">
+                <button class="btn btn--dark">Заказать звонок</button>
+            </div>
+            <div class="cta__form-item">
+                <label class="checkbox-radio">
+                    <input type="checkbox">
+                    <div class="checkbox-radio__square"></div>
+                    <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                            href="#">согласие</a> на обработку персональных данных</div>
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-wrap">
+            <div class="container-md">
+                <div class="head">
+                    <h2 class="head__title text-lg-center">Статьи по теме:</h2>
+                </div>
+                <ul class="articles__list articles__list--col-3">
+                    <li>
+                        <div class="article-card" data-article-card>
+                            <div class="article-card__img ibg">
+                                <a href="#">
+                                    <img src="img/photo/article-card-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article-card__titel">
+                                <a href="#">
+                                    Зубные импланты: виды и цены, что выбрать?
+                                </a>
+                            </div>
+                            <div class="article-card__rubric">
+                                <a href="#">Советы врачей</a>
+                            </div>
+                            <div class="article-card__meta">
+                                <div class="article-card__mera-row-1">
+                                    <div class="article-card__reviews">
+                                        <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
+                                        320
+                                    </div>
+                                    <div class="article-card__checked-by">
+                                        Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                    </div>
+                                </div>
+                                <div class="article-card__mera-row-2">
+                                    <ul class="article-card__meta-list">
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
+                                            Дата публикации: 21.02.2022
+                                        </li>
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
+                                            Время чтения: 5 минут
+                                        </li>
+                                    </ul>
+                                    <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <a href="#" class="article-card__read-more">Читать</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-card" data-article-card>
+                            <div class="article-card__img ibg">
+                                <a href="#">
+                                    <img src="img/photo/article-card-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article-card__titel">
+                                <a href="#">
+                                    Удаление зуба или восстановление: обзор популярных методов от стоматологов клиники DANA
+                                </a>
+                            </div>
+                            <div class="article-card__rubric">
+                                <a href="#">Технологии</a>
+                            </div>
+                            <div class="article-card__meta">
+                                <div class="article-card__mera-row-1">
+                                    <div class="article-card__reviews">
+                                        <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
+                                        1540
+                                    </div>
+                                    <div class="article-card__checked-by">
+                                        Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                    </div>
+                                </div>
+                                <div class="article-card__mera-row-2">
+                                    <ul class="article-card__meta-list">
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
+                                            Дата публикации: 15.01.2022
+                                        </li>
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
+                                            Время чтения: 10 минут
+                                        </li>
+                                    </ul>
+                                    <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <a href="#" class="article-card__read-more">Читать</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-card" data-article-card>
+                            <div class="article-card__img ibg">
+                                <a href="#">
+                                    <img src="img/photo/article-card-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article-card__titel">
+                                <a href="#">
+                                    Зубные импланты: виды и цены, что выбрать?
+                                </a>
+                            </div>
+                            <div class="article-card__rubric">
+                                <a href="#">Советы врачей</a>
+                            </div>
+                            <div class="article-card__meta">
+                                <div class="article-card__mera-row-1">
+                                    <div class="article-card__reviews">
+                                        <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
+                                        320
+                                    </div>
+                                    <div class="article-card__checked-by">
+                                        Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                    </div>
+                                </div>
+                                <div class="article-card__mera-row-2">
+                                    <ul class="article-card__meta-list">
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
+                                            Дата публикации: 21.02.2022
+                                        </li>
+                                        <li>
+                                            <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
+                                            Время чтения: 5 минут
+                                        </li>
+                                    </ul>
+                                    <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <a href="#" class="article-card__read-more">Читать</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer padding-wrap pb-0">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__col footer__col-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col-2">
+                    <div class="footer__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Лечение зубов под микроскопом</a>
+                        </li>
+                        <li>
+                            <a href="#">Лечение десен</a>
+                        </li>
+                        <li>
+                            <a href="#">Удаление зубов</a>
+                        </li>
+                        <li>
+                            <a href="#">Протезирование</a>
+                        </li>
+                        <li>
+                            <a href="#">All-on-4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Имплантация</a>
+                        </li>
+                        <li>
+                            <a href="#">Исправление прикуса</a>
+                        </li>
+                        <li>
+                            <a href="#">Эстетическая стоматология</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультация и диагностика</a>
+                        </li>
+                        <li>
+                            <a href="#">Оборудование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col-5">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта сайта</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользовательское Соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social" data-da=".footer__col-1,767.98,last">
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#insta"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#fb"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy">
+                        Стоматологические центры DANA
+                        2022 © Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

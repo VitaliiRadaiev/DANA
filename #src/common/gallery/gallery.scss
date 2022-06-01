@@ -90,11 +90,12 @@
     }
 
     &__img {
-        width: 29.7rem;
-        height: 28rem;
+        width: 32.25rem;
+        height: 31.6rem;
 
         @media (max-width: $md3+px) {
             width: 227px;
+            height: 28rem;
         }
     }
 
@@ -102,6 +103,7 @@
         & .gallery__img {
             @media (min-width: 768px) {
                 width: 28.6rem;
+                height: 28rem;
             }
         }
     }

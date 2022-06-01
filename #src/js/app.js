@@ -349,6 +349,7 @@ class App {
 		@@include('../common/faq-list/faq-list.js');
 		@@include('../common/portfolio-card/portfolio-card.js');
 		@@include('../common/article-card/article-card.js');
+		@@include('../common/comment-form/comment-form.js');
 	}
 }
 

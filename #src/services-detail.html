@@ -27,12 +27,7 @@
 
         <div class="padding-wrap pt-0">
             <div class="container-md">
-                <div class="main-grid main-grid--col-3">
-                    <div class="main-grid__side-column">
-                        <div class="main-grid__sticky-box">
-                            @@include('common/services-side-panel/_services-side-panel.html')
-                        </div>
-                    </div>
+                <div class="main-grid">
                     <div class="main-grid__content">
                         <div class="main-grid__content-row">
                             <div class="services-card services-card--big">
@@ -275,6 +270,7 @@
                     </div>
                     <div class="main-grid__side-column">
                         <div class="main-grid__sticky-box">
+                            @@include('common/services-side-panel/_services-side-panel.html')
                             @@include('common/cta-card/_cta-card.html', {
                                 "title": "Запишитесь к врачу"
                             })
