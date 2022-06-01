@@ -1221,6 +1221,7 @@ window.popup = {
 				const setFontSize = () => {
 					if(document.documentElement.clientWidth > 992) {
 						let value = 10 / 1903 * el.clientWidth;
+						if(value > 10) value = 10;
 						el.style.fontSize = value + 'px';
 					}
 				}

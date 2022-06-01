@@ -199,65 +199,73 @@ defer
             </div>
         </div>
 
-        <div class="articles padding-wrap pt-0">
+        <div class="articles padding-wrap pt-0" data-tabs>
             <div class="container-md">
                 <ul class="buttons-group">
                     <li>
-                        <a href="#" class="btn btn--second active">Все</a>
+                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Все</a>
                     </li>
                     <li>
-                        <a href="#" class="btn btn--second">Протезирование зубов</a>
+                        <a href="#" class="btn btn--second " data-tab-trigger="1">Протезирование зубов</a>
                     </li>
                     <li>
-                        <a href="#" class="btn btn--second">Имплантация</a>
+                        <a href="#" class="btn btn--second" data-tab-trigger="2">Имплантация</a>
                     </li>
                     <li>
-                        <a href="#" class="btn btn--second">Лечение зубов</a>
+                        <a href="#" class="btn btn--second" data-tab-trigger="3">Лечение зубов</a>
                     </li>
                     <li>
-                        <a href="#" class="btn btn--second">Эстетическая стоматология</a>
+                        <a href="#" class="btn btn--second" data-tab-trigger="4">Эстетическая стоматология</a>
                     </li>
                 </ul>
                 <div class="main-grid main-grid--not-hide-side-column">
                     <div class="main-grid__content">
-                        <ul class="articles__list">
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Зубные импланты: виды и цены, что выбрать?
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Советы врачей</a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                320
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
-                                            </div>
+                        <div data-tab-content="0">
+                            <ul class="articles__list">
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 21.02.2022
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 5 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -293,48 +301,56 @@ defer
         </div>
     </div>
 </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Удаление зуба или восстановление: обзор популярных методов от стоматологов клиники DANA
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Технологии</a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                1540
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Саид Шахаев</a>
                                             </div>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 15.01.2022
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 10 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -370,48 +386,55 @@ defer
         </div>
     </div>
 </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Зубные импланты: виды и цены, что выбрать?
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Советы врачей</a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                320
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
                                             </div>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 21.02.2022
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 5 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -447,48 +470,55 @@ defer
         </div>
     </div>
 </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-3.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Топ-7 способов исправления прикуса у взрослых
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Эстетическая стоматология </a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                2421
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Саид Шахаев</a>
                                             </div>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 24.12.2021
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 6 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Топ-7 способов исправления прикуса у взрослых
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Эстетическая стоматология </a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    2421
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 24.12.2021
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 6 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -524,48 +554,55 @@ defer
         </div>
     </div>
 </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Зубные импланты: виды и цены, что выбрать?
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Советы врачей</a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                320
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
                                             </div>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 21.02.2022
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 5 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -601,48 +638,56 @@ defer
         </div>
     </div>
 </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="article-card" data-article-card>
-                                    <div class="article-card__img ibg">
-                                        <a href="#">
-                                            <img src="img/photo/article-card-2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="article-card__titel">
-                                        <a href="#">
-                                            Удаление зуба или восстановление: обзор популярных методов от стоматологов клиники DANA
-                                        </a>
-                                    </div>
-                                    <div class="article-card__rubric">
-                                        <a href="#">Технологии</a>
-                                    </div>
-                                    <div class="article-card__meta">
-                                        <div class="article-card__mera-row-1">
-                                            <div class="article-card__reviews">
-                                                <svg><use xlink:href="img/icons/sprites.svg#open-eye"></use></svg>
-                                                1540
-                                            </div>
-                                            <div class="article-card__checked-by">
-                                                Статья проверена доктором: <a href="#">Саид Шахаев</a>
                                             </div>
                                         </div>
-                                        <div class="article-card__mera-row-2">
-                                            <ul class="article-card__meta-list">
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#calendar-simple"></use></svg>
-                                                    Дата публикации: 15.01.2022
-                                                </li>
-                                                <li>
-                                                    <svg><use xlink:href="img/icons/sprites.svg#clock-simple"></use></svg>
-                                                    Время чтения: 10 минут
-                                                </li>
-                                            </ul>
-                                            <div class="rating" data-rating="5">
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
     <div class="rating__stars rating__stars-1">
         <div class="rating__star">
             <span class="icon-star-full"></span>
@@ -678,13 +723,13 @@ defer
         </div>
     </div>
 </div>
+                                            </div>
                                         </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
                                     </div>
-                                    <a href="#" class="article-card__read-more">Читать</a>
-                                </div>
-                            </li>
-                        </ul>
-                        
+                                </li>
+                            </ul>
+                            
 <div class="pagination">
 	<ul class="pagination__list">
 		<li class="pagination__arrow">
@@ -714,6 +759,2083 @@ defer
 		</li>
 	</ul>
 </div>
+                        </div>
+                        <div data-tab-content="1">
+                            <ul class="articles__list">
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Топ-7 способов исправления прикуса у взрослых
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Эстетическая стоматология </a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    2421
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 24.12.2021
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 6 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+<div class="pagination">
+	<ul class="pagination__list">
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item current">1</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">2</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">3</a>
+		</li>
+		<li class="dots">
+			...
+		</li>
+		<li>
+			<a href="#" class="pagination__item">6</a>
+		</li>
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+			</a>
+		</li>
+	</ul>
+</div>
+                        </div>
+                        <div data-tab-content="2">
+                            <ul class="articles__list">
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Топ-7 способов исправления прикуса у взрослых
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Эстетическая стоматология </a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    2421
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 24.12.2021
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 6 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+<div class="pagination">
+	<ul class="pagination__list">
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item current">1</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">2</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">3</a>
+		</li>
+		<li class="dots">
+			...
+		</li>
+		<li>
+			<a href="#" class="pagination__item">6</a>
+		</li>
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+			</a>
+		</li>
+	</ul>
+</div>
+                        </div>
+                        <div data-tab-content="3">
+                            <ul class="articles__list">
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Топ-7 способов исправления прикуса у взрослых
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Эстетическая стоматология </a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    2421
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 24.12.2021
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 6 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+<div class="pagination">
+	<ul class="pagination__list">
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item current">1</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">2</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">3</a>
+		</li>
+		<li class="dots">
+			...
+		</li>
+		<li>
+			<a href="#" class="pagination__item">6</a>
+		</li>
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+			</a>
+		</li>
+	</ul>
+</div>
+                        </div>
+                        <div data-tab-content="4">
+                            <ul class="articles__list">
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Топ-7 способов исправления прикуса у взрослых
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Эстетическая стоматология </a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    2421
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 24.12.2021
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 6 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Зубные импланты: виды и цены, что выбрать?
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Советы врачей</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    320
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Нина Перельтшейн</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 21.02.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 5 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="article-card" data-article-card>
+                                        <div class="article-card__img ibg">
+                                            <a href="#">
+                                                <img src="img/photo/article-card-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="article-card__titel">
+                                            <a href="#">
+                                                Удаление зуба или восстановление: обзор популярных методов от
+                                                стоматологов клиники DANA
+                                            </a>
+                                        </div>
+                                        <div class="article-card__rubric">
+                                            <a href="#">Технологии</a>
+                                        </div>
+                                        <div class="article-card__meta">
+                                            <div class="article-card__mera-row-1">
+                                                <div class="article-card__reviews">
+                                                    <svg>
+                                                        <use xlink:href="img/icons/sprites.svg#open-eye"></use>
+                                                    </svg>
+                                                    1540
+                                                </div>
+                                                <div class="article-card__checked-by">
+                                                    Статья проверена доктором: <a href="#">Саид Шахаев</a>
+                                                </div>
+                                            </div>
+                                            <div class="article-card__mera-row-2">
+                                                <ul class="article-card__meta-list">
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#calendar-simple">
+                                                            </use>
+                                                        </svg>
+                                                        Дата публикации: 15.01.2022
+                                                    </li>
+                                                    <li>
+                                                        <svg>
+                                                            <use xlink:href="img/icons/sprites.svg#clock-simple"></use>
+                                                        </svg>
+                                                        Время чтения: 10 минут
+                                                    </li>
+                                                </ul>
+                                                <div class="rating" data-rating="5">
+    <div class="rating__stars rating__stars-1">
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-full"></span>
+        </div>
+    </div>
+    <div class="rating__stars rating__stars-2">
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+        <div class="rating__star">
+            <span class="icon-star-empty"></span>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="article-card__read-more">Читать</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+<div class="pagination">
+	<ul class="pagination__list">
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item current">1</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">2</a>
+		</li>
+		<li>
+			<a href="#" class="pagination__item">3</a>
+		</li>
+		<li class="dots">
+			...
+		</li>
+		<li>
+			<a href="#" class="pagination__item">6</a>
+		</li>
+		<li class="pagination__arrow">
+			<a href="#">
+				<svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+			</a>
+		</li>
+	</ul>
+</div>
+                        </div>
                     </div>
                     <div class="main-grid__side-column">
                         <div class="main-grid__sticky-box">
