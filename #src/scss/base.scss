@@ -548,6 +548,10 @@ figure {
 		font-size: 12px;
 		line-height: 16px;
 	}
+
+	&--gradient {
+		background: linear-gradient(98.67deg, #179B97 0.55%, #09CAC3 96.7%);
+	}
 }
 
 .box {
@@ -595,26 +599,11 @@ figure {
 	padding-left: 0;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: -2.4rem;
+	gap: 2.4rem 3.8rem;
+	margin-bottom: 0;
 
 	@media (max-width: $md3+px) {
-		margin-bottom: -16px;
-	}
-
-	& > li {
-		margin-bottom: 2.4rem;
-
-		@media (max-width: $md3+px) {
-			margin-bottom: 16px;
-		}
-
-		&:not(:last-child) {
-			margin-right: 4rem;
-
-			@media (max-width: $md3+px) {
-				margin-right: 16px;
-			}
-		}
+		gap: 16px;
 	}
 
 	& a {
@@ -739,6 +728,13 @@ figure {
 				&:not(:last-child) {
 					margin-bottom: 1.6rem;
 				}
+			}
+		}
+
+		&.without-dots {
+			padding-left: 0;
+			& > li {
+				list-style: none;
 			}
 		}
 	}

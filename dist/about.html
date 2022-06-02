@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en" data-set-font-size>
+<head>
+	<meta charset="UTF-8">
+	<title>DANA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+
+    <header class="header " data-header data-popup="add-right-padding">
+    <div class="header__row-1">
+        <div class="header__row-1-body container">
+            <div class="header__address">
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    ул. Адмирала Коновалова, 2-4
+                </div>
+                <div class="header__address-item">
+                    <div class="header__address-icon">
+                        <svg><use xlink:href="img/icons/sprites.svg#local"></use></svg>
+                    </div>
+                    Большая Пороховская, 47
+                </div>
+            </div>
+            <div class="header__social">
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#telegram"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#whatsapp"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg><use xlink:href="img/icons/sprites.svg#viber"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="header__mob-phone">+7 (812) 612-44-54</a>
+        </div>
+    </div>
+    <div class="header__row-2"></div>
+    <div class="header__row-2-body container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="menu-overlay" data-action="close-menu"></div>
+            <nav class="header__menu menu" data-menu>
+                <div class="menu__top-line"></div>
+                <div class="menu__head">
+                    <div class="menu__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                    <div class="menu__close-btn" data-action="close-menu">
+                        <img src="img/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">О клинике</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Технологии</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">Статьи</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__bottom">
+                    <a href="#" class="btn btn--gradient">Записаться в клинику</a>
+                </div>
+            </nav>
+            <div class="header__phone">
+                <a href="#">+7 (812) 612-44-54</a>
+                <p>Ежедневно: 9:00 — 21:00</p>
+            </div>
+            <a href="#" class="header__btn btn btn--dark">
+                Записаться на консультацию
+            </a>
+            <div class="header__burger" data-action="open-menu">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+    </div>
+</header>
+
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page" data-padding-top-header-size>
+        <div class="container-md d-none d-md-block pt-4">
+    <ul class="breadcrumbs">
+         <li><a href="#">Главная</a></li>
+             <li>О клинике</li>
+            
+    </ul>
+</div>
+
+        <div class="about-head padding-wrap">
+            <div class="container-md">
+                <div class="about-head__body">
+                    <div class="about-head__row-1">
+                        <h2 class="about-head__title">О клинике</h2>
+                        <div class="about-head__images">
+                            <div class="images-carousel swiper" data-slider="images-carousel">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="images-carousel__img ibg">
+                <img src="img/photo/carousel-img.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="images-carousel__img ibg">
+                <img src="img/photo/carousel-img.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="images-carousel__img ibg">
+                <img src="img/photo/carousel-img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="slider-buttons">
+        <div class="slider-button slider-button--color slider-button--prev hover">
+            <svg><use xlink:href="img/icons/sprites.svg#chevron-left"></use></svg>
+        </div>
+        <div class="slider-button slider-button--color slider-button--next hover">
+            <svg><use xlink:href="img/icons/sprites.svg#chevron-right"></use></svg>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="about-head__text text-content">
+                            <p>
+                                Клиника «Дана» имеет не очень долгую, но богатую историю. Главная задача, стоявшая перед
+                                нами – создать место с доступными ценами и высоким качеством обслуживания. Для наших
+                                специалистов работа – образ жизни, а не средство заработка.
+                            </p>
+                            <p>
+                                «Дана» оказывает современные стоматологические услуги, но основная цель для нас – ваше
+                                здоровье и здоровье ваших зубов. Мы рады предложить вам передовые методики лечения,
+                                специалистов с многолетним опытом работы и современное импортное оборудование.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-head__row-2">
+                        <div class="box">
+                            <ul class="links-group">
+                                <li>
+                                    <a href="#anchor1">Топ-7 фактов о клинике</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor2">Наши достижения</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor3">Наши партнеры</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor4">3D-тур по клинике</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor5">Информация для пациентов</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor6">Лицензии</a>
+                                </li>
+                                <li>
+                                    <a href="#anchor7">Юридическая информация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-wrap">
+            <div class="video-wrap video-wrap--sm rounded-0">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BlOXiHTjIlk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <div class="gallery-second padding-wrap" data-tabs>
+    <div class="container-md">
+        <div class="head">
+            <h2 class="head__title">Фотогалерея</h2>
+        </div>
+        <ul class="buttons-group">
+            <li>
+                <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Филиал Большая Пороховская</a>
+            </li>
+            <li>
+                <a href="#" class="btn btn--second " data-tab-trigger="1">Филиал ул. Адмирала Коновалова</a>
+            </li>
+        </ul>
+        <div data-tab-content="0">
+            <div class="gallery-second-slider" data-slider="gallery-second">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-1-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-1.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-2-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-2.jpg" alt="">
+                                <div class="label label--gradient">Врачебный кабинет</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-3-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-3.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-1-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-1.jpg" alt="">
+                                <div class="label label--gradient">Врачебный кабинет</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-2-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-2.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <div class="slider-button slider-button--color slider-button--prev hover">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-button slider-button--color slider-button--next hover">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-tab-content="1">
+            <div class="gallery-second-slider" data-slider="gallery-second">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-1-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-1.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-2-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-2.jpg" alt="">
+                                <div class="label label--gradient">Врачебный кабинет</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-3-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-3.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-1-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-1.jpg" alt="">
+                                <div class="label label--gradient">Врачебный кабинет</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/photo/gallery-second-img-2-3x.jpg" data-fancybox
+                                class="gallery-second-slider__item ibg">
+                                <img src="img/photo/gallery-second-img-2.jpg" alt="">
+                                <div class="label label--gradient">Холл</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <div class="slider-button slider-button--color slider-button--prev hover">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-button slider-button--color slider-button--next hover">
+                        <svg>
+                            <use xlink:href="img/icons/sprites.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section class="padding-wrap">
+            <div class="container-md">
+                <div class="head head--sm">
+                    <h2 class="head__title text-lg-center">Топ-7 фактов о клинике</h2>
+                    <div class="head__subtitle text text-lg-center">Наши преимущества:</div>
+                </div>
+                <ul class="list-col-4">
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-1.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Опыт
+                                </div>
+                                <div class="info-card__text">
+                                    Высокая квалификация врачей позволяет осуществлять сложнейшие операции. Благодаря
+                                    технологичному оборудованию, даже самые запущенные случаи будут разрешены
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-2.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Оборудование и материалы
+                                </div>
+                                <div class="info-card__text">
+                                    «Дана» оказывает современные стоматологические услуги. Мы рады предложить вам
+                                    передовые методики лечения и современное импортное оборудование
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-3.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Специалисты
+                                </div>
+                                <div class="info-card__text">
+                                    Доктора нашей стоматологии используют индивидуальный подход к каждому пациенту,
+                                    чтобы у вас всегда было чувство комфорта и уверенности
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-4.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Лечение во сне
+                                </div>
+                                <div class="info-card__text">
+                                    Пациент находится в состоянии медикаментозного сна, максимально приближенного к
+                                    физиологическому, его ничто не беспокоит, он ничего не боится, сохранены
+                                    физиологические защитные рефлексы
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-5.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Зуботехническая лаборатория
+                                </div>
+                                <div class="info-card__text">
+                                    Стоматология Дана имеет собственную зуботехническую лабораторию, поэтому мы
+                                    гарантируем качество всех ортопедических конструкции и контроль со стороны доктора
+                                    при их изготовлении.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-6.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Цены
+                                </div>
+                                <div class="info-card__text">
+                                    Лояльная ценовая политика полностью отражает наш подход – цены на лечение
+                                    соответствуют его качеству
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-card info-card--third">
+                            <div class="info-card__icon">
+                                <img src="img/icons/info-card-icon-7.svg" alt="">
+                            </div>
+                            <div class="info-card__inner">
+                                <div class="info-card__title">
+                                    Гигиена и профилактика
+                                </div>
+                                <div class="info-card__text">
+                                    В клинике отдельно выделено направление гигиены и профилактики, в котором работают
+                                    высококлассные врачи-гигиенисты. Для чистки мы используем самое современные методики
+                                    и оборудование
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="certificates padding-wrap" data-slider="certificates">
+            <div class="container">
+                <div class="head head--sm">
+                    <h2 class="head__title text-lg-center">Наши достижения</h2>
+                    <div class="head__subtitle text text-lg-center">Клиника «Дана» — стоматология по мировым стандартам!
+                    </div>
+                </div>
+                <div class="certificates__body">
+                    <div class="certificates__slider-mob swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-1-3x.jpg" data-fancybox
+                                    class="certificates__slider-mob-item not-hover">
+                                    <img src="img/photo/certificat-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-2-3x.jpg" data-fancybox
+                                    class="certificates__slider-mob-item not-hover">
+                                    <img src="img/photo/certificat-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-1-3x.jpg" data-fancybox
+                                    class="certificates__slider-mob-item not-hover">
+                                    <img src="img/photo/certificat-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-2-3x.jpg" data-fancybox
+                                    class="certificates__slider-mob-item not-hover">
+                                    <img src="img/photo/certificat-2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates__slider-desk swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-1-3x.jpg" data-fancybox
+                                    class="certificates__slider-desk-item not-hover">
+                                    <img src="img/photo/certificat-1-3x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-2-3x.jpg" data-fancybox
+                                    class="certificates__slider-desk-item not-hover">
+                                    <img src="img/photo/certificat-2-3x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-1-3x.jpg" data-fancybox
+                                    class="certificates__slider-desk-item not-hover">
+                                    <img src="img/photo/certificat-1-3x.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/photo/certificat-2-3x.jpg" data-fancybox
+                                    class="certificates__slider-desk-item not-hover">
+                                    <img src="img/photo/certificat-2-3x.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="certificates__slider-desk-controllers">
+                            <div class="certificates__slider-btn prev">
+                                <svg>
+                                    <use xlink:href="img/icons/sprites.svg#chevron-left"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="certificates__slider-btn next">
+                                <svg>
+                                    <use xlink:href="img/icons/sprites.svg#chevron-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-wrap">
+            <div class="partners">
+                <div class="container-md">
+                    <div class="head head--sm">
+                        <h2 class="head__title text-center text-white">Наши партнеры</h2>
+                    </div>
+                    <ul class="partners__list">
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-1.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-2.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-3.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-4.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-5.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-6.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-7.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__card">
+                                <img src="img/photo/partners-logo-8.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-wrap" data-tabs>
+            <div class="container-md">
+                <div class="head">
+                    <h2 class="head__title">3D-тур по клинике</h2>
+                </div>
+                <ul class="buttons-group">
+                    <li>
+                        <a href="#" class="btn btn--second tab-active" data-tab-trigger="0">Филиал Большая Пороховская</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn--second " data-tab-trigger="1">Филиал ул. Адмирала Коновалова</a>
+                    </li>
+                </ul>
+                <div data-tab-content="0">
+                    <img class="w-100 h-auto" src="img/photo/3d-tour.jpg" alt="">
+                </div>
+                <div data-tab-content="1">
+                    <img class="w-100 h-auto" src="img/photo/3d-tour.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-wrap">
+            <div class="container-md">
+                <div class="info-for-patient">
+                    <div class="info-for-patient__col-1">
+                        <h2 class="info-for-patient__title">Информация для пациентов</h2>
+                        <div class="info-for-patient__text text-content">
+                            <p>Качественный сервис — наша основная задача. У нас введен контроль соответствия уровня оказанных услуг стандартам обслуживания. Поэтому мы всегда рады обратной связи.</p>
+                        </div>
+                    </div>
+                    <div class="info-for-patient__col-2">
+                        <ul class="links-list">
+                            <li>
+                                <a href="#" class="links-list__item">
+                                    <p>Общая информация, реквизиты и контакты органов исполнительной власти</p>
+                                    <svg><use xlink:href="img/icons/sprites.svg#arrow-right"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="links-list__item">
+                                    <p>Правила внутреннего распорядка пациентов</p>
+                                    <svg><use xlink:href="img/icons/sprites.svg#arrow-right"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="links-list__item">
+                                    <p>Положение об оказании платных медицинских услуг в ООО ЭФА</p>
+                                    <svg><use xlink:href="img/icons/sprites.svg#arrow-right"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="links-list__item">
+                                    <p>Положение о гарантийных сроках</p>
+                                    <svg><use xlink:href="img/icons/sprites.svg#arrow-right"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="links-list__item">
+                                    <p>Отчет о проведении специальной проверки оценка труда</p>
+                                    <svg><use xlink:href="img/icons/sprites.svg#arrow-right"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="documents-section padding-wrap">
+    <div class="container-sm">
+        <div class="head">
+            <h2 class="head__title text-lg-center">Лицензии и документы</h2>
+            <div class="head__subtitle text text-lg-center">
+                Лицензия на стоматологическую деятельность ООО «Дана»
+            </div>
+        </div>
+        <div class="documents-section__slider" data-documents-slider>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/photo/document-1-3x.jpg" data-fancybox class="documents-section__slider-item">
+                            <img src="img/photo/document-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+    <div class="slider-button slider-button--prev hover">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-left"></use></svg>
+    </div>
+    <div class="slider-button slider-button--next hover">
+        <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+        <section class="padding-wrap">
+            <div class="container-md">
+                <div class="head">
+                    <h2 class="head__title">Юридическая информация</h2>
+                </div>
+                <ul class="faq-list faq-list--simple" data-faq-list>
+                    <li>
+                        <div class="box box--has-text box--big-padding">
+                            <h3 class="faq-list__title">
+                                Реквизиты
+                            </h3>
+                            <div class="faq-list__collaps text-content last">
+
+                                <ul class="without-dots">
+                                    <li><strong>ООО «ДАНА»</strong></li>
+                                    <li>ИНН: 7806243121</li>
+                                    <li>КПП: 780601001</li>
+                                    <li>ОГРН: 1167847281205</li>
+                                    <li>ОКПО: 03379514</li>
+                                </ul>
+
+                                <p>
+                                    Юр./факт.адрес: Российская Федерация, 195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47, литер А, пом. 1Н
+                                </p>
+
+                                <ul class="without-dots">
+                                    <li>Банк: АО «Тинькофф Банк»</li>
+                                    <li>Расчетный счет: 40702810810000242850</li>
+                                    <li>БИК Банка: 044525974</li>
+                                    <li>
+                                        Корр. Счет: 30101810145250000974
+                                    </li>
+                                    <li>
+                                        ИНН Банка: 7710140679
+                                    </li>
+                                    <li>
+                                        Юридический адрес банка: Российская Федерация, 123060, г. Москва, 1-й Волоколамский проезд, д. 10, стр. 1
+                                    </li>
+                                </ul>
+
+                                <ul class="without-dots">
+                                    <li>Телефон: 918-2-918</li>
+                                    <li>
+                                        <strong>Генеральный директор:</strong> Мусагаджиев Амир Мусагаджиевич
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box box--has-text box--big-padding">
+                            <h3 class="faq-list__title">
+                                Политика конфиденциальности
+                            </h3>
+                            <div class="faq-list__collaps text-content last">
+
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box box--has-text box--big-padding">
+                            <h3 class="faq-list__title">
+                                Пользовательское соглашение
+                            </h3>
+                            <div class="faq-list__collaps text-content last">
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi commodi officiis non sunt quidem explicabo nostrum praesentium, rerum corrupti.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta padding-wrap">
+    <div class="cta__inner">
+        <div class="container-md">
+            <div class="cta__body">
+                <div class="cta__col-1">
+                    <h2 class="cta__title">Мы работаем для Вашего комфорта!</h2>
+                    <div class="cta__text">
+                        Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы
+                        в ближайшее время свяжемся с вами.
+                    </div>
+                    <form action="">
+                        <div class="cta__form-items mb-0">
+                            <div class="cta__form-item cta__form-item--half" data-mask="+7(999)-999-99-99">
+                                <input type="text" class="input" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="cta__form-item cta__form-item--half">
+                                <button class="btn btn--dark">Заказать обратный звонок</button>
+                            </div>
+                            <div class="cta__form-item">
+                                <label class="checkbox-radio">
+                                    <input type="checkbox">
+                                    <div class="checkbox-radio__square"></div>
+                                    <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                            href="#">согласие</a> на обработку персональных данных</div>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta__col-2">
+                    <div class="cta__img">
+                        <img src="img/photo/cta-img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer padding-wrap pb-0">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__col footer__col-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col-2">
+                    <div class="footer__phone">
+                        <a href="#">+7 (812) 612-44-54</a>
+                        <p>Ежедневно: 9:00 — 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Лечение зубов под микроскопом</a>
+                        </li>
+                        <li>
+                            <a href="#">Лечение десен</a>
+                        </li>
+                        <li>
+                            <a href="#">Удаление зубов</a>
+                        </li>
+                        <li>
+                            <a href="#">Протезирование</a>
+                        </li>
+                        <li>
+                            <a href="#">All-on-4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Имплантация</a>
+                        </li>
+                        <li>
+                            <a href="#">Исправление прикуса</a>
+                        </li>
+                        <li>
+                            <a href="#">Эстетическая стоматология</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультация и диагностика</a>
+                        </li>
+                        <li>
+                            <a href="#">Оборудование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col-5">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Врачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта сайта</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользовательское Соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__social" data-da=".footer__col-1,767.98,last">
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#insta"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg><use xlink:href="img/icons/sprites.svg#fb"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy">
+                        Стоматологические центры DANA
+                        2022 © Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

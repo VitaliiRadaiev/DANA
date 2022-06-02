@@ -10,6 +10,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2.7rem;
+
+    @media (max-width: $md3+px) {
+        padding: 0 12px;
+    }
 }
 .slider-button {
     pointer-events: auto;
@@ -47,5 +51,25 @@
 
     &--next {
        
+    }
+
+    &--color {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.2rem;
+        width: 3.2rem;
+        border-radius: 50%;
+        background-color: #0ABEB9;
+        transition: all 0.15s ease-in-out;
+        color: #fff;
+        cursor: pointer;
+
+        @media (max-width: $md3+px) {
+            font-size: 12px;
+            height: 24px;
+            width: 24px;
+        }
     }
 }

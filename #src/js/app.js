@@ -77,6 +77,8 @@ class App {
 		@@include('../common/info-cards-list/info-cards-list.js');
 		@@include('../common/gallery/gallery.js');
 		@@include('../common/certificates/certificates.js');
+		@@include('../common/image-carousel/image-carousel.js');
+		@@include('../common/gallery-second/gallery-second.js');
 	}
 
 

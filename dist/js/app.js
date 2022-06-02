@@ -762,6 +762,49 @@ window.popup = {
         }
     }
 };
+		{
+    let imagesCarouselAll = document.querySelectorAll('[data-slider="images-carousel"]');
+    if(imagesCarouselAll.length) {
+        imagesCarouselAll.forEach(imagesCarousel => {
+            let sliderData = new Swiper(imagesCarousel, {
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false,
+                },
+            
+                slidesPerView: 1,
+                spaceBetween: 16,
+                speed: 600,
+                loop: true,
+                navigation: {
+                    nextEl: imagesCarousel.querySelector('.slider-button--next'),
+                    prevEl: imagesCarousel.querySelector('.slider-button--prev'),
+                },
+
+            });
+        })
+    }
+};
+		{
+    let gallerySecondAll = document.querySelectorAll('[data-slider="gallery-second"]');
+    if(gallerySecondAll.length) {
+        gallerySecondAll.forEach(gallerySecond => {
+            let sliderData = new Swiper(gallerySecond.querySelector('.swiper'), {
+                observer: true,
+                observeParents: true,
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                speed: 600,
+                loop: true,
+                navigation: {
+                    nextEl: gallerySecond.querySelector('.slider-button--next'),
+                    prevEl: gallerySecond.querySelector('.slider-button--prev'),
+                },
+            });
+            
+        })
+    }
+};
 	}
 
 
@@ -1466,35 +1509,41 @@ window.popup = {
                 let collapsedText = item.querySelector('.faq-list__collaps');
                 let title = item.querySelector('.faq-list__title');
                 let btn = item.querySelector('.faq-list__btn');
-                let btnText = btn.innerHTML;
 
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    if(item.classList.contains('text-is-show')) {
-                        item.classList.remove('text-is-show');
-                        btn.innerHTML = btnText;
-                        this.utils.slideDown(previewText, 200);
-                        this.utils.slideUp(collapsedText, 400);
-                    } else {
-                        item.classList.add('text-is-show');
-                        btn.innerHTML = btn.dataset.text;
-                        this.utils.slideUp(previewText, 200);
-                        this.utils.slideDown(collapsedText, 400);
-                    }
-                })
+                if(btn) {
+                    let btnText = btn.innerHTML;
+
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if(item.classList.contains('text-is-show')) {
+                            item.classList.remove('text-is-show');
+                            btn.innerHTML = btnText;
+                            this.utils.slideDown(previewText, 200);
+                            this.utils.slideUp(collapsedText, 400);
+                        } else {
+                            item.classList.add('text-is-show');
+                            btn.innerHTML = btn.dataset.text;
+                            this.utils.slideUp(previewText, 200);
+                            this.utils.slideDown(collapsedText, 400);
+                        }
+                    })
+                }
+
                 
                 title.addEventListener('click', (e) => {
                     e.preventDefault();
                     if(item.classList.contains('text-is-show')) {
                         item.classList.remove('text-is-show');
-                        btn.innerHTML = btnText;
-                        this.utils.slideDown(previewText, 200);
+                        if(previewText) this.utils.slideDown(previewText, 200);
                         this.utils.slideUp(collapsedText, 400);
+
+                        if(btn) btn.innerHTML = btnText;
                     } else {
                         item.classList.add('text-is-show');
-                        btn.innerHTML = btn.dataset.text;
-                        this.utils.slideUp(previewText, 200);
+                        if(previewText) this.utils.slideUp(previewText, 200);
                         this.utils.slideDown(collapsedText, 400);
+
+                        if(btn) btn.innerHTML = btn.dataset.text;
                     }
                 })
             })
