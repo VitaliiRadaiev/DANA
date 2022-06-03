@@ -7555,6 +7555,39 @@ figure {
   text-align: right;
 }
 
+.article-hero__rating .kk-star-ratings {
+  display: block !important;
+  text-align: right;
+}
+
+.article-hero__rating .kksr-legend {
+  margin: 0;
+}
+
+.article-hero__rating .kksr-stars {
+  font-size: 2.4rem;
+  margin-right: -0.8rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.article-hero__rating .kksr-stars .kksr-icon {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+.article-hero__rating .kksr-stars .kksr-star {
+  padding-right: 0.5rem;
+}
+
+.article-hero__rating .kksr-legend {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.71em;
+  letter-spacing: -0.025em;
+  color: #6B6B6B;
+}
+
 .article-hero__rating .rating {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
@@ -9494,6 +9527,10 @@ figure {
     margin-top: 3.2rem;
   }
 
+  .article .cta-card {
+    display: none;
+  }
+
   .about-head__images {
     margin-bottom: 4.8rem;
   }
@@ -11142,6 +11179,10 @@ figure {
     padding-top: 24px;
   }
 
+  .article .checked-by {
+    margin-bottom: 0;
+  }
+
   .article-hero {
     padding: 0 !important;
     background-color: transparent;
@@ -11158,6 +11199,10 @@ figure {
 
   .article-hero__reviews .article-card__reviews {
     font-weight: 400;
+  }
+
+  .article-hero__rating .kksr-stars {
+    font-size: 16px;
   }
 
   .article-hero__rating .rating {

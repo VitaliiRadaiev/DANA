@@ -6,6 +6,18 @@
     & .article-hero {
         margin-bottom: 2.4rem;
     }
+
+    & .cta-card {
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+    }
+
+    & .checked-by {
+        @media (max-width: $md3+px) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .article-hero {
@@ -71,6 +83,43 @@
 
     &__rating {
         text-align: right;
+
+        & .kk-star-ratings {
+            display: block !important;
+            text-align: right;
+        }
+
+        & .kksr-legend {
+            margin: 0;
+        }
+
+        & .kksr-stars {
+            font-size: 2.4rem;
+            margin-right: -0.8rem;
+            margin-bottom: 0.4rem;
+            display: inline-block;
+
+            @media (max-width: $md3+px) {
+                font-size: 16px;
+            }
+
+            & .kksr-icon {
+                width: 1em !important;
+                height: 1em !important;
+            }
+
+            & .kksr-star {
+                padding-right: 0.5rem;
+            }
+        }
+
+        & .kksr-legend {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.71em;
+            letter-spacing: -0.025em;
+            color: $textColorThird;
+        }
 
         & .rating {
             font-size: 2.4rem;
