@@ -338,6 +338,8 @@ class App {
 		@@include('../common/frequently-questions/frequently-questions.js');
 		@@include('../common/testimonials/testimonials.js');
 		@@include('../common/testimonial-card/testimonial-card.js');
+		@@include('../common/comments/comment.js');
+		@@include('../common/main-grid/main-grid.js');
 
 		{
 			let lastSection = document.querySelector('[data-last-section]');
@@ -353,6 +355,7 @@ class App {
 		@@include('../common/portfolio-card/portfolio-card.js');
 		@@include('../common/article-card/article-card.js');
 		@@include('../common/comment-form/comment-form.js');
+		@@include('../common/links-group/links-group.js');
 	}
 }
 

@@ -1487,6 +1487,66 @@ window.popup = {
         })
     }
 };
+		{
+    let comments = document.querySelectorAll('.commentlist .comment');
+    if(comments.length) {
+        comments.forEach(comment => {
+            let name = comment.querySelector(".comment-author .fn");
+            let metaData = comment.querySelector('.comment-metadata');
+            let likesButtonsWrap = comment.querySelector('.cld-like-dislike-wrap');
+            let replyButton = comment.querySelector('.reply');
+
+            if(name && metaData) {
+                metaData.prepend(name);
+            }
+
+            if(likesButtonsWrap && replyButton) {
+                likesButtonsWrap.prepend(replyButton);
+            }
+        })
+    }
+};
+		{
+    let sticyBox = document.querySelector('.main-grid__sticky-box');
+    if (sticyBox) {
+        let header = document.querySelector('[data-header]');
+        let currentScrollValue = window.pageYOffset;
+        let sticyBoxMouseOver = false;
+        let sticyScrollValue = 0;
+
+        window.addEventListener('scroll', (e) => {
+
+            if (window.pageYOffset > currentScrollValue) {
+                if ((sticyBox.offsetTop + sticyBox.clientHeight) > (sticyBox.parentElement.clientHeight - 100)) {
+                    sticyBox.style.transform = `translateY(0px)`;
+                } else {
+                    if (sticyBoxMouseOver && document.documentElement.clientWidth > 991.98) {
+                        if (sticyBox.clientHeight > (document.documentElement.clientHeight - header.clientHeight - 50)) {
+                            sticyBox.style.transform = `translateY(-${sticyBox.clientHeight - (document.documentElement.clientHeight - header.clientHeight - 50)}px)`
+                        }
+                    }
+                }
+            } else {
+                if (sticyBox.offsetTop < 50) {
+                    sticyBox.style.transform = `translateY(0px)`;
+                } else {
+                    if (sticyBoxMouseOver && document.documentElement.clientWidth > 991.98) {
+                        sticyBox.style.transform = `translateY(0px)`;
+                    }
+                }
+            }
+
+            currentScrollValue = window.pageYOffset;
+        })
+
+        sticyBox.addEventListener('mouseenter', () => {
+            sticyBoxMouseOver = true;
+        })
+        sticyBox.addEventListener('mouseleave', () => {
+            sticyBoxMouseOver = false;
+        })
+    }
+};
 
 		{
 			let lastSection = document.querySelector('[data-last-section]');
@@ -1589,7 +1649,7 @@ window.popup = {
         articleCards.forEach(articleCard => {
             let title = articleCard.querySelector('.article-card__titel');
             let ratingParent = articleCard.querySelector('.article-card__mera-row-2');
-            let rating = articleCard.querySelector('.rating');
+            let rating = articleCard.querySelector('.rating, .kk-star-ratings');
             let reviewsParent = articleCard.querySelector('.article-card__mera-row-1');
             let reviews = articleCard.querySelector('.article-card__reviews');
             let metaList = articleCard.querySelector('.article-card__meta-list');
@@ -1620,6 +1680,14 @@ window.popup = {
             } else {
                 submit.classList.add('disabled');
             }
+        })
+    }
+};
+		{
+    let links = document.querySelectorAll('.links-group a');
+    if(links.length) {
+        links.forEach(link => {
+            link.innerHTML = link.innerText.split(' ').map(word => `<span>${word}</span>`).join('');
         })
     }
 };

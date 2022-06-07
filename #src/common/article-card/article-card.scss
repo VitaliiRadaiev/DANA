@@ -38,6 +38,36 @@
         }
     }
 
+    & .kk-star-ratings {
+        align-self: flex-start;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 4px;
+        }
+
+        & .kksr-legend {
+            display: none;
+        }
+
+        & .kksr-star {
+            padding-right: 0.8rem !important;
+            
+            &:last-child {
+                padding-right: 0 !important;
+            }
+        }
+
+        & .kksr-icon {
+            width: 2.2rem !important;
+            height: 2.2rem !important;
+
+            @media (max-width: $md3+px) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
     &__rubric {
         margin-bottom: 1.2rem;
 

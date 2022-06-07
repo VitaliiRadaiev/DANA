@@ -8,6 +8,11 @@
     &__content {
         flex: 1 1 auto;
         min-width: 0;
+
+
+        & > .kk-star-ratings {
+            display: none !important;
+        }
     }
 
     &__side-column {
@@ -43,6 +48,7 @@
         position: sticky;
         position: -webkit-sticky;
         top: 17rem;
+        transition: all .15s ease-in-out;
 
         & > *:not(:last-child) {
             margin-bottom: 4.2rem;

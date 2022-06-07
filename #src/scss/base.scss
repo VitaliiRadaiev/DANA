@@ -611,13 +611,22 @@ figure {
 		line-height: 1.4em;
 		letter-spacing: -0.025em;
 		color: $secondColor;
-		display: inline-block;
-		text-decoration: dashed underline;
+		display: inline-flex;
+		flex-wrap: wrap;
 
 		@media (max-width: $md3+px) {
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 18px;
+		}
+
+		& span {
+			border-bottom: 1px dashed $secondColor;
+
+			&:not(:last-child) {
+				padding-right: 0.2em;
+				margin-right: 0.1em;
+			}
 		}
 	}
 }
