@@ -812,9 +812,18 @@ window.popup = {
 		let tabsContainers = document.querySelectorAll('[data-tabs]');
 		if (tabsContainers.length) {
 			tabsContainers.forEach(tabsContainer => {
-				let triggerItems = tabsContainer.querySelectorAll('[data-tab-trigger]');
+				let triggerItems = Array.from(tabsContainer.querySelectorAll('[data-tab-trigger]'));
 				let contentItems = Array.from(tabsContainer.querySelectorAll('[data-tab-content]'));
 				let select = tabsContainer.querySelector('[data-tab-select]');
+
+				if(tabsContainer.dataset.tabs === 'sub') {
+					triggerItems = triggerItems.filter(i => i.closest('[data-tabs="sub"]'))
+					contentItems = contentItems.filter(i => i.closest('[data-tabs="sub"]'))
+				} else {
+					triggerItems = triggerItems.filter(i => !i.closest('[data-tabs="sub"]'))
+					contentItems = contentItems.filter(i => !i.closest('[data-tabs="sub"]'))
+				}
+
 
 				const getContentItem = (id) => {
 					if (!id.trim()) return;
