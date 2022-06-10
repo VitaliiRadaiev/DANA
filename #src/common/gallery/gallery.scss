@@ -97,6 +97,33 @@
             width: 227px;
             height: 28rem;
         }
+
+        &-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(50% - 1px);
+        }
+        &-2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: calc(50% - 1px);
+        }
+
+        & .label {
+            position: absolute;
+            z-index: 3;
+            right: 1rem;
+            bottom: 1rem;
+            background-color: $secondColor;
+            font-size: 1.4rem;
+            line-height: 1em;
+            padding: 0.8rem 1.6rem;
+            text-transform: uppercase;
+        }
     }
 
     &--big {

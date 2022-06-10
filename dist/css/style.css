@@ -5787,6 +5787,34 @@ figure {
   height: 31.6rem;
 }
 
+.gallery__img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(50% - 1px);
+}
+
+.gallery__img-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(50% - 1px);
+}
+
+.gallery__img .label {
+  position: absolute;
+  z-index: 3;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #0ABEB9;
+  font-size: 1.4rem;
+  line-height: 1em;
+  padding: 0.8rem 1.6rem;
+  text-transform: uppercase;
+}
+
 .services-side-panel {
   padding-left: 2.4rem;
 }
