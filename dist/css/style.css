@@ -2321,7 +2321,7 @@ body {
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.6em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   -webkit-transition: opacity 0.8s ease;
   -o-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
@@ -2416,7 +2416,7 @@ h1 {
 h2 {
   font-size: 4.4rem;
   line-height: 1.14em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   font-weight: 400;
 }
 
@@ -2428,28 +2428,28 @@ h3 {
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 1.06em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 h4 {
   font-weight: 600;
   font-size: 2.6rem;
   line-height: 1.08em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 h5 {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.17em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 h6 {
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 1.31em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 p,
@@ -2715,7 +2715,7 @@ figure {
   font-weight: 400;
   font-size: 2.6rem;
   line-height: 1.3em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .label {
@@ -2735,14 +2735,14 @@ figure {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
 .label--gradient {
-  background: -o-linear-gradient(351.33deg, #179B97 0.55%, #09CAC3 96.7%);
-  background: linear-gradient(98.67deg, #179B97 0.55%, #09CAC3 96.7%);
+  background: -o-linear-gradient(351.33deg, #179b97 0.55%, #09cac3 96.7%);
+  background: linear-gradient(98.67deg, #179b97 0.55%, #09cac3 96.7%);
 }
 
 .box {
@@ -2769,7 +2769,7 @@ figure {
 .links-group a {
   font-size: 2rem;
   line-height: 1.4em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   color: #0ABEB9;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2795,16 +2795,22 @@ figure {
   padding-top: 4rem;
 }
 
+.text-content {
+  font-size: 2rem;
+  line-height: 1.4em;
+  letter-spacing: -0.02em;
+}
+
 .text-content--md {
   font-size: 1.8rem;
   line-height: 1.33em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .text-content--sm {
   font-size: 1.6rem;
   line-height: 1.25em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .text-content h1,
@@ -3036,6 +3042,26 @@ figure {
 
 .header__row-1 {
   background-color: #2F2F2F;
+}
+
+.header__row-1 .social li,
+.header__row-1 .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__row-1 .social li,
+.header__row-1 .social svg {
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .header__row-1-body {
@@ -3351,6 +3377,16 @@ figure {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.footer__social .social > li {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer__social .social svg {
+  width: 4rem;
+  height: 4rem;
 }
 
 .footer__copy {
@@ -3994,6 +4030,10 @@ figure {
 
 .our-services__list {
   padding-left: 0;
+  margin-bottom: 0;
+}
+
+.our-services__list:not(:last-child) {
   margin-bottom: 0;
 }
 
@@ -6854,7 +6894,7 @@ figure {
 
 .about-banner__text-wrap {
   margin: 0 auto;
-  max-width: 90.6rem;
+  max-width: 86.6rem;
 }
 
 .about-banner__title {
@@ -6863,7 +6903,7 @@ figure {
 }
 
 .about-banner__text {
-  margin: 0 auto 6.4rem;
+  margin: 0 auto 5.4rem;
   max-width: 70.6rem;
 }
 
@@ -6980,14 +7020,14 @@ figure {
 
 .contact-section__map-list li {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 1.6rem);
-          flex: 0 1 calc(50% - 1.6rem);
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
   margin-bottom: 3.2rem;
 }
 
 .contact-section__map {
   height: 0;
-  padding-bottom: 67.3%;
+  padding-bottom: 54.3%;
   overflow: hidden;
   border-radius: 4rem;
   margin-bottom: 3.2rem;
@@ -8611,6 +8651,19 @@ figure {
   .header--is-scroll .header__row-2-body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .header--is-scroll .social li {
+    width: 2.64rem;
+  }
+
+  .header--is-scroll .social li:not(:last-child) {
+    margin-right: 1.98rem;
+  }
+
+  .header--is-scroll .social li svg {
+    width: 2.64rem;
+    height: 2.64rem;
   }
 
   .header__mob-phone {

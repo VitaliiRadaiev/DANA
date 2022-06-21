@@ -118,6 +118,8 @@
             justify-content: flex-end;
 
             & > li {
+                width: 4rem;
+                height: 4rem;
                 @media (max-width: $md3+px) {
                     width: 32px;
 
@@ -128,6 +130,8 @@
             }
 
             & svg {
+                width: 4rem;
+                height: 4rem;
                 @media (max-width: $md3+px) {
                     width: 32px;
                     height: 32px;

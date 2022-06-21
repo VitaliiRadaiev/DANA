@@ -44,7 +44,7 @@ body {
 	font-weight: 400;
 	font-size: 2rem;
 	line-height: 1.6em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 	transition: opacity 0.8s ease;
 	position: relative;
 	min-height: 100%;
@@ -134,7 +134,7 @@ h1 {
 h2 {
 	font-size: 4.4rem;
 	line-height: 1.14em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 	font-weight: 400;
 
 	@media (max-width: $md3+px) {
@@ -156,7 +156,7 @@ h3 {
 	font-weight: 600;
 	font-size: 3.2rem;
 	line-height: 1.06em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 
 	@media (max-width: $md2+px) {
 		font-size: 24px;
@@ -168,21 +168,21 @@ h4 {
 	font-weight: 600;
 	font-size: 2.6rem;
 	line-height: 1.08em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 }
 
 h5 {
 	font-weight: 600;
 	font-size: 2.4rem;
 	line-height: 1.17em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 }
 
 h6 {
 	font-weight: 500;
 	font-size: 2.2rem;
 	line-height: 1.31em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 }
 
 p,
@@ -520,7 +520,7 @@ figure {
 	font-weight: 400;
 	font-size: 2.6rem;
 	line-height: 1.3em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 
 	@media (max-width: $md2+px) {
 		font-weight: 400;
@@ -540,7 +540,7 @@ figure {
 	font-weight: 600;
 	font-size: 1.6rem;
 	line-height: 1em;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.02em;
 	align-self: flex-start;
 
 	@media (max-width: $md3+px) {
@@ -550,7 +550,7 @@ figure {
 	}
 
 	&--gradient {
-		background: linear-gradient(98.67deg, #179B97 0.55%, #09CAC3 96.7%);
+		background: linear-gradient(98.67deg, #179b97 0.55%, #09cac3 96.7%);
 	}
 }
 
@@ -609,7 +609,7 @@ figure {
 	& a {
 		font-size: 2rem;
 		line-height: 1.4em;
-		letter-spacing: -0.025em;
+		letter-spacing: -0.02em;
 		color: $secondColor;
 		display: inline-flex;
 		flex-wrap: wrap;
@@ -633,12 +633,11 @@ figure {
 
 .last {
 	& > *:last-child {
-		margin-bottom: 0 !important; 
+		margin-bottom: 0 !important;
 	}
 }
 
 .button-wrap {
-
 	&--bottom {
 		padding-top: 4rem;
 
@@ -649,16 +648,20 @@ figure {
 }
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
+	font-size: 2rem;
+	line-height: 1.4em;
+	letter-spacing: -0.02em;
+
 	&--md {
 		font-size: 1.8rem;
 		line-height: 1.33em;
-		letter-spacing: -0.025em;
+		letter-spacing: -0.02em;
 	}
 
 	&--sm {
 		font-size: 1.6rem;
 		line-height: 1.25em;
-		letter-spacing: -0.025em;
+		letter-spacing: -0.02em;
 
 		@media (max-width: $md3+px) {
 			line-height: 1.5em;

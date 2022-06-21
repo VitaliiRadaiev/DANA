@@ -157,7 +157,7 @@
 
     &__text-wrap {
         margin: 0 auto;
-        max-width: 90.6rem;
+        max-width: 86.6rem;
     }
 
     &__title {
@@ -171,7 +171,7 @@
     }
 
     &__text {
-        margin: 0 auto 6.4rem;
+        margin: 0 auto 5.4rem;
         max-width: 70.6rem;
 
         &.text-content {
@@ -343,7 +343,7 @@
         }
 
         & li {
-            flex: 0 1 calc(50% - 1.6rem);
+            flex: 0 1 100%;
             margin-bottom: 3.2rem;
 
             @media (max-width: $md2+px) {
@@ -360,7 +360,7 @@
 
     &__map {
         height: 0;
-        padding-bottom: 67.3%;
+        padding-bottom:54.3%;
         overflow: hidden;
         border-radius: 4rem;
         margin-bottom: 3.2rem;

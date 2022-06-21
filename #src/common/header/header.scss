@@ -28,10 +28,39 @@
                 padding-bottom: 1.5rem;
             }
         }
+
+        & .social {
+            @media (min-width: 992px) {
+                & li {
+                    &:not(:last-child) {
+                        margin-right: 1.98rem;
+                    }
+                    width: 2.64rem;
+    
+                    & svg {
+                        width: 2.64rem;
+                        height: 2.64rem;
+                    }
+                }
+            }
+
+        }
     }
 
     &__row-1 {
         background-color: $mainColor;
+
+        & .social {
+            & li, & a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            & li, & svg {
+                transition: all .15s ease-in-out;
+            }
+        }
     }
 
     &__row-1-body {
