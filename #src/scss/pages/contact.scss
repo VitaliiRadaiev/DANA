@@ -114,6 +114,11 @@
             display: inline-block;
             margin-left: 0.8rem;
         }
+
+        & p {
+            margin-bottom: 0;
+            display: inline-block;
+        }
     }
 
     &__routes {

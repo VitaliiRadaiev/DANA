@@ -4108,7 +4108,9 @@ figure {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #2F2F2F;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-42.33%, #202020), color-stop(90.25%, #414141));
+  background: -o-linear-gradient(bottom, #202020 -42.33%, #414141 90.25%);
+  background: linear-gradient(360deg, #202020 -42.33%, #414141 90.25%);
 }
 
 .team-carousel__slider .swiper {
@@ -4136,6 +4138,22 @@ figure {
   transition: all 0.15s ease-in-out;
 }
 
+.team-carousel-card:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: -o-linear-gradient(105.4deg, #358B88 21.7%, #13B3AD 78.56%);
+  background: linear-gradient(344.6deg, #358B88 21.7%, #13B3AD 78.56%);
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  opacity: 0;
+}
+
 .team-carousel-card__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4145,6 +4163,8 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .team-carousel-card__calendar {
@@ -5815,6 +5835,10 @@ figure {
   text-transform: uppercase;
 }
 
+.threeD-gallery iframe {
+  height: 48.5rem !important;
+}
+
 .services-side-panel {
   padding-left: 2.4rem;
 }
@@ -6808,6 +6832,16 @@ figure {
   background: rgba(47, 47, 47, 0.8);
 }
 
+.about-banner__bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .about-banner__body {
   position: relative;
   z-index: 2;
@@ -7482,6 +7516,11 @@ figure {
 .contact__list-text .simple-social {
   display: inline-block;
   margin-left: 0.8rem;
+}
+
+.contact__list-text p {
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 .contact__routes {
@@ -8678,8 +8717,8 @@ figure {
     opacity: 0.7;
   }
 
-  .team-carousel-card:hover {
-    background-color: #0ABEB9;
+  .team-carousel-card:hover:before {
+    opacity: 1;
   }
 
   .team-carousel-card:hover .team-carousel-card__calendar {
@@ -9331,8 +9370,8 @@ figure {
     width: auto;
   }
 
-  .team-carousel__slider .swiper-slide.swiper-slide-active .team-carousel-card {
-    background-color: #0ABEB9;
+  .team-carousel__slider .swiper-slide.swiper-slide-active .team-carousel-card:before {
+    opacity: 1;
   }
 
   .team-carousel__slider .swiper-slide.swiper-slide-active .team-carousel-card .team-carousel-card__calendar {
@@ -10723,6 +10762,10 @@ figure {
   .gallery__img {
     width: 227px;
     height: 28rem;
+  }
+
+  .threeD-gallery iframe {
+    height: 320px !important;
   }
 
   .certificates__title {
