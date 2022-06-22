@@ -4033,10 +4033,6 @@ figure {
   margin-bottom: 0;
 }
 
-.our-services__list:not(:last-child) {
-  margin-bottom: 0;
-}
-
 .our-services__list > li {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(50% - 1.6rem);
@@ -5087,8 +5083,8 @@ figure {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: calc(100% + 1px);
-  height: calc(100% + 1px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   z-index: 1;
   background-color: #fff;
   border-radius: 4rem;
@@ -8749,7 +8745,6 @@ figure {
   }
 
   .our-services__list {
-    margin-bottom: -3.2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

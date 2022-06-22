@@ -13,15 +13,12 @@
         margin-bottom: 0;
 
         @media (min-width: 992px) {
-            margin-bottom: -3.2rem;  
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
+
 
         & > li {
             flex: 0 1 calc(50% - 1.6rem);
