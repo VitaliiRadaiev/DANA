@@ -85,7 +85,11 @@
 
     & .buttons-group {
         @media (min-width: 768px) {
-            margin-bottom: 0.8rem;
+            margin-bottom: 2.8rem;
+        }
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 18px;
         }
     }
 

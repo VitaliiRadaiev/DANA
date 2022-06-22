@@ -8500,7 +8500,7 @@ figure {
   }
 
   .info-block .buttons-group {
-    margin-bottom: 0.8rem;
+    margin-bottom: 2.8rem;
   }
 
   .team-detail-head__inner {
@@ -11199,6 +11199,10 @@ figure {
   .services-questions-card__text {
     font-size: 16px;
     line-height: 1.5em;
+  }
+
+  .info-block .buttons-group {
+    margin-bottom: 18px;
   }
 
   .info-block__text {
