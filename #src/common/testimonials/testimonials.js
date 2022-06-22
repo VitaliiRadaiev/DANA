@@ -7,38 +7,68 @@
         let margin = 8;
 
         if(list && btn && listItems.length) {
-            const setMaxHeight = () => {
-                if(document.documentElement.clientWidth < 768) {
-                    let height = listItems[0].clientHeight + margin;
-
-                    if(listItems[1]) {
-                        height += listItems[1].clientHeight + margin;
-                    }
-                    
-                    list.style.maxHeight = height - 1 + 'px';
+            const toggleHideItems = () => {
+                if(document.documentElement.clientWidth < 768 && !testimonialsSection.classList.contains('testimonials--showed')) {
+                    listItems.forEach((item, index) => {
+                        if(index > 1) {
+                            item.classList.add('d-none')
+                        }
+                    })
+                } else {
+                    listItems.forEach(item => {
+                        item.classList.remove('d-none')
+                    })
                 }
             }
 
-            setMaxHeight();
-            let id = setInterval(setMaxHeight, 10);
-            setTimeout(() => {
-                clearInterval(id);
-            }, 200)
+            toggleHideItems();
 
-            window.addEventListener('resize', setMaxHeight);
+            window.addEventListener('resize', toggleHideItems)
+
 
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
-
-                list.style.maxHeight = list.scrollHeight + margin + 'px';
-                list.style.overflow = 'visible';
+                listItems.forEach(item => {
+                    item.classList.remove('d-none')
+                })
                 btn.style.display = 'none';
                 testimonialsSection.classList.add('testimonials--showed')
 
-                setTimeout(() => {
-                    list.removeAttribute('style');
-                }, 300)
             })
         }
+    }
+
+    let testimonialsListAll = document.querySelectorAll('[data-testimonials-list]');
+    if(testimonialsListAll.length) {
+        testimonialsListAll.forEach(testimonialsList => {
+            let items = Array.from(testimonialsList.children);
+            if(items.length > 9) {
+                let btnWrap = document.createElement('div');
+                btnWrap.className = 'testimonials-list-btn-wrap text-center'
+
+                let btn = document.createElement('a');
+                btn.className = 'btn btn--dark';
+                btn.innerHTML = 'Показать еще отзывы';
+                btnWrap.append(btn);
+
+                testimonialsList.after(btnWrap);
+
+                items.forEach((item, index) => {
+                    if(index > 8) {
+                        item.classList.add('d-none');
+                    }
+                })
+
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    items.forEach((item) => {
+                        item.classList.remove('d-none');
+                    })
+
+                    btnWrap.classList.add('d-none');
+                })
+            }
+        })
     }
 }

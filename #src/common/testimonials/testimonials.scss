@@ -55,3 +55,11 @@
         }
     }
 }
+
+.testimonials-list-btn-wrap {
+    padding-top: 5rem;
+
+    @media (max-width: $md3+px) {
+        padding-top: 1rem;
+    }
+}

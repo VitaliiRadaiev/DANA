@@ -5238,6 +5238,10 @@ figure {
   margin-bottom: 2.4rem;
 }
 
+.testimonials-list-btn-wrap {
+  padding-top: 5rem;
+}
+
 .testimonial-card {
   background-color: #fff;
   border-radius: 4rem;
@@ -10611,6 +10615,10 @@ figure {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-bottom: 16px;
+  }
+
+  .testimonials-list-btn-wrap {
+    padding-top: 1rem;
   }
 
   .testimonial-card {
