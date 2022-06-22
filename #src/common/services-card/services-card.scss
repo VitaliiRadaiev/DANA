@@ -27,6 +27,17 @@
             padding-bottom: 91.46%;
             margin-bottom: 1.6rem;
         }
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 85.08%;
+            height: 100%;
+            z-index: 2;
+            background: linear-gradient(90.12deg, #039D98 54.96%, rgba(3, 157, 152, 0) 91.25%);
+        }
     }
 
     &__inner {

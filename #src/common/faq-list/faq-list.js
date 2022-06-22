@@ -9,9 +9,9 @@
                 let collapsedText = item.querySelector('.faq-list__collaps');
                 let title = item.querySelector('.faq-list__title');
                 let btn = item.querySelector('.faq-list__btn');
+                let btnText = btn.innerHTML;
 
                 if(btn) {
-                    let btnText = btn.innerHTML;
 
                     btn.addEventListener('click', (e) => {
                         e.preventDefault();

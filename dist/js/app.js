@@ -388,7 +388,9 @@ const timeout = 800;
 if(popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
+		console.log(popupLink);
 		popupLink.addEventListener('click', function(e) {
+			console.log(e);
 			const popupName = popupLink.getAttribute('href').replace('#', '');
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
@@ -1608,9 +1610,9 @@ window.popup = {
                 let collapsedText = item.querySelector('.faq-list__collaps');
                 let title = item.querySelector('.faq-list__title');
                 let btn = item.querySelector('.faq-list__btn');
+                let btnText = btn.innerHTML;
 
                 if(btn) {
-                    let btnText = btn.innerHTML;
 
                     btn.addEventListener('click', (e) => {
                         e.preventDefault();

@@ -68,7 +68,10 @@
     }
 
     &--gradient {
-        background: linear-gradient(278.48deg, #179b97 1.93%, #09cac3 95.01%);
+        background-image: linear-gradient(278.48deg, #179b97 1.93%, #09cac3 95.01%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 115% 115%;
         color: #fff;
 
         &:hover {

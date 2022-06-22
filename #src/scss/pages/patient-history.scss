@@ -36,11 +36,16 @@
             }
         }
 
-        & .with-margin > li {
-            @media (max-width: $md3+px) {
-                margin-bottom: 0 !important;
+        & .text-content ul {
+            & > li {
+                &:not(:last-child) {
+					margin-bottom: 1.6rem;
+				}
+                @media (max-width: $md3+px) {
+                    margin-bottom: 0 !important;
+                }
             }
-        }
+        } 
 
         & .buttons-group {
             @media (max-width: $md3+px) {
@@ -128,6 +133,20 @@
                 font-size: 20px;
                 line-height: 24px;
                 margin-bottom: 12px;
+            }
+        }
+
+        & .portfolio-card__team-list {
+            @media (min-width: 992px) {
+                gap: 2.4rem 4rem;
+                margin-bottom: 0;
+            }
+            & > li {
+                @media (min-width: 992px) {
+                    width: 10.4rem;
+                    height: 10.4rem;
+                    margin: 0;
+                }
             }
         }
     }

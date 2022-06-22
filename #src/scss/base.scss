@@ -484,10 +484,17 @@ figure {
 
 	&__subtitle {
 		margin-bottom: 1.6rem;
-		color: #6b6b6b;
 
 		@media (max-width: $md2+px) {
 			margin-bottom: 12px;
+		}
+
+		&:not(.text) {
+			line-height: 1.4em;
+		}
+
+		&.text {
+			color: #6b6b6b;
 		}
 
 		&:not(.text-lg-center):not(.text-center) {
@@ -909,3 +916,13 @@ figure {
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
+
+
+.tippy-content {
+	font-family: $mainFontFamily;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 1.4em;
+	letter-spacing: -0.02em;
+	padding: 1.1rem 2.5rem ;
+}

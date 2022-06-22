@@ -134,6 +134,10 @@
     &__form-bottom {
     }
 
+    & .wpcf7-list-item {
+        margin: 0;
+    }
+
     &--feedback {
         @media (max-width: $md3+px) {
             background-color: #fff;
