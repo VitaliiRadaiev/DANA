@@ -45,13 +45,17 @@
     }
 
     &__sticky-box {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 17rem;
         transition: all .15s ease-in-out;
+        height: 100%;
 
         & > *:not(:last-child) {
             margin-bottom: 4.2rem;
+        }
+
+        & .cta-card {
+                    position: sticky;
+        position: -webkit-sticky;
+        top: 17rem;
         }
     }
 

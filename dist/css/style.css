@@ -5353,16 +5353,20 @@ figure {
 }
 
 .main-grid__sticky-box {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 17rem;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+  height: 100%;
 }
 
 .main-grid__sticky-box > *:not(:last-child) {
   margin-bottom: 4.2rem;
+}
+
+.main-grid__sticky-box .cta-card {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 17rem;
 }
 
 .main-grid__title {
