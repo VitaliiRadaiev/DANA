@@ -220,6 +220,10 @@
                 color: $secondColor !important;
                 text-decoration: underline;
             }
+
+            & p:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 

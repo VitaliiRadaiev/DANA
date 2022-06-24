@@ -17,7 +17,7 @@
     &__body {
         padding: 5.3rem 0 14.3rem;
         position: relative;
-
+        user-select: none;
         @media (max-width: $md2+px) {
             margin: 0 -32px;
             padding: 0 32px;
@@ -26,6 +26,7 @@
 
         @media (min-width: 992px) {
             &:before {
+                pointer-events: none;
                 position: absolute;
                 content: "";
                 z-index: 4;
@@ -36,6 +37,7 @@
                 background: linear-gradient(90deg, #f0f0f0 31.54%, rgba(240, 240, 240, 0) 100%);
             }
             &:after {
+                pointer-events: none;
                 position: absolute;
                 content: "";
                 z-index: 4;

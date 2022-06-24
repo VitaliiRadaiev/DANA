@@ -142,6 +142,7 @@
         @media (max-width: $md3+px) {
             background-color: #fff;
             margin-top: -32px;
+            padding-bottom: 0 !important;
         }
 
         & .cta__inner {
@@ -168,6 +169,12 @@
         & .cta__form-items {
             @media (min-width: 992px) {
                 max-width: 71rem;
+            }
+
+            @media (max-width: $md2+px) {
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
             }
         }
 

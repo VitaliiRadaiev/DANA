@@ -30,7 +30,7 @@
                         slidesPerView: 'auto',
                         spaceBetween: 0,
                         centeredSlides: true,
-                        touchRatio: 0,
+                       // touchRatio: 0,
                         loop: true,
                     }
                 },
@@ -62,6 +62,7 @@
             });
 
             deskSwiper.controller.control = mobSwiper
+            mobSwiper.controller.control = deskSwiper
         }
     }
 }

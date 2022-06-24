@@ -11,13 +11,21 @@ const timeout = 800;
 if(popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
-		console.log(popupLink);
+
 		popupLink.addEventListener('click', function(e) {
-			console.log(e);
-			const popupName = popupLink.getAttribute('href').replace('#', '');
+			e.preventDefault();
+			let popupName = '';
+
+			if(popupLink.getAttribute('href')) {
+				popupName = popupLink.getAttribute('href').replace('#', '');
+			}
+			if(popupLink.dataset.popupHref) {
+				popupName = popupLink.dataset.popupHref.replace('#', '');
+			}
+			console.log(popupName);
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
-			e.preventDefault();
+			
 		});
 	}
 }

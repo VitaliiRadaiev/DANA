@@ -608,7 +608,7 @@ defer
         Услуги:
     </h3>
     <ul class="services-side-panel__list text-content" data-spoller="one">
-        <li>
+        <li class="item-active">
             <a href="#" data-spoller-trigger>Имплантация</a>
             <ul>
                 <li><a href="#">Наращивание костной ткани при имплантации зубов</a></li>
@@ -733,73 +733,91 @@ defer
         </div>
 
         <section class="team-carousel padding-wrap">
-    <div class="container">
-        <div class="head">
-            <h2 class="head__title text-lg-center">Наши специалисты</h2>
-            
-        </div>
-    </div>
-    <div class="team-carousel__slider">
-        <div class="swiper" data-team-carousel-slider>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="team-carousel-card">
-                        <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
-                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
-                        </a>
-                        <a href="#" class="team-carousel-card__body not-hover">
-                            <div class="team-carousel-card__name">Екимова Мария</div>
-                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-1.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-carousel-card">
-                        <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
-                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
-                        </a>
-                        <a href="#" class="team-carousel-card__body not-hover">
-                            <div class="team-carousel-card__name">Шахаев Саид</div>
-                            <div class="team-carousel-card__position">стоматолог-ортопед, хирург</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-2.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-carousel-card">
-                        <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
-                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
-                        </a>
-                        <a href="#" class="team-carousel-card__body not-hover">
-                            <div class="team-carousel-card__name">Маргиева Зарина</div>
-                            <div class="team-carousel-card__position">стоматолог-терапевт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-3.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-carousel-card">
-                        <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
-                            <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
-                        </a>
-                        <a href="#" class="team-carousel-card__body not-hover">
-                            <div class="team-carousel-card__name">Перельштейн Нина</div>
-                            <div class="team-carousel-card__position">стоматолог-ортодонт</div>
-                            <div class="team-carousel-card__photo">
-                                <img src="img/photo/team-carousel-card-4.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
+    
+    
+        <div class="container">
+            <div class="head">
+                <h2 class="head__title text-lg-center">Наши специалисты</h2>
+                
             </div>
-            <div class="slider-buttons">
+        </div>
+        <div class="team-carousel__slider">
+            <div class="swiper" data-team-carousel-slider>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team-carousel-card">
+                            <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
+                                <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                            </a>
+                            <a href="#" class="team-carousel-card__body not-hover">
+                                <div class="team-carousel-card__name">Екимова Мария</div>
+                                <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                                <div class="team-carousel-card__photo">
+                                    <img src="img/photo/team-carousel-card-1.png" alt="">
+                                </div>
+                                <div class="team-carousel-card__btn-wrap">
+                                    <div class="team-carousel-card__btn btn btn--light" data-popup-href="#ctaPopup" data-popup="open-popup">Записаться к врачу</div>
+                                </div>
+                            
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-carousel-card">
+                            <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
+                                <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                            </a>
+                            <a href="#" class="team-carousel-card__body not-hover">
+                                <div class="team-carousel-card__name">Шахаев Саид</div>
+                                <div class="team-carousel-card__position">стоматолог-ортопед, хирург</div>
+                                <div class="team-carousel-card__photo">
+                                    <img src="img/photo/team-carousel-card-2.png" alt="">
+                                </div>
+                                <div class="team-carousel-card__btn-wrap">
+                                    <div class="team-carousel-card__btn btn btn--light" data-popup-href="#ctaPopup" data-popup="open-popup">Записаться к врачу</div>
+                                </div>
+                            
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-carousel-card">
+                            <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
+                                <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                            </a>
+                            <a href="#" class="team-carousel-card__body not-hover">
+                                <div class="team-carousel-card__name">Маргиева Зарина</div>
+                                <div class="team-carousel-card__position">стоматолог-терапевт</div>
+                                <div class="team-carousel-card__photo">
+                                    <img src="img/photo/team-carousel-card-3.png" alt="">
+                                </div>
+                                <div class="team-carousel-card__btn-wrap">
+                                    <div class="team-carousel-card__btn btn btn--light" data-popup-href="#ctaPopup" data-popup="open-popup">Записаться к врачу</div>
+                                </div>
+                            
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team-carousel-card">
+                            <a href="#" class="team-carousel-card__calendar" data-tooltip="Записаться на прием">
+                                <svg><use xlink:href="img/icons/sprites.svg#calendar"></use></svg>
+                            </a>
+                            <a href="#" class="team-carousel-card__body not-hover">
+                                <div class="team-carousel-card__name">Перельштейн Нина</div>
+                                <div class="team-carousel-card__position">стоматолог-ортодонт</div>
+                                <div class="team-carousel-card__photo">
+                                    <img src="img/photo/team-carousel-card-4.png" alt="">
+                                </div>
+                                <div class="team-carousel-card__btn-wrap">
+                                    <div class="team-carousel-card__btn btn btn--light" data-popup-href="#ctaPopup" data-popup="open-popup">Записаться к врачу</div>
+                                </div>
+                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
     <div class="slider-button slider-button--prev hover">
         <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-left"></use></svg>
     </div>
@@ -807,8 +825,9 @@ defer
         <svg><use xlink:href="img/icons/sprites.svg#circle-arrow-right"></use></svg>
     </div>
 </div>
+            </div>
         </div>
-    </div>
+    
 </section>
 
         <section class="cta padding-wrap">
@@ -960,6 +979,50 @@ defer
     </div>
 </footer>
     <!-- == // FOOTER ================== -->
+
+    <div class="popup" id="ctaPopup">
+    <div class="popup__body">
+        <div class="popup__content ">
+            <div class="popup__close" data-popup="close-popup"><span></span></div>
+            <section class="cta">
+                <div class="cta__inner">
+                    <div class="cta__body">
+                        <div class="cta__col-1">
+                            <h3 class="cta__title">Запишитесь к врачу</h3>
+                            <div class="cta__text">
+                                Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы
+                                в ближайшее время свяжемся с вами.
+                            </div>
+                            <form action="">
+                                <div class="cta__form-items mb-0">
+                                    <div class="cta__form-item cta__form-item--half" data-mask="+7(999)-999-99-99">
+                                        <input type="text" class="input" placeholder="Ваш номер телефона">
+                                    </div>
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <button class="btn btn--dark">Заказать звонок</button>
+                                    </div>
+                                    <div class="cta__form-item">
+                                        <label class="checkbox-radio">
+                                            <input type="checkbox">
+                                            <div class="checkbox-radio__square"></div>
+                                            <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                                    href="#">согласие</a> на обработку персональных данных</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="cta__col-2">
+                            <div class="cta__img">
+                                <img src="img/photo/team-card-img-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</div>
+	</div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/jQueryScripts.min.js"></script>

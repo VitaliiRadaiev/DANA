@@ -1,7 +1,9 @@
 @@include('plugins/fancybox.min.js');
 
 jQuery(document).ready(function ($) {
-
+  $('[data-fancybox]').fancybox({
+    clickOutside: "close",
+  });
 
   $('img.img-svg').each(function () {
     var $img = $(this);

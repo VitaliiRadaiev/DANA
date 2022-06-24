@@ -37,6 +37,11 @@
             height: 100%;
             z-index: 2;
             background: linear-gradient(90.12deg, #039D98 54.96%, rgba(3, 157, 152, 0) 91.25%);
+
+            @media (max-width: $md3+px) {
+                width: 80.48%;
+                background: linear-gradient(90.12deg, #039D98 23.36%, rgba(3, 157, 152, 0) 91.25%);
+            }
         }
     }
 
@@ -75,7 +80,7 @@
 
     &__text {
         margin-bottom: 1.6rem;
-        max-width: 58%;
+        max-width: 59%;
         line-height: 1.4em;
 
         @media (max-width: $md3+px) {
@@ -83,6 +88,7 @@
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 4px;
+            max-width: none;
         }
         
     }

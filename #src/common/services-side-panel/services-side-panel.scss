@@ -22,6 +22,11 @@
                 padding-bottom: 0.8rem;
                 padding-left: 2.5em;
                 margin-bottom: 0;
+                color: $secondColor;
+            }
+
+            &.item-active > a {
+                color: $warningColor !important;
             }
         }
 

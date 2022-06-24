@@ -33,18 +33,29 @@
 
 
     &__content-body {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -0.8rem -1.6rem;
+
+
+        @media (min-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -0.8rem -1.6rem;
+        }
     }
 
     &__content-col {
-        flex: 0 1 33.333333%;
-        padding: 0 0.8rem;
+
+
+        @media (min-width: 992px) {
+            flex: 0 1 33.333333%;
+            padding: 0 0.8rem;
+        }
         margin-bottom: 1.6rem;
 
         @media (max-width: $md2+px) {
             flex: 0 1 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -126,6 +137,11 @@
             & p {
                 margin-bottom: 0;
                 max-width: 30.8rem;
+                margin-right: 2rem;
+            }
+
+            & > strong {
+                white-space: nowrap;
             }
         }
     }
@@ -221,13 +237,30 @@
     }
 
     & .cta__form-items {
-        max-width: 37.4rem;
+
+        @media (min-width: 992px) {
+            max-width: 37.4rem;
+        }
+
+        @media (max-width: $md2+px) and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
     }
 
     & .cta__form-item {
         margin-bottom: 1.6rem;
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @media (max-width: $md2+px) and (min-width: 768px) {
+            margin-bottom: 0;
+            flex: 0 0 calc(50% - 15px);
         }
     }
 }

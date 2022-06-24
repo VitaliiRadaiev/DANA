@@ -350,13 +350,6 @@ class App {
 		@@include('../common/comments/comment.js');
 		@@include('../common/main-grid/main-grid.js');
 
-		{
-			let lastSection = document.querySelector('[data-last-section]');
-			let footer = document.querySelector('.footer');
-			if (lastSection && footer) {
-				footer.classList.add('pt-0-mob');
-			}
-		}
 	}
 
 	componentsScriptsBeforeLoad() {
@@ -365,6 +358,9 @@ class App {
 		@@include('../common/article-card/article-card.js');
 		@@include('../common/comment-form/comment-form.js');
 		@@include('../common/links-group/links-group.js');
+		@@include('../common/content-list/content-list.js');
+		@@include('../common/services-questions/services-questions.js');
+		@@include('../common/cta/cta.js');
 	}
 }
 

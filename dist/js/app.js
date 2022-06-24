@@ -388,13 +388,21 @@ const timeout = 800;
 if(popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
-		console.log(popupLink);
+
 		popupLink.addEventListener('click', function(e) {
-			console.log(e);
-			const popupName = popupLink.getAttribute('href').replace('#', '');
+			e.preventDefault();
+			let popupName = '';
+
+			if(popupLink.getAttribute('href')) {
+				popupName = popupLink.getAttribute('href').replace('#', '');
+			}
+			if(popupLink.dataset.popupHref) {
+				popupName = popupLink.dataset.popupHref.replace('#', '');
+			}
+			console.log(popupName);
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
-			e.preventDefault();
+			
 		});
 	}
 }
@@ -729,7 +737,7 @@ window.popup = {
                         slidesPerView: 'auto',
                         spaceBetween: 0,
                         centeredSlides: true,
-                        touchRatio: 0,
+                       // touchRatio: 0,
                         loop: true,
                     }
                 },
@@ -761,6 +769,7 @@ window.popup = {
             });
 
             deskSwiper.controller.control = mobSwiper
+            mobSwiper.controller.control = deskSwiper
         }
     }
 };
@@ -1532,8 +1541,9 @@ window.popup = {
     let comments = document.querySelectorAll('.commentlist .comment');
     if(comments.length) {
         comments.forEach(comment => {
+            let author = comment.querySelector(".comment-author");
             let name = comment.querySelector(".comment-author .fn");
-            let metaData = comment.querySelector('.comment-metadata');
+            let metaData = comment.querySelector('.commentmetadata');
             let likesButtonsWrap = comment.querySelector('.cld-like-dislike-wrap');
             let replyButton = comment.querySelector('.reply');
 
@@ -1543,6 +1553,15 @@ window.popup = {
 
             if(likesButtonsWrap && replyButton) {
                 likesButtonsWrap.prepend(replyButton);
+            }
+
+            if(author && metaData) {
+                let authorWrap = document.createElement('div');
+                authorWrap.className = 'comment-author-wrap';
+                author.after(authorWrap);
+
+                authorWrap.append(author);
+                authorWrap.append(metaData);
             }
         })
     }
@@ -1589,13 +1608,6 @@ window.popup = {
 //     }
 // };
 
-		{
-			let lastSection = document.querySelector('[data-last-section]');
-			let footer = document.querySelector('.footer');
-			if (lastSection && footer) {
-				footer.classList.add('pt-0-mob');
-			}
-		}
 	}
 
 	componentsScriptsBeforeLoad() {
@@ -1610,10 +1622,10 @@ window.popup = {
                 let collapsedText = item.querySelector('.faq-list__collaps');
                 let title = item.querySelector('.faq-list__title');
                 let btn = item.querySelector('.faq-list__btn');
-                let btnText = btn.innerHTML;
+                let btnText = null;
 
                 if(btn) {
-
+                    btnText = btn.innerHTML;
                     btn.addEventListener('click', (e) => {
                         e.preventDefault();
                         if(item.classList.contains('text-is-show')) {
@@ -1730,6 +1742,72 @@ window.popup = {
         links.forEach(link => {
             link.innerHTML = link.innerText.split(' ').map(word => `<span>${word}</span>`).join('');
         })
+    }
+};
+		{
+    let links = document.querySelectorAll('.content-list a');
+    if(links.length) {
+        links.forEach(link => {
+            link.innerHTML = link.innerText.split(' ').map(word => `<span>${word}</span>`).join('');
+        })
+    }
+};
+		
+let servicesQuestionsLists = document.querySelectorAll('[data-services-questions-list]');
+if(servicesQuestionsLists.length) {
+    servicesQuestionsLists.forEach(servicesQuestionsList => {
+        let items = Array.from(servicesQuestionsList.children);
+  
+        if(items.length > 10) {
+            
+            let btnWrap = document.createElement('div');
+            btnWrap.className = 'button-wrap button-wrap--bottom text-center'
+
+            let btn = document.createElement('a');
+            btn.className = 'btn btn--dark';
+            btn.innerHTML = 'Показать все услуги';
+            btnWrap.append(btn);
+
+            servicesQuestionsList.after(btnWrap);
+
+            items.forEach((item, index) => {
+                if(index > 9) {
+                    item.classList.add('d-none');
+                }
+            })
+
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                if(servicesQuestionsList.classList.contains('show-all-items')) {
+                    servicesQuestionsList.classList.remove('show-all-items');
+
+                    items.forEach((item, index) => {
+                        if(index > 9) {
+                            item.classList.add('d-none');
+                        }
+                    })
+                    btn.innerHTML = 'Показать все услуги';
+                } else {
+                    servicesQuestionsList.classList.add('show-all-items');
+                    
+                    items.forEach((item) => {
+                        item.classList.remove('d-none');
+                    })
+                    
+                    btn.innerHTML = 'Свернуть';
+                }
+
+
+            })
+        }
+    })
+};
+		let ctaFeedback = document.querySelector('.cta--feedback');
+if(ctaFeedback) {
+    let footer = document.querySelector('.footer');
+    if(footer) {
+        footer.classList.add('pt-0-mob');
     }
 };
 	}
