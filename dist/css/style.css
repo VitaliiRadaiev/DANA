@@ -2819,6 +2819,14 @@ figure {
   letter-spacing: -0.02em;
 }
 
+.text-content .kk-star-ratings {
+  display: none !important;
+}
+
+.text-content .kk-star-ratings + blockquote {
+  margin-top: 0 !important;
+}
+
 .text-content h1,
 .text-content h2,
 .text-content h3,
@@ -4108,7 +4116,7 @@ figure {
   content: "";
   top: 0;
   left: 0;
-  width: 85.08%;
+  width: 92.44%;
   height: 100%;
   z-index: 2;
   background: -o-linear-gradient(359.88deg, #039D98 54.96%, rgba(3, 157, 152, 0) 91.25%);
@@ -5493,6 +5501,10 @@ figure {
   border-radius: 4rem;
   overflow: hidden;
   position: relative;
+}
+
+.board .kk-star-ratings {
+  display: none !important;
 }
 
 .board:before {
@@ -8026,7 +8038,8 @@ figure {
   background-color: #fff;
 }
 
-.contact__top-map iframe {
+.contact__top-map iframe,
+.contact__top-map .map {
   position: absolute !important;
   top: 0;
   left: 0;
@@ -8166,6 +8179,60 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.ymaps-2-1-79-balloon {
+  border-radius: 2.4rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+}
+
+.ymaps-2-1-79-balloon__content {
+  padding-top: 2.4rem !important;
+  padding-left: 2.4rem !important;
+  padding-bottom: 2.4rem !important;
+}
+
+.map-popup {
+  color: #2F2F2F;
+}
+
+.map-popup__title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.33em;
+  letter-spacing: -0.02em;
+}
+
+.map-popup .contact__list {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.map-popup .contact__list > li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.map-popup .contact__list-title {
+  font-size: 1.4rem;
+  line-height: 1.29em;
+  letter-spacing: -0.02em;
+}
+
+.map-popup .contact__list-text {
+  font-size: 1.4rem;
+  line-height: 1.29em;
+  letter-spacing: -0.02em;
+}
+
+.map-popup .map-btn {
+  min-width: 19rem;
+  min-height: 3.4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.29em;
 }
 
 .technology-list .technology__list {
@@ -10757,9 +10824,9 @@ blockquote:before {
   }
 
   .services-card__bg:before {
-    width: 80.48%;
-    background: -o-linear-gradient(359.88deg, #039D98 23.36%, rgba(3, 157, 152, 0) 91.25%);
-    background: linear-gradient(90.12deg, #039D98 23.36%, rgba(3, 157, 152, 0) 91.25%);
+    width: 90.24%;
+    background: -o-linear-gradient(359.88deg, #039D98 54.96%, rgba(3, 157, 152, 0) 91.25%);
+    background: linear-gradient(90.12deg, #039D98 54.96%, rgba(3, 157, 152, 0) 91.25%);
   }
 
   .services-card__inner {

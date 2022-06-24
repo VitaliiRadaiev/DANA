@@ -8,33 +8,34 @@ let unlock = true;
 
 const timeout = 800;
 
-if(popupLinks.length > 0) {
+
+if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
 
-		popupLink.addEventListener('click', function(e) {
+		popupLink.addEventListener('click', function (e) {
 			e.preventDefault();
 			let popupName = '';
 
-			if(popupLink.getAttribute('href')) {
+			if (popupLink.getAttribute('href')) {
 				popupName = popupLink.getAttribute('href').replace('#', '');
 			}
-			if(popupLink.dataset.popupHref) {
+			if (popupLink.dataset.popupHref) {
 				popupName = popupLink.dataset.popupHref.replace('#', '');
 			}
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
-			
+
 		});
 	}
 }
 
 
 const popupCloseIcon = document.querySelectorAll('[data-popup="close-popup"]');
-if(popupCloseIcon.length > 0) {
-	for(let index = 0; index < popupCloseIcon.length; index++) {
+if (popupCloseIcon.length > 0) {
+	for (let index = 0; index < popupCloseIcon.length; index++) {
 		const el = popupCloseIcon[index];
-		el.addEventListener('click', function(e) {
+		el.addEventListener('click', function (e) {
 			popupClose(el.closest('.popup'));
 			e.preventDefault();
 		});
@@ -42,7 +43,7 @@ if(popupCloseIcon.length > 0) {
 }
 
 function popupOpen(curentPopup) {
-	if(curentPopup && unlock) {
+	if (curentPopup && unlock) {
 		const popupActive = document.querySelector('.popup.popup--open');
 		if (popupActive) {
 			popupClose(popupActive, false);
@@ -50,9 +51,9 @@ function popupOpen(curentPopup) {
 			bodyLock();
 		}
 		curentPopup.classList.add('popup--open');
-		curentPopup.addEventListener('click', function(e) {
-			if(!e.target.closest('.popup__content')) {
-				popupClose(e.target.closest('.popup')); 
+		curentPopup.addEventListener('click', function (e) {
+			if (!e.target.closest('.popup__content')) {
+				popupClose(e.target.closest('.popup'));
 			}
 		});
 
@@ -60,9 +61,9 @@ function popupOpen(curentPopup) {
 }
 
 function popupClose(popupActive, doUnlock = true) {
-	if(unlock) {
+	if (unlock) {
 		popupActive.classList.remove('popup--open');
-		if(doUnlock) {
+		if (doUnlock) {
 			bodyUnlock();
 		}
 	}
@@ -71,14 +72,14 @@ function popupClose(popupActive, doUnlock = true) {
 function bodyLock() {
 	const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
 	let targetPadding = document.querySelectorAll('[data-popup="add-right-padding"]');
-	if(targetPadding.length) {
+	if (targetPadding.length) {
 		for (let index = 0; index < targetPadding.length; index++) {
 			const el = targetPadding[index];
 			el.style.paddingRight = lockPaddingValue;
 		}
 	}
 
-	if(lockPadding.length > 0) {
+	if (lockPadding.length > 0) {
 		for (let index = 0; index < lockPadding.length; index++) {
 			const el = lockPadding[index];
 			el.style.paddingRight = lockPaddingValue;
@@ -89,7 +90,7 @@ function bodyLock() {
 	body.classList.add('overflow-hidden');
 
 	unlock = false;
-	setTimeout(function() {
+	setTimeout(function () {
 		unlock = true;
 	}, timeout);
 }
@@ -97,15 +98,15 @@ function bodyLock() {
 function bodyUnlock() {
 	let targetPadding = document.querySelectorAll('[data-popup="add-right-padding"]');
 
-	setTimeout(function() {
-		if(targetPadding.length) {
+	setTimeout(function () {
+		if (targetPadding.length) {
 			for (let index = 0; index < targetPadding.length; index++) {
 				const el = targetPadding[index];
 				el.style.paddingRight = '0px';
 			}
 		}
 
-		for( let index = 0; index < lockPadding.length; index++) {
+		for (let index = 0; index < lockPadding.length; index++) {
 			const el = lockPadding[index];
 			el.style.paddingRight = '0px';
 		}
@@ -115,40 +116,40 @@ function bodyUnlock() {
 	}, timeout);
 
 	unlock = false;
-	setTimeout(function() { 
+	setTimeout(function () {
 		unlock = true;
 	}, timeout);
 }
 
-document.addEventListener('keydown', function(e) {
-	if(e.which === 27) {
+document.addEventListener('keydown', function (e) {
+	if (e.which === 27) {
 		const popupActive = document.querySelector('.popup.popup--open');
 		popupClose(popupActive);
 	}
 });
 
 // === Polyfill ===
-	(function() {
-		if(!Element.prototype.closest) {
-			Element.prototype.closest = function(css) {
-				var node = this;
-				while(node) {
-					if(node.matches(css)) return node;
-					else node == node.parentElement;
-				}
-				return null;
-			};
-		}
-	})();
+(function () {
+	if (!Element.prototype.closest) {
+		Element.prototype.closest = function (css) {
+			var node = this;
+			while (node) {
+				if (node.matches(css)) return node;
+				else node == node.parentElement;
+			}
+			return null;
+		};
+	}
+})();
 
-	(function() {
-		if(!Element.prototype.matches) {
-			Element.prototype.matches = Element.prototype.matchesSelector ||
-				Element.prototype.webkitMatchesSelector ||
-				Element.prototype.mozMatchesSelector ||
-				Element.prototype.mozMatchesSelector;
-		}
-	})();
+(function () {
+	if (!Element.prototype.matches) {
+		Element.prototype.matches = Element.prototype.matchesSelector ||
+			Element.prototype.webkitMatchesSelector ||
+			Element.prototype.mozMatchesSelector ||
+			Element.prototype.mozMatchesSelector;
+	}
+})();
 // === AND Polyfill ===
 
 // добавление API попапа в глобалную видимость
@@ -170,5 +171,29 @@ window.popup = {
 		if (!popup) return;
 
 		popupClose(popup);
+	},
+	initItem(item) {
+		if(!item) return;
+
+		const popupLink = item;
+
+		popupLink.addEventListener('click', function (e) {
+			e.preventDefault();
+			let popupName = '';
+
+			if (popupLink.getAttribute('href')) {
+				popupName = popupLink.getAttribute('href').replace('#', '');
+			}
+			if (popupLink.dataset.popupHref) {
+				popupName = popupLink.dataset.popupHref.replace('#', '');
+			}
+			const curentPopup = document.getElementById(popupName);
+			popupOpen(curentPopup);
+
+		});
+
+
 	}
 }
+
+

@@ -59,6 +59,9 @@
 			}
 		}
 	</style>
+	        <script src="https://api-maps.yandex.ru/2.1/?apikey=1eda18f0-d3c9-44c1-990d-210d66fa5be0&lang=ru_RU"
+            type="text/javascript">
+            </script>
 	
 <script src="js/vendors.js"></script>
 <script src="js/app.js"></script>
@@ -198,12 +201,15 @@ defer
             </div>
         </div>
 
+
+
         <div class="contact padding-wrap pt-0">
             <div class="container-md">
                 <div class="contact__row">
                     <div class="contact__top-map">
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
-										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        <div class="map" id="map"></div>
+                        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D" width="560" height="400"
+										frameborder="1" allowfullscreen="true" style="position:relative;"></iframe> -->
                     </div>
                 </div>
                 <div class="contact__row" data-tabs>
@@ -247,7 +253,7 @@ defer
                                         +7 (921) 918-2-918
                                         <div class="simple-social">
                                             <a href="#">WhatsApp</a> / <a href="#">Telegram</a> / <a href="#">Viber</a>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -262,15 +268,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -278,31 +287,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -315,15 +326,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -331,31 +345,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -368,15 +384,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -384,31 +403,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -448,7 +469,7 @@ defer
                                         +7 (921) 918-2-918
                                         <div class="simple-social">
                                             <a href="#">WhatsApp</a> / <a href="#">Telegram</a> / <a href="#">Viber</a>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -463,15 +484,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -479,31 +503,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -516,15 +542,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -532,31 +561,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -569,15 +600,18 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>1.</span> 
+                                                        <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a href="#">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#">обойти ТЦ</a>, выйти на <a
+                                                                href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>2.</span> 
+                                                        <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a href="#">остановки Торговый центр</a> (время в пути примерно 6 минут, 4 остановки)
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                href="#">остановки Торговый центр</a> (время в пути
+                                                            примерно 6 минут, 4 остановки)
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -585,31 +619,33 @@ defer
                                             <div class="route-card__item">
                                                 <ul class="route-card__steps">
                                                     <li>
-                                                        <span>3.</span> 
+                                                        <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую Пороховскую улицу. 
+                                                            Дойти до <a href="#">перекрестка</a>, перейти Большую
+                                                            Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <span>4.</span> 
+                                                        <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                             <div class="route-card__item">
                                                 <div class="route-card__map">
-                                                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
+                                                    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUFNDUd3D"
                                                         width="560" height="400" frameborder="1" allowfullscreen="true"
-                                                        style="position:relative;"></iframe>
+                                                        style="position:relative;"></iframe> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -621,6 +657,90 @@ defer
                 </div>
             </div>
         </div>
+
+
+        <!-- <div class="map-popup">
+            <h3 class="map-popup__title">Клиника на Большой Пороховской</h3>
+            <ul class="contact__list">
+                <li class="contact__list-address">
+                    <div class="contact__list-title">Адрес:</div>
+                    <div class="contact__list-text">
+                        195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                        <div class="small">Красногвардейский район</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact__list-title">Телефон:</div>
+                    <div class="contact__list-text">
+                        <a href="#">+7 (812) 612-44-54</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact__list-title">График работы:</div>
+                    <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
+                </li>
+            </ul>
+            <div class="map-popup__buttons">
+                <a href="#ctaPopup" data-popup="open-popup" class="btn btn--gradient">Записаться в клинику</a>
+            </div>
+        </div> -->
+
+        
+
+        <script type="text/javascript">
+            ymaps.ready(init);
+            function init() {
+                var yMap = new ymaps.Map("map", {
+                    center: [59.964462, 30.460398],
+                    zoom: 10
+                });
+
+                myPlacemark = new ymaps.Placemark(yMap.getCenter(), {
+                    hintContent: 'ул. Большая Пороховская, д. 47',
+                    balloonContent: `
+                    <div class="map-popup">
+                    <h3 class="map-popup__title">Клиника на Большой Пороховской</h3>
+                    <ul class="contact__list">
+                        <li class="contact__list-address">
+                            <div class="contact__list-title">Адрес:</div>
+                            <div class="contact__list-text">
+                                195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact__list-title">Телефон:</div>
+                            <div class="contact__list-text">
+                                <a href="#">+7 (812) 612-44-54</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact__list-title">График работы:</div>
+                            <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
+                        </li>
+                    </ul>
+                    <div class="map-popup__buttons">
+                        <a href="#ctaPopup" data-popup="open-popup" class="map-btn btn btn--gradient">Записаться в клинику</a>
+                    </div>
+                    </div>
+                    `
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/icons/mapIcon.svg',
+                    // Размеры метки.
+                    iconImageSize: [49, 54],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    //iconImageOffset: [-5, -38]
+                }),
+
+                yMap.geoObjects.add(myPlacemark)
+                yMap.geoObjects.events.add('balloonopen', () => {
+                    let mapBtn = document.querySelector('.map-btn');
+                    if(!mapBtn) return;
+                    window.popup.initItem(mapBtn);
+                })
+            }
+        </script>
     </main>
 
 
@@ -732,6 +852,49 @@ defer
     </div>
 </footer>
     <!-- == // FOOTER ================== -->
+    <div class="popup" id="ctaPopup">
+    <div class="popup__body">
+        <div class="popup__content ">
+            <div class="popup__close" data-popup="close-popup"><span></span></div>
+            <section class="cta">
+                <div class="cta__inner">
+                    <div class="cta__body">
+                        <div class="cta__col-1">
+                            <h3 class="cta__title">Запишитесь к врачу</h3>
+                            <div class="cta__text">
+                                Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача. Оставьте заявку и мы
+                                в ближайшее время свяжемся с вами.
+                            </div>
+                            <form action="">
+                                <div class="cta__form-items mb-0">
+                                    <div class="cta__form-item cta__form-item--half" data-mask="+7(999)-999-99-99">
+                                        <input type="text" class="input" placeholder="Ваш номер телефона">
+                                    </div>
+                                    <div class="cta__form-item cta__form-item--half">
+                                        <button class="btn btn--dark">Заказать звонок</button>
+                                    </div>
+                                    <div class="cta__form-item">
+                                        <label class="checkbox-radio">
+                                            <input type="checkbox">
+                                            <div class="checkbox-radio__square"></div>
+                                            <div class="checkbox-radio__text">Нажимая на кнопку «Заказать обратный звонок» я даю <a
+                                                    href="#">согласие</a> на обработку персональных данных</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="cta__col-2">
+                            <div class="cta__img">
+                                <img src="img/photo/team-card-img-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</div>
+	</div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/jQueryScripts.min.js"></script>

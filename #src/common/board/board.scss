@@ -9,6 +9,10 @@
         border-radius: 16px;
     }
 
+    & .kk-star-ratings {
+		display: none !important;
+	}
+
     &:before {
         position: absolute;
         content: "";
