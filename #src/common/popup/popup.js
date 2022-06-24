@@ -22,7 +22,6 @@ if(popupLinks.length > 0) {
 			if(popupLink.dataset.popupHref) {
 				popupName = popupLink.dataset.popupHref.replace('#', '');
 			}
-			console.log(popupName);
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
 			

@@ -163,6 +163,12 @@ class App {
 							parent.classList.add('active');
 						}
 
+						if(trigger.closest('.item-active')) {
+							content.style.display = 'block';
+							trigger.classList.add('active');
+							parent.classList.add('active');
+						}
+
 						trigger.addEventListener('click', (e) => {
 							e.preventDefault();
 							parent.classList.toggle('active');
@@ -218,9 +224,12 @@ class App {
 								item.el.classList.remove('d-none');
 							})
 
-							titles.forEach(title => {
-								title.classList.remove('d-none');
-							})
+							if(titles.length) {
+								titles.forEach(title => {
+									title.classList.remove('d-none');
+								})
+							}
+
 						} else {
 							filterItems.forEach(item => {
 								if(item.multipleId.includes(trigger.dataset.filterTrigger)) {
@@ -230,9 +239,11 @@ class App {
 								}
 							})
 
-							titles.forEach(title => {
-								title.classList.add('d-none');
-							})
+							if(titles.length) {
+								titles.forEach(title => {
+									title.classList.add('d-none');
+								})
+							}
 						}
 					})
 				})
@@ -370,6 +381,7 @@ class App {
 		@@include('../common/content-list/content-list.js');
 		@@include('../common/services-questions/services-questions.js');
 		@@include('../common/cta/cta.js');
+		@@include('../common/advantage/advantage.js');
 	}
 }
 

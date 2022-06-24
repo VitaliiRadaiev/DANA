@@ -1,0 +1,159 @@
+.advantage {
+
+    &__row {
+        @media (min-width: 414px) {
+            display: flex;
+            gap: 1.6rem;
+
+            &:not(.show-flaws) {
+                & .advantage__col--1 {
+                    width: 66.14% !important;
+                }
+                & .advantage__col--2 {
+                    width: calc(33.86% - 1.6rem) !important;
+    
+                    & .advantage__box {
+                        cursor: pointer;
+    
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            bottom: 0;
+                            right: -1px;
+                            width: 44%;
+                            height: 100%;
+                            z-index: 4;
+                            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 143.86%);
+                        }
+    
+                        
+                        @media (min-width: 992px) {
+                            &:hover {
+                                box-shadow: 0px 0px 2rem 0px rgba($mainColor, 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &.show-flaws {
+                & .advantage__col--1 {
+                    width: calc(33.86% - 1.6rem) !important;
+    
+                    & .advantage__box {
+                        cursor: pointer;
+    
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            bottom: 0;
+                            right: -1px;
+                            width: 44%;
+                            height: 100%;
+                            z-index: 4;
+                            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 143.86%);
+                        }
+    
+                        
+                        @media (min-width: 992px) {
+                            &:hover {
+                                box-shadow: 0px 0px 2rem 0px rgba($mainColor, 0.2);
+                            }
+                        }
+                    }
+                }
+    
+                & .advantage__col--2 {
+                    width: 66.14% !important;
+                }
+            }
+        }
+
+
+        &:not(:last-child) {
+            margin-bottom: 3.2rem;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 24px;
+            }
+        }
+
+
+    }
+
+    &__col {
+        transition: all .15s linear;
+    }
+
+    &__col--1 {
+        margin-bottom: 12px;
+        @media (min-width: 414px) {
+            margin-bottom: 0;
+            width: 66.14%;
+        }
+        
+    }
+
+    &__col--2 {
+        @media (min-width: 414px) {
+            width: calc(33.86% - 1.6rem);
+        }
+    }
+
+    &__text-wrap {
+        @media (min-width: 992px) {
+            min-width: 64rem !important;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.2rem;
+
+        @media (max-width: $md3+px) and (min-width: 414px) {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        & svg {
+            flex: 0 0 auto;
+            height: 2.8rem;
+            width: 2.8rem;
+            margin-right: 1.6rem;
+
+            @media (max-width: $md3+px) and (min-width: 414px) {
+                height: 16px;
+                width: 16px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__text {
+        @media (max-width: $md3+px) and (min-width: 414px){
+            font-size: 14px;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__box {
+        padding: 4.8rem;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: all .15s ease-in-out;
+
+        @media (max-width: $md2+px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    
+        @media (max-width: $md3+px) {
+            padding: 40px 12px;
+        }
+    }
+}

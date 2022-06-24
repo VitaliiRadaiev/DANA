@@ -150,4 +150,15 @@
     <path d="M22 11L31 20L22 29" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="plus" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.6953 22V15.1193H6V12.8807H12.6953V6H15.3047V12.8807H22V15.1193H15.3047V22H12.6953Z" fill="#0ABEB9"/>
+    <circle cx="14" cy="14" r="12.75" stroke="#0ABEB9" stroke-width="2.5"/>
+    </symbol>
+
+    <symbol id="minus" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="12.75" stroke="#E52D65" stroke-width="2.5"/>
+    <path d="M8 16V13H20V16H8Z" fill="#E52D65"/>
+    </symbol>
+
+
 </svg>

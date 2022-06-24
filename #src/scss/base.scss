@@ -715,11 +715,16 @@ figure {
 
 	& a {
 		text-decoration: underline;
+		color: $secondColor;
 
 		@media (min-width: 992px) {
 			&:hover {
 				color: $mainColor;
 			}
+		}
+
+		& * {
+			color: $secondColor !important;
 		}
 	}
 
