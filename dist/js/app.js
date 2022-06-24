@@ -929,6 +929,7 @@ window.popup = {
 		let filters = document.querySelectorAll('[data-filter]');
 		if(filters.length) {
 			filters.forEach(filter => {
+				let titles = filter.querySelectorAll('.team-list__title');
 				let triggers = filter.querySelectorAll('[data-filter-trigger]');
 				let filterItems = Array.from(filter.querySelectorAll('[data-filter-content]')).map(item => {
 					return {
@@ -953,6 +954,10 @@ window.popup = {
 							filterItems.forEach(item => {
 								item.el.classList.remove('d-none');
 							})
+
+							titles.forEach(title => {
+								title.classList.remove('d-none');
+							})
 						} else {
 							filterItems.forEach(item => {
 								if(item.multipleId.includes(trigger.dataset.filterTrigger)) {
@@ -960,6 +965,10 @@ window.popup = {
 								} else {
 									item.el.classList.add('d-none');
 								}
+							})
+
+							titles.forEach(title => {
+								title.classList.add('d-none');
 							})
 						}
 					})

@@ -54,6 +54,18 @@
             margin-bottom: 16px;
         }
     }
+
+    & + .button-wrap {
+        padding-bottom: 5rem;
+
+        @media (max-width: $md2+px) {
+            padding-bottom: 0;
+        }
+
+        @media (max-width: $md3+px) {
+            padding-top: 12px;
+        }
+    }
 }
 
 .testimonials-list-btn-wrap {

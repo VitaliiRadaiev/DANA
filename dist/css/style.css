@@ -4077,7 +4077,7 @@ figure {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(50% - 1.6rem);
           flex: 0 1 calc(50% - 1.6rem);
-  margin-bottom: 3.2rem;
+  margin-bottom: 4rem;
 }
 
 .services-card {
@@ -4116,7 +4116,7 @@ figure {
 }
 
 .services-card__title {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
   max-width: 41.1rem;
 }
 
@@ -5146,6 +5146,14 @@ figure {
   margin-bottom: 8.8rem;
 }
 
+.team-list__title {
+  margin-bottom: 4.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  padding: 0 1.6rem;
+}
+
 .team-card {
   display: block;
   position: relative;
@@ -5316,6 +5324,10 @@ figure {
       -ms-flex: 0 1 33.333333%;
           flex: 0 1 33.333333%;
   margin-bottom: 2.4rem;
+}
+
+.testimonials-list + .button-wrap {
+  padding-bottom: 5rem;
 }
 
 .testimonials-list-btn-wrap {
@@ -8655,7 +8667,7 @@ blockquote:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5rem 4rem 4.8rem;
+    padding: 6rem 4rem 4.8rem;
   }
 
   .team-carousel-card__btn.btn {
@@ -9889,6 +9901,10 @@ blockquote:before {
             flex: 0 1 50%;
   }
 
+  .testimonials-list + .button-wrap {
+    padding-bottom: 0;
+  }
+
   .testimonial-card {
     padding: 28px 30px;
   }
@@ -10929,6 +10945,10 @@ blockquote:before {
     margin-bottom: 24px;
   }
 
+  .team-list__title {
+    margin-bottom: 16px;
+  }
+
   .team-card:before {
     display: none;
   }
@@ -11009,6 +11029,10 @@ blockquote:before {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-bottom: 16px;
+  }
+
+  .testimonials-list + .button-wrap {
+    padding-top: 12px;
   }
 
   .testimonials-list-btn-wrap {

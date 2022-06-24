@@ -60,12 +60,12 @@
             min-height: 40rem;
             display: flex;
             flex-direction: column;
-            padding: 5rem 4rem 4.8rem;
+            padding: 6rem 4rem 4.8rem;
         }
     }
 
     &__title {
-        margin-bottom: 1.6rem;
+        margin-bottom: 2.4rem;
         max-width: 41.1rem;
 
         @media (max-width: $md3+px) {
