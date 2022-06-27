@@ -945,3 +945,9 @@ figure {
 	letter-spacing: -0.02em;
 	padding: 1.1rem 2.5rem ;
 }
+
+.tooltip-img {
+	width: calc(100% + 20px);
+	height: auto;
+	margin-left: -10px;
+}

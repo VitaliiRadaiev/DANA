@@ -360,15 +360,16 @@
 
     &__map {
         height: 0;
-        padding-bottom:54.3%;
+        padding-bottom:47.17%;
         overflow: hidden;
         border-radius: 4rem;
         margin-bottom: 3.2rem;
         position: relative;
 
         @media (max-width: $md3+px) {
-            padding-bottom: 83.84%;
+            padding-bottom: 100%;
             border-radius: 24px;
+            margin-bottom: 0;
         }
 
         & iframe {

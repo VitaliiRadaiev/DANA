@@ -3062,6 +3062,12 @@ figure {
   padding: 1.1rem 2.5rem;
 }
 
+.tooltip-img {
+  width: calc(100% + 20px);
+  height: auto;
+  margin-left: -10px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -4172,6 +4178,7 @@ figure {
 
 .services-card--big .services-card__body {
   min-height: 48rem;
+  padding-bottom: 10.2rem;
 }
 
 .services-card--big .services-card__title {
@@ -4183,10 +4190,11 @@ figure {
   line-height: 1.23em;
   letter-spacing: -0.025em;
   margin-bottom: 2.4rem;
+  max-width: 51%;
 }
 
 .services-card--big .services-card__btn {
-  margin-bottom: auto;
+  margin-top: auto;
   min-width: 33.8rem;
 }
 
@@ -4852,6 +4860,7 @@ figure {
           justify-content: flex-end;
   padding: 1.5rem 3rem;
   font-size: 2rem;
+  line-height: 1.2em;
   pointer-events: none;
 }
 
@@ -4866,7 +4875,7 @@ figure {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 35%;
+  height: 50%;
   z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0)));
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
@@ -5408,7 +5417,7 @@ figure {
 }
 
 .testimonial-card__text {
-  color: #6B6B6B;
+  color: #2F2F2F;
   font-size: 1.8rem;
   line-height: 1.33em;
   letter-spacing: -0.025em;
@@ -5427,8 +5436,8 @@ figure {
 
 .main-grid--content-lg .main-grid__side-column {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30.47%;
-          flex: 0 0 30.47%;
+      -ms-flex: 0 0 27.9%;
+          flex: 0 0 27.9%;
 }
 
 .main-grid__content {
@@ -7564,7 +7573,7 @@ figure {
 
 .contact-section__map {
   height: 0;
-  padding-bottom: 54.3%;
+  padding-bottom: 47.17%;
   overflow: hidden;
   border-radius: 4rem;
   margin-bottom: 3.2rem;
@@ -8186,6 +8195,7 @@ figure {
   overflow: hidden;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+  max-width: 43rem;
 }
 
 .ymaps-2-1-79-balloon__content {
@@ -8869,6 +8879,10 @@ blockquote:before {
     padding: 6rem 4rem 4.8rem;
   }
 
+  .services-card--big .services-card__bg:before {
+    width: 76.45%;
+  }
+
   .team-carousel-card__btn.btn {
     min-width: 25.7rem;
   }
@@ -8906,7 +8920,8 @@ blockquote:before {
   }
 
   .video-testimonials__grid > li:nth-child(3n+1) .video-testimonials__grid-item-text {
-    font-size: 2.6rem;
+    font-size: 14px;
+    padding: 1rem;
   }
 
   .video-testimonials__bottom .btn:nth-child(1) {
@@ -9022,8 +9037,8 @@ blockquote:before {
   .team-detail-head__inner {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 47%;
-    grid-template-columns: 1fr 47%;
+    -ms-grid-columns: 1fr 40%;
+    grid-template-columns: 1fr 40%;
         grid-template-areas: "title img" "subtitle img" "tags img" "adress img" "btn img";
   }
 
@@ -9313,6 +9328,11 @@ blockquote:before {
     -webkit-transform: translateY(9.8rem);
         -ms-transform: translateY(9.8rem);
             transform: translateY(9.8rem);
+  }
+
+  .video-testimonials__grid > li:nth-child(3n+1) .video-testimonials__grid-item-text {
+    font-size: 2.6rem;
+    padding: 1.5rem 3rem;
   }
 
   .cta__inner {
@@ -10050,6 +10070,11 @@ blockquote:before {
 
   .video-testimonials__grid {
     gap: 1.6rem;
+  }
+
+  .video-testimonials__grid-item-text {
+    padding: 10px;
+    font-size: 9px;
   }
 
   .rating-section__list > li {
@@ -11115,6 +11140,10 @@ blockquote:before {
     margin-bottom: 0;
   }
 
+  .cta__form-bottom {
+    margin-top: 12px;
+  }
+
   .cta--feedback {
     background-color: #fff;
     margin-top: -32px;
@@ -11833,8 +11862,9 @@ blockquote:before {
   }
 
   .contact-section__map {
-    padding-bottom: 83.84%;
+    padding-bottom: 100%;
     border-radius: 24px;
+    margin-bottom: 0;
   }
 
   .contact-section__map-bottom-col-2 .btn {

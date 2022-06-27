@@ -34,7 +34,7 @@
     
         @media (min-width: 768px) {
             display: grid;
-            grid-template-columns: 1fr 47%;
+            grid-template-columns: 1fr 40%;
             grid-template-areas: 'title img' 'subtitle img' 'tags img' 'adress img' 'btn img';
         }
 

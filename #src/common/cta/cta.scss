@@ -132,6 +132,9 @@
     }
 
     &__form-bottom {
+        @media (max-width: $md3+px) {
+            margin-top: 12px;
+        }
     }
 
     & .wpcf7-list-item {

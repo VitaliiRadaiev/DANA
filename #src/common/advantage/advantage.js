@@ -12,10 +12,10 @@ if(dataAdvantageSections.length) {
                 let text2 = col2.querySelector('.advantage__text-wrap');
 
 
-                col1.addEventListener('click', () => {
+                col1.addEventListener('mouseenter', () => {
                     row.classList.remove('show-flaws');
                 })
-                col2.addEventListener('click', () => {
+                col2.addEventListener('mouseenter', () => {
                     row.classList.add('show-flaws');
                 })
 

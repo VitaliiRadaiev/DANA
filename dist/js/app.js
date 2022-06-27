@@ -355,10 +355,10 @@ if (header) {
 
 	setPageMinHeight() {
 		let page = document.querySelector('._page');
-		if(page) {
+		if (page) {
 			let footer = document.querySelector('.footer');
 			const setHeight = () => {
-				if(footer) {
+				if (footer) {
 					page.style.minHeight = document.documentElement.clientHeight - footer.clientHeight + 'px';
 				}
 			}
@@ -851,7 +851,7 @@ window.popup = {
 				let contentItems = Array.from(tabsContainer.querySelectorAll('[data-tab-content]'));
 				let select = tabsContainer.querySelector('[data-tab-select]');
 
-				if(tabsContainer.dataset.tabs === 'sub') {
+				if (tabsContainer.dataset.tabs === 'sub') {
 					triggerItems = triggerItems.filter(i => i.closest('[data-tabs="sub"]'))
 					contentItems = contentItems.filter(i => i.closest('[data-tabs="sub"]'))
 				} else {
@@ -868,7 +868,7 @@ window.popup = {
 				if (triggerItems.length && contentItems.length) {
 					// init
 					let activeItem = tabsContainer.querySelector('.tab-active[data-tab-trigger]');
-					if(activeItem) {
+					if (activeItem) {
 						activeItem.classList.add('tab-active');
 						getContentItem(activeItem.dataset.tabTrigger).classList.add('tab-active');
 					} else {
@@ -892,12 +892,12 @@ window.popup = {
 					})
 				}
 
-				if(select) {
+				if (select) {
 					select.addEventListener('change', (e) => {
 						getContentItem(e.target.value).classList.add('tab-active');
 
 						contentItems.forEach(item => {
-							if(getContentItem(e.target.value) === item) return;
+							if (getContentItem(e.target.value) === item) return;
 
 							item.classList.remove('tab-active');
 						})
@@ -919,12 +919,12 @@ window.popup = {
 						let content = trigger.nextElementSibling;
 
 						// init
-						if(trigger.classList.contains('active')) {
+						if (trigger.classList.contains('active')) {
 							content.style.display = 'block';
 							parent.classList.add('active');
 						}
 
-						if(trigger.closest('.item-active')) {
+						if (trigger.closest('.item-active')) {
 							content.style.display = 'block';
 							trigger.classList.add('active');
 							parent.classList.add('active');
@@ -957,7 +957,7 @@ window.popup = {
 
 	filterInit() {
 		let filters = document.querySelectorAll('[data-filter]');
-		if(filters.length) {
+		if (filters.length) {
 			filters.forEach(filter => {
 				let titles = filter.querySelectorAll('.team-list__title');
 				let triggers = filter.querySelectorAll('[data-filter-trigger]');
@@ -975,17 +975,17 @@ window.popup = {
 						trigger.classList.add('active');
 
 						triggers.forEach(i => {
-							if(i === trigger) return;
+							if (i === trigger) return;
 
 							i.classList.remove('active');
 						})
 
-						if(trigger.dataset.filterTrigger === '*') {
+						if (trigger.dataset.filterTrigger === '*') {
 							filterItems.forEach(item => {
 								item.el.classList.remove('d-none');
 							})
 
-							if(titles.length) {
+							if (titles.length) {
 								titles.forEach(title => {
 									title.classList.remove('d-none');
 								})
@@ -993,14 +993,14 @@ window.popup = {
 
 						} else {
 							filterItems.forEach(item => {
-								if(item.multipleId.includes(trigger.dataset.filterTrigger)) {
+								if (item.multipleId.includes(trigger.dataset.filterTrigger)) {
 									item.el.classList.remove('d-none');
 								} else {
 									item.el.classList.add('d-none');
 								}
 							})
 
-							if(titles.length) {
+							if (titles.length) {
 								titles.forEach(title => {
 									title.classList.add('d-none');
 								})
@@ -1064,7 +1064,7 @@ window.popup = {
 					if (el) {
 						e.preventDefault();
 						let top = Math.abs(document.body.getBoundingClientRect().top) + el.getBoundingClientRect().top;
-						
+
 						if (header) {
 							top = top - header.clientHeight;
 						}
@@ -1326,9 +1326,9 @@ window.popup = {
 		if (elements.length) {
 			elements.forEach(el => {
 				const setFontSize = () => {
-					if(document.documentElement.clientWidth > 992) {
+					if (document.documentElement.clientWidth > 992) {
 						let value = 10 / 1903 * el.clientWidth;
-						if(value > 10) value = 10;
+						if (value > 10) value = 10;
 						el.style.fontSize = value + 'px';
 					}
 				}
@@ -1347,6 +1347,21 @@ window.popup = {
 				tippy(el, {
 					content: el.dataset.tooltip,
 				});
+			})
+		}
+
+		let imageTooltips = document.querySelectorAll('[data-tooltip-img]');
+		if (imageTooltips.length) {
+			imageTooltips.forEach(imageTooltip => {
+				imageTooltip.addEventListener('click', (e) => {
+					e.preventDefault();
+				})
+				tippy(imageTooltip, {
+					content: `<img class="tooltip-img" src="${imageTooltip.dataset.tooltipImg}" alt="">`,
+					allowHTML: true,
+					maxWidth: 'none'
+				});
+
 			})
 		}
 	}
@@ -1486,17 +1501,17 @@ window.popup = {
 };
 		{
     let testimonialsSection = document.querySelector('[data-testimonials]');
-    if(testimonialsSection) {
+    if (testimonialsSection) {
         let list = testimonialsSection.querySelector('.testimonials-list');
         let listItems = testimonialsSection.querySelectorAll('.testimonials-list li');
         let btn = testimonialsSection.querySelector('.testimonials__mob-btn');
         let margin = 8;
 
-        if(list && btn && listItems.length) {
+        if (list && btn && listItems.length) {
             const toggleHideItems = () => {
-                if(document.documentElement.clientWidth < 768 && !testimonialsSection.classList.contains('testimonials--showed')) {
+                if (document.documentElement.clientWidth < 768 && !testimonialsSection.classList.contains('testimonials--showed')) {
                     listItems.forEach((item, index) => {
-                        if(index > 1) {
+                        if (index > 1) {
                             item.classList.add('d-none')
                         }
                     })
@@ -1525,10 +1540,10 @@ window.popup = {
     }
 
     let testimonialsListAll = document.querySelectorAll('[data-testimonials-list]');
-    if(testimonialsListAll.length) {
+    if (testimonialsListAll.length) {
         testimonialsListAll.forEach(testimonialsList => {
             let items = Array.from(testimonialsList.children);
-            if(items.length > 9) {
+            if (items.length > 9) {
                 let btnWrap = document.createElement('div');
                 btnWrap.className = 'testimonials-list-btn-wrap text-center'
 
@@ -1540,19 +1555,32 @@ window.popup = {
                 testimonialsList.after(btnWrap);
 
                 items.forEach((item, index) => {
-                    if(index > 8) {
+                    if (index > 8) {
                         item.classList.add('d-none');
                     }
                 })
 
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
+                    if (testimonialsList.classList.contains('show-all-items')) {
+                        testimonialsList.classList.remove('show-all-items');
 
-                    items.forEach((item) => {
-                        item.classList.remove('d-none');
-                    })
+                        items.forEach((item, index) => {
+                            if (index > 8) {
+                                item.classList.add('d-none');
+                            }
+                        })
+                        btn.innerHTML = 'Показать еще отзывы';
+                    } else {
+                        testimonialsList.classList.add('show-all-items');
 
-                    btnWrap.classList.add('d-none');
+                        items.forEach((item) => {
+                            item.classList.remove('d-none');
+                        })
+
+                        btn.innerHTML = 'Свернуть';
+                    }
+
                 })
             }
         })
@@ -1868,10 +1896,10 @@ if(dataAdvantageSections.length) {
                 let text2 = col2.querySelector('.advantage__text-wrap');
 
 
-                col1.addEventListener('click', () => {
+                col1.addEventListener('mouseenter', () => {
                     row.classList.remove('show-flaws');
                 })
-                col2.addEventListener('click', () => {
+                col2.addEventListener('mouseenter', () => {
                     row.classList.add('show-flaws');
                 })
 
