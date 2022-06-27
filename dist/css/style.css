@@ -3549,10 +3549,6 @@ figure {
   gap: 2.4rem;
 }
 
-.buttons-group + .team-list {
-  padding-top: 6rem;
-}
-
 .promo-header {
   overflow: hidden;
 }
@@ -9028,6 +9024,14 @@ blockquote:before {
 
   .info-block .buttons-group {
     margin-bottom: 2.8rem;
+  }
+
+  .team-section .team-list {
+    padding-top: 6rem;
+  }
+
+  .team-section .team-list > .team-list__title:first-child {
+    margin-top: -6rem;
   }
 
   .team-detail-head__inner {

@@ -1,0 +1,11 @@
+.team-section {
+    & .team-list {
+        @media (min-width: 768px) {
+            padding-top: 6rem;
+
+            & > .team-list__title:first-child {
+                margin-top: -6rem;
+            }
+        }
+    }
+}
