@@ -40,6 +40,17 @@
     &__title {
         margin-bottom: 2.4rem;
 
+        font-size: 4.4rem;
+        line-height: 1.14em;
+        letter-spacing: -0.02em;
+        font-weight: 400;
+    
+        @media (max-width: $md3+px) {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1.14em;
+        }
+
         @media (max-width: $md3+px) {
             margin-bottom: 16px;
         }
