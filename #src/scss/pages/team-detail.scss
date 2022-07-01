@@ -34,7 +34,7 @@
     
         @media (min-width: 768px) {
             display: grid;
-            grid-template-columns: 1fr 40%;
+            grid-template-columns: 1fr 46%;
             grid-template-areas: 'title img' 'subtitle img' 'tags img' 'adress img' 'btn img';
         }
 
@@ -172,7 +172,7 @@
         font-weight: 500;
         font-size: 2rem;
         line-height: 1em;
-        letter-spacing: -0.025em;
+        letter-spacing: -0.02em;
         margin-bottom: 2.9rem;
 
         @media (min-width: 768px) {

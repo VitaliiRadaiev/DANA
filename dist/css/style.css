@@ -5277,9 +5277,9 @@ figure {
 .team-card__text {
   font-size: 1.8rem;
   line-height: 1.33em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin-bottom: 2.4rem;
-  max-width: 50%;
+  max-width: 51%;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -5289,7 +5289,7 @@ figure {
   margin-top: auto;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  min-width: 27.2rem;
+  min-width: 25.6rem;
   position: relative;
   border: none;
 }
@@ -7944,7 +7944,7 @@ figure {
   font-weight: 500;
   font-size: 2rem;
   line-height: 1em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin-bottom: 2.9rem;
 }
 
@@ -9115,8 +9115,8 @@ blockquote:before {
   .team-detail-head__inner {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 40%;
-    grid-template-columns: 1fr 40%;
+    -ms-grid-columns: 1fr 46%;
+    grid-template-columns: 1fr 46%;
         grid-template-areas: "title img" "subtitle img" "tags img" "adress img" "btn img";
   }
 

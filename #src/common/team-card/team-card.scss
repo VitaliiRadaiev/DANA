@@ -134,9 +134,9 @@
     &__text {
         font-size: 1.8rem;
         line-height: 1.33em;
-        letter-spacing: -0.025em;
+        letter-spacing: -0.02em;
         margin-bottom: 2.4rem;
-        max-width: 50%;
+        max-width: 51%;
         transition: all 0.15s ease-in-out;
 
         @media (max-width: $md3+px) {
@@ -150,7 +150,7 @@
     &__btn {
         margin-top: auto;
         align-self: flex-start;
-        min-width: 27.2rem;
+        min-width: 25.6rem;
         position: relative;
         border: none;
 
