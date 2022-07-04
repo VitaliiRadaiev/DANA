@@ -466,7 +466,6 @@ figure {
 		margin-bottom: 0;
 	}
 
-
 	& h3.head__title {
 		@media (max-width: $md3+px) {
 			font-weight: 600;
@@ -488,16 +487,16 @@ figure {
 		line-height: 1.14em;
 		letter-spacing: -0.02em;
 		font-weight: 400;
-	
+
 		@media (max-width: $md3+px) {
 			font-weight: 600;
 			font-size: 28px;
 			line-height: 1.14em;
 		}
-	
+
 		&.mb-3 {
 			margin-bottom: 2.4rem !important;
-	
+
 			@media (max-width: $md3+px) {
 				margin-bottom: 16px !important;
 			}
@@ -681,10 +680,22 @@ figure {
 	line-height: 1.4em;
 	letter-spacing: -0.02em;
 
+	@media (max-width: $md3+px) {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+	}
+
 	&--md {
 		font-size: 1.8rem;
 		line-height: 1.33em;
 		letter-spacing: -0.02em;
+
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: -0.02em;
+		}
 	}
 
 	&--sm {
@@ -819,7 +830,8 @@ figure {
 		}
 	}
 
-	& .quote, & blockquote {
+	& .quote,
+	& blockquote {
 		width: 100%;
 		max-width: 67.4rem;
 		margin: 4.8rem auto;
@@ -840,8 +852,6 @@ figure {
 		& + h6 {
 			margin-top: 0rem !important;
 		}
-
-
 	}
 
 	& figure {
@@ -958,14 +968,13 @@ figure {
 }
 // === and TEXT CONTETN BLOCK ========================================================================
 
-
 .tippy-content {
 	font-family: $mainFontFamily;
 	font-weight: 600;
 	font-size: 2rem;
 	line-height: 1.4em;
 	letter-spacing: -0.02em;
-	padding: 1.1rem 2.5rem ;
+	padding: 1.1rem 2.5rem;
 }
 
 .tooltip-img {

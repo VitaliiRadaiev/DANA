@@ -271,14 +271,18 @@ defer
                                                     <li>
                                                         <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#" data-tooltip-img="img/photo/обойти-тц.jpg">обойти ТЦ</a>, выйти на <a
-                                                                href="#" data-tooltip-img="img/photo/метро-Ладожская.jpg">остановку станция Метро Ладожская</a>.
+                                                            Выйти из метро, <a href="#"
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg">обойти
+                                                                ТЦ</a>, выйти на <a href="#"
+                                                                data-tooltip-img="img/photo/метро-Ладожская.jpg">остановку
+                                                                станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a data-tooltip-img="img/photo/остановка-торговый-центр.jpg"
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                data-tooltip-img="img/photo/остановка-торговый-центр.jpg"
                                                                 href="#">остановки Торговый центр</a> (время в пути
                                                             примерно 6 минут, 4 остановки)
                                                         </div>
@@ -290,14 +294,18 @@ defer
                                                     <li>
                                                         <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#" data-tooltip-img="img/photo/перекресток.jpg">перекрестка</a>, перейти Большую
+                                                            Дойти до <a href="#"
+                                                                data-tooltip-img="img/photo/перекресток.jpg">перекрестка</a>,
+                                                            перейти Большую
                                                             Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#" data-tooltip-img="img/photo/дома с вывесками.jpg">дома с вывесками</a>.
+                                                            Прямо 640 метров до такого-то <a href="#"
+                                                                data-tooltip-img="img/photo/дома с вывесками.jpg">дома с
+                                                                вывесками</a>.
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -328,14 +336,18 @@ defer
                                                     <li>
                                                         <span>1.</span>
                                                         <div>
-                                                            Выйти из метро, <a href="#" data-tooltip-img="img/photo/обойти-тц.jpg">обойти ТЦ</a>, выйти на <a data-tooltip-img="img/photo/обойти-тц.jpg"
+                                                            Выйти из метро, <a href="#"
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg">обойти
+                                                                ТЦ</a>, выйти на <a
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg"
                                                                 href="#">остановку станция Метро Ладожская</a>.
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <span>2.</span>
                                                         <div>
-                                                            От м. Ладожская на маршрутном такси К271 до <a data-tooltip-img="img/photo/обойти-тц.jpg"
+                                                            От м. Ладожская на маршрутном такси К271 до <a
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg"
                                                                 href="#">остановки Торговый центр</a> (время в пути
                                                             примерно 6 минут, 4 остановки)
                                                         </div>
@@ -347,14 +359,17 @@ defer
                                                     <li>
                                                         <span>3.</span>
                                                         <div>
-                                                            Дойти до <a href="#" data-tooltip-img="img/photo/обойти-тц.jpg">перекрестка</a>, перейти Большую
+                                                            Дойти до <a href="#"
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg">перекрестка</a>,
+                                                            перейти Большую
                                                             Пороховскую улицу.
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <span>4.</span>
                                                         <div>
-                                                            Прямо 640 метров до такого-то <a href="#" data-tooltip-img="img/photo/обойти-тц.jpg">дома с
+                                                            Прямо 640 метров до такого-то <a href="#"
+                                                                data-tooltip-img="img/photo/обойти-тц.jpg">дома с
                                                                 вывесками</a>.
                                                         </div>
                                                     </li>
@@ -685,60 +700,65 @@ defer
             </div>
         </div> -->
 
-        
+
 
         <script type="text/javascript">
             ymaps.ready(init);
             function init() {
                 var yMap = new ymaps.Map("map", {
                     center: [59.964462, 30.460398],
-                    zoom: 10
+                    zoom: 12
                 });
 
                 myPlacemark = new ymaps.Placemark(yMap.getCenter(), {
                     hintContent: 'ул. Большая Пороховская, д. 47',
-                    balloonContent: `
-                    <div class="map-popup">
-                    <h3 class="map-popup__title">Клиника на Большой Пороховской</h3>
-                    <ul class="contact__list">
-                        <li class="contact__list-address">
-                            <div class="contact__list-title">Адрес:</div>
-                            <div class="contact__list-text">
-                                195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                    balloonContent:  `
+                            <div class="map-popup">
+                            <h3 class="map-popup__title">Клиника на Большой Пороховской</h3>
+                            <ul class="contact__list">
+                                <li class="contact__list-address">
+                                    <div class="contact__list-title">Адрес:</div>
+                                    <div class="contact__list-text">
+                                        195248, г. Санкт-Петербург, ул. Большая Пороховская, д. 47 <br>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">Телефон:</div>
+                                    <div class="contact__list-text">
+                                        <a href="#">+7 (812) 612-44-54</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact__list-title">График работы:</div>
+                                    <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
+                                </li>
+                            </ul>
+                            <div class="map-popup__buttons">
+                                <a href="#ctaPopup" data-popup="open-popup" class="map-btn btn btn--gradient">Записаться в клинику</a>
                             </div>
-                        </li>
-                        <li>
-                            <div class="contact__list-title">Телефон:</div>
-                            <div class="contact__list-text">
-                                <a href="#">+7 (812) 612-44-54</a>
+                            <img class="map-popup-img" src="img/icons/mapIcon.svg" alt="">
                             </div>
-                        </li>
-                        <li>
-                            <div class="contact__list-title">График работы:</div>
-                            <div class="contact__list-text">Ежедневно 09.00 - 21.00</div>
-                        </li>
-                    </ul>
-                    <div class="map-popup__buttons">
-                        <a href="#ctaPopup" data-popup="open-popup" class="map-btn btn btn--gradient">Записаться в клинику</a>
-                    </div>
-                    </div>
-                    `
+                            `,
                 }, {
                     iconLayout: 'default#image',
                     iconImageHref: 'img/icons/mapIcon.svg',
-                    // Размеры метки.
                     iconImageSize: [49, 54],
                     // Смещение левого верхнего угла иконки относительно
                     // её "ножки" (точки привязки).
                     //iconImageOffset: [-5, -38]
-                }),
+                })
+
 
                 yMap.geoObjects.add(myPlacemark)
                 yMap.geoObjects.events.add('balloonopen', () => {
                     let mapBtn = document.querySelector('.map-btn');
-                    if(!mapBtn) return;
+                    if (!mapBtn) return;
                     window.popup.initItem(mapBtn);
                 })
+                
+                if(document.documentElement.clientWidth > 768) {
+                    myPlacemark.balloon.open();
+                }
             }
         </script>
     </main>

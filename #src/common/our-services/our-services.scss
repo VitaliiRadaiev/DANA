@@ -32,6 +32,18 @@
                 }
             }
         }
+
+        &--second {
+            & > li {
+                @media (max-width: $md3+px) {
+                    margin-bottom: 16px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 
     &--lift {

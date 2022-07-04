@@ -1359,7 +1359,11 @@ window.popup = {
 				tippy(imageTooltip, {
 					content: `<img class="tooltip-img" src="${imageTooltip.dataset.tooltipImg}" alt="">`,
 					allowHTML: true,
-					maxWidth: 'none'
+					maxWidth: 444,
+					theme: 'tomato',
+					arrow: false,
+					inlinePositioning: true,
+					offset: [0, 0],
 				});
 
 			})
