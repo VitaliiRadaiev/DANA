@@ -152,6 +152,33 @@ class App {
 			spollers.forEach(spoller => {
 				let isOneActiveItem = spoller.dataset.spoller.trim() === 'one' ? true : false;
 				let triggers = spoller.querySelectorAll('[data-spoller-trigger]');
+
+				if(spoller.classList.contains('services-side-panel__list')) {
+					triggers.forEach(trigger => {
+						let span = document.createElement('span');
+						span.className = 'chevron-down';
+						trigger.append(span);
+					})
+				}
+
+				let itemActive = spoller.querySelector('.item-active');
+				if(itemActive) {
+					if(itemActive.parentElement.classList.contains('services-side-panel__list')) {
+						let trigger = itemActive.querySelector('[data-spoller-trigger]');
+						
+						trigger.classList.add('active');
+						trigger.parentElement.classList.add('active');
+						trigger.nextElementSibling.style.display = 'block';
+					} else {
+						let parentLi = itemActive.closest('li:not(.item-active)');
+						let trigger = parentLi.querySelector('[data-spoller-trigger]');
+						
+						trigger.classList.add('active');
+						trigger.parentElement.classList.add('active');
+						trigger.nextElementSibling.style.display = 'block';
+					}
+				}
+
 				if (triggers.length) {
 					triggers.forEach(trigger => {
 						let parent = trigger.parentElement;
@@ -163,29 +190,45 @@ class App {
 							parent.classList.add('active');
 						}
 
-						if (trigger.closest('.item-active')) {
-							content.style.display = 'block';
-							trigger.classList.add('active');
-							parent.classList.add('active');
-						}
-
 						trigger.addEventListener('click', (e) => {
-							e.preventDefault();
-							parent.classList.toggle('active');
-							trigger.classList.toggle('active');
-							content && this.utils.slideToggle(content);
-
-							if (isOneActiveItem) {
-								triggers.forEach(i => {
-									if (i === trigger) return;
-
-									let parent = i.parentElement;
-									let content = i.nextElementSibling;
-
-									parent.classList.remove('active');
-									i.classList.remove('active');
-									content && this.utils.slideUp(content);
-								})
+							if(spoller.classList.contains('services-side-panel__list')) {
+								if(e.target.closest('span.chevron-down')) {
+									e.preventDefault();
+									parent.classList.toggle('active');
+									trigger.classList.toggle('active');
+									content && this.utils.slideToggle(content);
+		
+									if (isOneActiveItem) {
+										triggers.forEach(i => {
+											if (i === trigger) return;
+		
+											let parent = i.parentElement;
+											let content = i.nextElementSibling;
+		
+											parent.classList.remove('active');
+											i.classList.remove('active');
+											content && this.utils.slideUp(content);
+										})
+									}
+								}
+							} else {
+								e.preventDefault();
+								parent.classList.toggle('active');
+								trigger.classList.toggle('active');
+								content && this.utils.slideToggle(content);
+	
+								if (isOneActiveItem) {
+									triggers.forEach(i => {
+										if (i === trigger) return;
+	
+										let parent = i.parentElement;
+										let content = i.nextElementSibling;
+	
+										parent.classList.remove('active');
+										i.classList.remove('active');
+										content && this.utils.slideUp(content);
+									})
+								}
 							}
 						})
 					})
@@ -365,16 +408,16 @@ class App {
 				imageTooltip.addEventListener('click', (e) => {
 					e.preventDefault();
 				})
-				tippy(imageTooltip, {
+				let t = tippy(imageTooltip, {
 					content: `<img class="tooltip-img" src="${imageTooltip.dataset.tooltipImg}" alt="">`,
 					allowHTML: true,
-					maxWidth: 444,
+					//maxWidth: 444,
+					maxWidth: 'none',
 					theme: 'tomato',
 					arrow: false,
 					inlinePositioning: true,
 					offset: [0, 0],
 				});
-
 			})
 		}
 	}
@@ -401,6 +444,7 @@ class App {
 		@@include('../common/services-questions/services-questions.js');
 		@@include('../common/cta/cta.js');
 		@@include('../common/advantage/advantage.js');
+		@@include('../common/services-side-panel/services-side-panel.js');
 	}
 }
 

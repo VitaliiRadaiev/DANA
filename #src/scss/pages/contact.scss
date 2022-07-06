@@ -256,7 +256,7 @@
     max-width: 43rem;
 
     @media (min-width: 768px) {
-        transform: translateY(-33px) translateX(-80px);
+        transform: translateY(-36px) translateX(-86px);
     }
     
     @media (min-width: 433px) {
@@ -288,20 +288,27 @@
         padding: 0 !important;
         margin: 0 !important;
         background: transparent !important;
+
+        @media (min-width: 768px) {
+            width: 43rem !important;
+        }
     
         & > * {
             overflow: visible !important;
         }
     }
     & .map-popup {
+        font-family: $mainFontFamily;
         color: $mainColor;
         border-radius: 2.4rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
         position: relative;
         background-color: #fff;
         padding: 2.4rem;
-        max-width: 43rem;
         width: 100%;
+        @media (min-width: 768px) {
+            width: 43rem;
+        }
 
         @media (max-width: 432.98px) {
             border-radius: 16px;
@@ -309,7 +316,7 @@
             padding-right: 30px;
         }
         &__title {
-            margin-bottom: 1rem;
+            margin-bottom: 0.7rem;
             font-weight: 600;
             font-size: 1.8rem;
             line-height: 1.33em;
@@ -330,7 +337,7 @@
             & > li {
                 &:not(:last-child) {
                     margin-bottom: 1.6rem;
-
+                    margin-right: 0;
                     @media (max-width: 432.98px) {
                         margin-bottom: 8px;
                     }
@@ -371,6 +378,7 @@
             font-weight: 500;
             font-size: 1.4rem;
             line-height: 1.29em;
+            padding: 6px 12px;
 
             @media (max-width: 432.98px) {
                 width: auto;
@@ -384,12 +392,12 @@
     & .map-popup-img {
         position: absolute;
         left: 45px;
-        top: calc(100% + 6px);
+        top: calc(100% + 8px);
         width: 49px;
         height: 54px;
 
         @media (min-width: 768px) {
-            left: calc(45px + 80px);
+            left: calc(45px + 86px);
         }
 
         @media (max-width: 432.98px) {
@@ -404,13 +412,21 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 2.4rem;
     pointer-events: auto;
+    padding: 0;
 
-    @media (min-width: 992px) {
-        padding: 6px;
+    & .tippy-content {
+        padding: 1.5rem;
     }
 
     & img {
         border-radius: 1.6rem;
+        margin: 0;
+        width: 100%;
+        height: auto;
+
+        @media (min-width: 768px) {
+            width: 64rem;
+        }
     }
 }
 

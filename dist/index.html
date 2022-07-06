@@ -264,7 +264,13 @@ defer
 					</div>
 					<div class="why-us__col why-us__col-2">
 						<div class="why-us__img why-us__img-1 ibg" data-da=".why-us__col-1,991.98,1">
-							<img src="img/photo/why-us-img-1.jpg" alt="">
+							<picture>
+								<!-- desk -->
+								<source srcset="img/photo/why-us-img-1.jpg"  media="(min-width: 768px)" >
+
+								<!-- mob -->
+								<img  src="img/photo/why-us-img-1.jpg" alt="img">
+							</picture>
 						</div>
 					</div>
 					<div class="why-us__col why-us__col-3">
@@ -991,7 +997,8 @@ defer
                 </li> 
                 <li>
                     <a class="video-testimonials__grid-item ibg" data-fancybox href="https://youtu.be/BlOXiHTjIlk">
-                        <img src="img/photo/testimonial-poster-2.jpg" alt="">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BlOXiHTjIlk?autoplay=1&mute=1&controls=0&loop=1&playlist=BlOXiHTjIlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-testimonials__grid-item-text"><span>Lorem ipsum dolor sit amet.</span></div>
                     </a>
                 </li>
                 <li>

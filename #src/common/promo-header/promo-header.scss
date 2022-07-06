@@ -100,14 +100,18 @@
 
 
 
-        @media (max-width: $md3+px) {
-            width: 100%;
-        }
+
 
         &.btn {
             @media (min-width: 992px) {
                 min-width: 27.5rem;
                 align-self: flex-start;
+            }
+
+            @media (max-width: $md2+px) {
+                width: 100%;
+                background-color: $mainColor;
+                color:  #fff !important;
             }
         }
     }
@@ -119,9 +123,11 @@
         }
 
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md2+px) {
             display: inline-flex;
             width: 100%;
+            background: transparent;
+            color: $mainColor !important;
         }
     }
 
